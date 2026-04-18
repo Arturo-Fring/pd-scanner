@@ -1,0 +1,671 @@
+{
+  "counts_by_type": {
+    "docx": 63,
+    "rtf": 30,
+    "txt": 12
+  },
+  "stats": [
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\toc-checkpoint.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "dataset - tif файлы с скринами документов dataset0 - веб кеш ЖЖ (html, картинки) dataset1 - pdf документы с сайта РБК dataset2 - pdf документы с сайта VK dataset3 - pdf документы с",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\akt_priema_peredachi_rabochego_mesta.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "ООО «Синтек Лабс» АКТ ПРИЕМА-ПЕРЕДАЧИ ОБОРУДОВАНИЯ № 27/26 г. Самара 22.02.2026 Мы, нижеподписавшиеся, представитель работодателя Латышев Дмитрий Борисович и сотрудник Пронина Алин",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\anketa_dms.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "ООО «Синтек Лабс» Анкета сотрудника для оформления ДМС Фамилия: Нестерова Имя: Елизавета Отчество: Матвеевна Дата рождения: 05.06.1990 Пол: женский Паспорт: 40 22 730415 Кем выдан:",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\doverennost_na_poluchenie_posylki.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "ДОВЕРЕННОСТЬ Я, Астахов Николай Петрович, 03.03.1987 г. рождения, паспорт: серия 38 16, номер 905511, выдан ОУФМС России по Новосибирской области в Октябрьском районе 12.07.2016, з",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\perepiska_email_dostavka_kresla.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "From: София Белякова <hr-logistics@syntechlabs.local> To: Роман Данилов <r.danilov@corp-example.local> Cc: warehouse@syntechlabs.local Date: Thu, 18 Feb 2026 11:42:09 +0300 Subject",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\raspiska_poluchenie_noutbuka.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "ООО «Синтек Лабс» Отдел ИТ-инвентаря РАСПИСКА о получении оборудования для удаленной работы Я, Журавлева Полина Сергеевна, 12.02.1993 г. рождения, паспорт: серия 46 18, номер 55120",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\servisnaya_zayavka_vyezd_inzhenera.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "ServiceDesk Export System: HomeOffice Support Ticket ID: SRV-2026-01982 Status: Scheduled Requester: Голубева Марина Юрьевна Employee ID: 013905 Site type: home_office Адрес выезда",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\soglasie_na_obrabotku_pd.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "ООО «Синтек Лабс» СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ КАНДИДАТА Я, Воронцов Тимур Алексеевич, 17.11.1988 г. рождения, паспорт серии 52 17 № 118903, выдан УФМС России по Нижег",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_kompensaciya_interneta.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "АО «НордВектор Тех» Форма HO-INT/07 ЗАЯВКА НА КОМПЕНСАЦИЮ РАСХОДОВ НА ДОМАШНИЙ ИНТЕРНЕТ Сотрудник: Мельник Светлана Игоревна Табельный номер: 011284 Подразделение: отдел тестирован",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_na_propusk_v_zhk.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "Управляющая компания ЖК «Речной Квартал» ЗАЯВКА НА РАЗОВЫЙ ПРОПУСК ДЛЯ КУРЬЕРА Заказчик пропуска (житель): Чернов Максим Олегович адрес: 410047, г. Саратов, ул. Летняя Долина, д. 1",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavlenie_dostavka_oborudovaniya_domoi.txt",
+      "file_type": "txt",
+      "chunk_count": 1,
+      "extractor_name": "TXTExtractor",
+      "sample_text": "АО «НордВектор Тех» Директору административного департамента от системного аналитика Кулагина Антона Владиславовича табельный номер 008731 ЗАЯВЛЕНИЕ Прошу организовать доставку обо",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx",
+      "file_type": "docx",
+      "chunk_count": 35,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "АНКЕТА",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx",
+      "file_type": "docx",
+      "chunk_count": 36,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "УТВЕРЖДАЮ",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+      "file_type": "docx",
+      "chunk_count": 54,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Я, нижеподписавшийся, настоящим выражаю свое согласие на заключение договора на оказание комплекса услуг по открытию Счета, предоставлению и обслуживанию Карты (далее по тексту: До",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+      "file_type": "docx",
+      "chunk_count": 18,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Анкета выпускника",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+      "file_type": "docx",
+      "chunk_count": 54,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Договор №_____________________",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+      "file_type": "docx",
+      "chunk_count": 7,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Ректору ФГАОУ ВО",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+      "file_type": "docx",
+      "chunk_count": 27,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Проректору _______________________",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+      "file_type": "docx",
+      "chunk_count": 12,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Ответственному секретарю",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+      "file_type": "docx",
+      "chunk_count": 14,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Ответственному секретарю",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+      "file_type": "docx",
+      "chunk_count": 14,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Ответственному секретарю",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\1C_Science-pattern.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\200_bak_Urmosh.docx",
+      "file_type": "docx",
+      "chunk_count": 14,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Ответственному секретарю",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\24.11.2020 - форма заявления на участие в конкурсе.docx",
+      "file_type": "docx",
+      "chunk_count": 36,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "З А Я В Л Е Н И Е",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\24.11.2020 - форма согласия соискателя.docx",
+      "file_type": "docx",
+      "chunk_count": 36,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Согласие на обработку персональных данных соискателя",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\63_ffa6_7.Gizlilik%20ve%20%C3%87erez%20Politikas%C4%B1_4064465.docx",
+      "file_type": "docx",
+      "chunk_count": 61,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Bilecik Şeyh Edebali Üniversitesi",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\anketa_dpo_2023.docx",
+      "file_type": "docx",
+      "chunk_count": 15,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "АНКЕТА СЛУШАТЕЛЯ ПРОГРАММЫ ДПО",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Application-Offer-Form.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\APS.docx",
+      "file_type": "docx",
+      "chunk_count": 118,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Лицензируемые материалы",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\ASP.docx",
+      "file_type": "docx",
+      "chunk_count": 875,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "ФГАОУ ВО «Южный федеральный университет»",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Azov_conf-application.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Azov_conf-example.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Azov_conf-requirements.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\BAKSPEC.docx",
+      "file_type": "docx",
+      "chunk_count": 1123,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "ФГАОУ ВО «Южный федеральный университет»",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\bez_vi_bak.docx",
+      "file_type": "docx",
+      "chunk_count": 17,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Ответственному секретарю",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Bid_Bachelor-Specialist.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Bid_Magistracy.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Congreso_Anexos_rus_2025.docx",
+      "file_type": "docx",
+      "chunk_count": 45,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "Приложение 1",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Course%20syllabus%20Biogeochemistry.docx",
+      "file_type": "docx",
+      "chunk_count": 17,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "1. Course Title:",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\DGTU-conference-programm.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\EBBondarevskaia_conference-info.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Environmental%20problems%20and%20environmental%20pollution%20.docx",
+      "file_type": "docx",
+      "chunk_count": 17,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "1. Course Title:",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Errand_RFFI-form-v2.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\FCP_competitions-notice.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\formo.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\FZ 273.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "\\ql | Федеральный закон от 25.12.2008 N 273-ФЗ (ред. от 22.12.2014) \"О противодействии коррупции\" | Документ предоставлен КонсультантПлюс www.consultant.ru Дата сохранения: 25.04.2",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\GenerationS-info.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Global%20research%20trends%20in%20branches%20of%20sociology.docx",
+      "file_type": "docx",
+      "chunk_count": 19,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "1. Course Title:",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Government-order_220-notice.rtf",
+      "file_type": "rtf",
+      "chunk_count": 1,
+      "extractor_name": "RTFExtractor",
+      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Horario_Aula_Hispánica_marzo-junio-2021.docx",
+      "file_type": "docx",
+      "chunk_count": 33,
+      "extractor_name": "DOCXExtractor",
+      "sample_text": "План мероприятий и встреч Дискуссионного Клуба СНО Aula Hispánica",
+      "warnings": []
+    }
+  ],
+  "previews": [
+    {
+      "title": "Extraction Preview: toc-checkpoint.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\toc-checkpoint.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\toc-checkpoint.txt",
+              "text": "dataset - tif файлы с скринами документов dataset0 - веб кеш ЖЖ (html, картинки) dataset1 - pdf документы с сайта РБК dataset2 - pdf документы с сайта VK dataset3 - pdf документы с сайта ЮФУ dataset4 - tif файлы и видео (mp4) со скринами ли",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: akt_priema_peredachi_rabochego_mesta.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\akt_priema_peredachi_rabochego_mesta.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\akt_priema_peredachi_rabochego_mesta.txt",
+              "text": "ООО «Синтек Лабс» АКТ ПРИЕМА-ПЕРЕДАЧИ ОБОРУДОВАНИЯ № 27/26 г. Самара 22.02.2026 Мы, нижеподписавшиеся, представитель работодателя Латышев Дмитрий Борисович и сотрудник Пронина Алина Константиновна, 22.08.1995 г. рождения, паспорт: 71 20 402",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: anketa_dms.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\anketa_dms.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\anketa_dms.txt",
+              "text": "ООО «Синтек Лабс» Анкета сотрудника для оформления ДМС Фамилия: Нестерова Имя: Елизавета Отчество: Матвеевна Дата рождения: 05.06.1990 Пол: женский Паспорт: 40 22 730415 Кем выдан: ТП № 3 УФМС России по Санкт-Петербургу и Ленинградской обла",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: doverennost_na_poluchenie_posylki.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\doverennost_na_poluchenie_posylki.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\doverennost_na_poluchenie_posylki.txt",
+              "text": "ДОВЕРЕННОСТЬ Я, Астахов Николай Петрович, 03.03.1987 г. рождения, паспорт: серия 38 16, номер 905511, выдан ОУФМС России по Новосибирской области в Октябрьском районе 12.07.2016, зарегистрированный по адресу: 630089, г. Новосибирск, ул. Звё",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: perepiska_email_dostavka_kresla.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\perepiska_email_dostavka_kresla.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\perepiska_email_dostavka_kresla.txt",
+              "text": "From: София Белякова <hr-logistics@syntechlabs.local> To: Роман Данилов <r.danilov@corp-example.local> Cc: warehouse@syntechlabs.local Date: Thu, 18 Feb 2026 11:42:09 +0300 Subject: RE: Доставка кресла для домашнего офиса Роман, добрый день",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: raspiska_poluchenie_noutbuka.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\raspiska_poluchenie_noutbuka.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\raspiska_poluchenie_noutbuka.txt",
+              "text": "ООО «Синтек Лабс» Отдел ИТ-инвентаря РАСПИСКА о получении оборудования для удаленной работы Я, Журавлева Полина Сергеевна, 12.02.1993 г. рождения, паспорт: серия 46 18, номер 551204, выдан ОМВД России по району Южное Бутово г. Москвы 11.09.",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: servisnaya_zayavka_vyezd_inzhenera.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\servisnaya_zayavka_vyezd_inzhenera.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\servisnaya_zayavka_vyezd_inzhenera.txt",
+              "text": "ServiceDesk Export System: HomeOffice Support Ticket ID: SRV-2026-01982 Status: Scheduled Requester: Голубева Марина Юрьевна Employee ID: 013905 Site type: home_office Адрес выезда инженера: 394026, г. Воронеж, ул. Школьная Гавань, д. 28, к",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: soglasie_na_obrabotku_pd.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\soglasie_na_obrabotku_pd.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\soglasie_na_obrabotku_pd.txt",
+              "text": "ООО «Синтек Лабс» СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ КАНДИДАТА Я, Воронцов Тимур Алексеевич, 17.11.1988 г. рождения, паспорт серии 52 17 № 118903, выдан УФМС России по Нижегородской области 26.03.2017, код подразделения 520-017, заре",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: zayavka_kompensaciya_interneta.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_kompensaciya_interneta.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_kompensaciya_interneta.txt",
+              "text": "АО «НордВектор Тех» Форма HO-INT/07 ЗАЯВКА НА КОМПЕНСАЦИЮ РАСХОДОВ НА ДОМАШНИЙ ИНТЕРНЕТ Сотрудник: Мельник Светлана Игоревна Табельный номер: 011284 Подразделение: отдел тестирования платформы Адрес подключения услуги: 350080, г. Краснодар,",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: zayavka_na_propusk_v_zhk.txt",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_na_propusk_v_zhk.txt",
+          "file_type": "txt",
+          "metadata": {
+            "extractor_name": "TXTExtractor",
+            "chunk_count": 1,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"section\": \"body\"}",
+              "source_type": "plain_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_na_propusk_v_zhk.txt",
+              "text": "Управляющая компания ЖК «Речной Квартал» ЗАЯВКА НА РАЗОВЫЙ ПРОПУСК ДЛЯ КУРЬЕРА Заказчик пропуска (житель): Чернов Максим Олегович адрес: 410047, г. Саратов, ул. Летняя Долина, д. 15, секция 3, кв. 87 мобильный телефон: +7 905 144-67-01 Прош",
+              "columns": [],
+              "metadata": {}
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    }
+  ]
+}

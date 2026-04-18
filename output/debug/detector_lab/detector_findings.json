@@ -1,0 +1,19 @@
+{
+  "source": "manual_input",
+  "findings": [
+    {
+      "entity_type": "phone",
+      "masked_value": "+7*** ***-**-74",
+      "confidence": 0.8,
+      "explanation": "phone: regex/heuristic match; validator passed",
+      "source_context": "+7*** ***-**-74"
+    },
+    {
+      "entity_type": "snils",
+      "masked_value": "*******8774",
+      "confidence": 0.58,
+      "explanation": "snils: regex/heuristic match",
+      "source_context": "*******8774"
+    }
+  ]
+}

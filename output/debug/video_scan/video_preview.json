@@ -1,0 +1,24 @@
+{
+  "ocr_available": false,
+  "ocr_status": "OCR disabled by current mode.",
+  "previews": [
+    {
+      "title": "Extraction Preview: CS10.mp4",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\CS10.mp4",
+          "file_type": "video",
+          "metadata": {
+            "structured": false,
+            "ocr_used": false
+          },
+          "warnings": [
+            "Deep video OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    }
+  ]
+}

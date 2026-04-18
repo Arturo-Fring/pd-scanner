@@ -1,0 +1,186 @@
+{
+  "ocr_available": false,
+  "ocr_status": "OCR disabled by current mode.",
+  "previews": [
+    {
+      "title": "Extraction Preview: 50308888-8889.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza00d00\\50308888-8889.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 0011839665.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza01f00\\0011839665.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 2040765768.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza04e00\\2040765768.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 2031309105.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza17e00\\2031309105.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 04303523-a.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza20e00\\04303523-a.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 513327776_513327782.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza23d00\\513327776_513327782.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 2075165787.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza27d00\\2075165787.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 2501172233_2501172290.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza29e00\\2501172233_2501172290.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 2050801870_1873.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza42d00\\2050801870_1873.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: 2042537535.tif",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza43e00\\2042537535.tif",
+          "file_type": "image",
+          "metadata": {
+            "ocr_used": false,
+            "structured": false
+          },
+          "warnings": [
+            "Image OCR skipped in fast mode."
+          ],
+          "sample_chunks": [],
+          "sample_rows": []
+        }
+      ]
+    }
+  ]
+}

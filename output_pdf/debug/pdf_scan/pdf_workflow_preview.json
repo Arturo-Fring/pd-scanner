@@ -1,0 +1,484 @@
+{
+  "invalid_pdfs": [],
+  "preview_count": 15,
+  "files": [
+    {
+      "title": "Extraction Preview: %D0%92%D1%81%D0%B5%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D1%8C_%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\%D0%92%D1%81%D0%B5%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D1%8C_%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 44,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text_sparse",
+              "text": "Всероссийская перепись домашних животных 2023",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Уникальные методологии и современные системы сбора и анализа больших данных 35 специалистов 250 кошек и 90 собак Более 20 лет исследований Все исследования основаны на неинвазивных методах и наблюдении Всероссийская перепись домашних животн",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "© Ipsos | Corporate presentation 2024 3 ‒ ОСНОВНЫЕ ФАКТЫ 2023 проведено ОНЛАЙН интервью, в т.ч. на панели I-Say 3 млн проведено ТЕЛЕФОННЫХ интервью 550 тыс.+ #1 2023 TOP 50 ИННОВАЦИОННЫХ КОМПАНИЙ IPSOS ПЯТЫЙ ГОД ПОДРЯД НАЗВАНА САМОЙ ИННОВАЦ",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Об исследовании Всероссийская перепись домашних питомцев и их владельцев включающая данные по основным характеристикам (например, размер популяции, отношение к домашним питомцам, тип кормления и др.) Трекинговое исследование в России перепи",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Дизайн исследования Где ? Вся Россия: • Городская и сельская России • Репрезентативная выборка на уровне федеральных округов и городских кластеров Как ? • Телефонные интервью • Единая анкета для всех стран Кто ? • 7718 интервью • Мужчины и ",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: agreement_reg.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\agreement_reg.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 5,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "1 Политика конфиденциальности VK Education 1. Настоящая Политика конфиденциальности (далее «Политика»), размещенная по следующему адресу в сети Интернет: https://education.vk.company/static/documents/agreement_reg.pdf регулирует отношения м",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "2 4.3. Компания может поделиться вашими данными с Сервисами Экосистемы VK, а также внешними сервисами, использующими инструменты Экосистемы VK, чтобы предоставить вам доступы, возможности и преимущества Экосистемы VK, например, если вы реши",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "3 3. Данные, которые Пользователь предоставляет с целью получения полных функциональных возможностей Сайта при подаче заявки и участии в отборе для участия в проектах Компании (имя и фамилия, дата рождения, пол, адрес электронной почты, ном",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "4 а также проведения обучения Пользователями- преподавателями по проектам Компании. 7. Учетные данные Пользователей-студентов, а именно: фамилия, имя, данные, указанные в пункте 5 настоящей таблицы. В целях выполнения Компанией обязательств",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "5 информации/ материалов третьим лицам и размещения указанной информации в публичном доступе. 10. Обращения, предложения и претензии (далее совместно – обращение) физических и юридических лиц к Компании в связи с Политикой и всеми вопросами",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: agreement_reg_extra.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\agreement_reg_extra.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 5,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "1 Пользовательское соглашение VK Education Настоящее Пользовательское соглашение (далее – «Соглашение») регулирует отношения между ООО «ВК» (ОГРН 1027739850962, Россия, 125167, г. Москва, Ленинградский проспект д.39, стр.79), далее «Компани",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "2 Интернет по адресу: https://id.vk.com/terms и Политикой конфиденциальности Экосистемы VK, которая размещена в открытом доступе в сети Интернет по адресу: https://id.vk.com/privacy, настоящим Соглашением и Политикой конфиденциальности. 2. ",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "3 3.8. Компания не предоставляет никаких гарантий того, что Сайт или их элементы могут подходить для конкретных целей использования. Компания не может гарантировать и не обещает никаких специфических результатов от использования Сайта или и",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "4 4.3.6. периодически знакомиться с содержанием настоящего Соглашения в сети Интернет по адресу: https://education.vk.company/static/documents/agreement_reg_extra.pdf , следить за внесенными в него изменениями. Неосуществление Пользователем",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "5 нахождения Компании, если иное не предусмотрено применимым законодательством Российской Федерации. 7.6. Обращения, предложения и претензии (далее совместно – обращение) физических и юридических лиц к Компании в связи с Соглашением и всеми",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: capsula_instruction.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\capsula_instruction.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 14,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text_sparse",
+              "text": "Умная колонка с Марусей",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Это VK Капсула. Скачать приложение помощник» для настройки VK Капсулы Подробная инструкция по настройке VK Капсулы Чтобы её подключить, вам понадобится: Розетка — для подключения к электросети 1 3 Приложение помощник» — для настройки и упра",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Как устроена VK Капсула Верхний индикатор Горит красным, когда микрофоны отключены Световое кольцо Загорается, когда Маруся слушает вас и отвечает на вопросы Кнопка отключения микрофонов Если не хотите, чтобы Маруся вас слышала Разъём питан",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Работа с VK Капсулой Начало работы 1 Установите приложение «Маруся — голосовой помощник» на смартфон. 2 Запустите приложение и авторизуйтесь в нем через VK ID. 3 Вставьте кабель в VK Капсулу и блок питания в розетку, чтобы подключить устрой",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Включить музыку со своего смартфона Включите на VK Капсуле Bluetooth: скажите или три раза коснитесь сенсорной панели сверху. Маруся, подключи Блютус 1 2 Выберите в списке доступных устройств на вашем смартфоне VK Capsula-XXXX. Вместо X Вме",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: capsula_neo_instruction.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\capsula_neo_instruction.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 20,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text_sparse",
+              "text": "Как пользоваться колонкой",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "03 Знакомство 05 Подключение 06 Голосовое управление 07 Персонализация 08 Защита личных данных 09 Режимы ограничения контента 10 Музыка с телефона 11 Настройка часов 12 Управление умным домом 14 Сброс настроек 14 Подключение к другой сети W",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "03 Знакомство \u000e\u0013 Дисплей Показывает время, погоду и милые глазки Маруси. Автоматически подстраивает яркость под освещение. 2. Световой спот Подсвечивает цветами разные состояния колонки: например, когда приходит уведомление, выключен микроф",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "04 Отключение микрофонов Тише Громче 2 микрофона: слышат вас даже издалека и точно распознают речь Пауза или запуск аудио, а при долгом нажатии — вызов Маруси Следующий трек Удерживать и тап на пока звучит музыка Предыдущий трек Удерживать ",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "05 Подключение 1. Включите колонку в розетку 2. Убедитесь, что работает Wi-Fi 3. Установите на телефон приложение «Маруся — голосовой помощник» и авторизуйтесь в нём с помощью VK ID 4. Скажите Марусе: «Подключи колонку» — или нажмите «Подкл",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: google_privacy_policy_en.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\google_privacy_policy_en.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 34,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "GOOGLE PRIVACY POLICY When you use our services, you’re trusting us with your information. We understand this is a big responsibility and work hard to protect your information and put you in control. This Privacy Policy is meant to help you",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "and photos, or see more relevant search results. And you can use many Google services when you’re signed out or without creating an account at all, like searching on Google or watching YouTube videos. You can also choose to browse the web i",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "When you create a Google Account, you provide us with personal information that includes your name and a password. You can also choose to add a phone number or payment information to your account. Even if you aren’t signed in to a Google Ac",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "include: Terms you search for Videos you watch Views and interactions with content and ads Voice and audio information Purchase activity People with whom you communicate or share content Activity on third-party sites and apps that use our s",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "IP address Activity on Google services, such as from your searches or places you label like home or work Information about things near your device, such as Wi-Fi access points, cell towers, and Bluetooth-enabled devices The types of locatio",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: google_terms_of_service_en.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\google_terms_of_service_en.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 20,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "GOOGLE TERMS OF SERVICE Effective May 22, 2024 | Archived versions What’s covered in these terms We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect from us as you use Google services, a",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Terms Service provider Google services are provided by, and you’re contracting with: Google LLC organized under the laws of the State of Delaware, USA, and operating under the laws of the USA 1600 Amphitheatre Parkway Mountain View, Califor",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "These terms help define the relationship between you and Google. When we speak of “Google,” “we,” “us,” and “our,” we mean Google LLC and its affiliates. Broadly speaking, we give you permission to access and use our services if you agree t",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "If we make material changes that negatively impact your use of our services or if we stop offering a service, we’ll provide you with reasonable advance notice, except in urgent situations such as preventing abuse, responding to legal requir",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "don’t abuse or harm others or yourself (or threaten or encourage such abuse or harm) — for example, by misleading, defrauding, illegally impersonating, defaming, bullying, harassing, or stalking others Our service-specific additional terms ",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: ok_history_new.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\ok_history_new.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 5,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "История проекта Датой создания социальной сети Одноклассники принято считать 26 марта 2006 года. Идея сайта оказалось простой и гениальной для своего времени. В период отсутствия широкого распространения мессенджеров, социальных сетей и про",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "2016 • Пользователи: 51 млн человек в сутки, 300 млн просморов видео в сутки. • ОК – второй сайт в рунете по просмотрам видео (comScore). • Появилась функция денежных переводов между пользователями • Интеграция Instagram с Одноклассниками..",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "2014 • Значительно расширены возможности общения. Например, теперь пользователи могут в личных сообщениях записывать аудио и видео послания длиной до 3 минут. Кроме того, в сообщениях доступная опция «прикрепить видео». • Социальная сеть ст",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "2012 • Основная версия сайта доступна на узбекском языке (латиница). • Пользователям предоставлена бесплатная возможность менять дизайн страниц по своему вкусу, выбирая из 39 предоставленных тем. • Глава социальной сети Илья Широков на конф",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "• Одноклассники вошли в состав холдинга Mail.RU Group. • Появилась возможность ставить «Класс!» и делиться материалами, опубликованными на других сайтах, разместивших у себя специальные кнопки Одноклассников. • На мобильной версии появились",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: politika_konfidencialnosti.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\politika_konfidencialnosti.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 3,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ 1. Общие положения 1.1. В целях надлежащего исполнения норм действующего законодательства Российской Федерации, в соответствии с Федеральным законом от 27 июля 2006 г. №152-ФЗ «О персональных данных», ООО «Акстор",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "3.1 Данные собираются Компанией при оформлении и исполнении заказа. 3.2. Ниже приводятся Данные, которые мы обрабатываем в следующих целях: Данные: Цели обработки - Имя - Фамилия - Адрес электронной почты - Номер телефона - Адрес доставки -",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "4.3.2.2 Сбор персональных данных, а также иной информации, которая не относится к персональным данным, осуществляется в сервисе при регистрации и/или авторизации путем заполнения Пользователем регистрационной формы или иными доступными спос",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: rules.pdf",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\rules.pdf",
+          "file_type": "pdf",
+          "metadata": {
+            "structured": false,
+            "page_count": 14,
+            "ocr_used": false,
+            "ocr_pages": 0
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "ПРАВИЛА ПРОВЕДЕНИЯ СТИМУЛИРУЮЩЕГО МЕРОПРИЯТИЯ «Поможем найти работу или вернем деньги» Принимая участие в Мероприятии, Участники полностью соглашаются с настоящими правилами проведения стимулирующего мероприятия «Поможем найти работу или ве",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "гражданином РФ, налоговым резидентом РФ или являться иностранным гражданином, но при этом иметь разрешение на работу в РФ, вид на жительство, действующие минимум в течение 1 (одного) календарного года после окончания прохождения обучения по",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "2. Сроки проведения Мероприятия. 2.1. Общий срок проведения Мероприятия: с «01» марта 2025 г. по «31» марта 2025 г. включительно. 3. Порядок проведения Мероприятия. 3.1. Для участия в Мероприятии Участнику необходимо: 3.1.1. Заключить догов",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "Расширенный Плюс». Введение o Программа профессиональной переподготовки «Финансовый менеджер 2.0. Тариф Расширенный». Введение o Профессия 1С-аналитик o Профессия 1С-аналитик. Тариф Индивидуальный o Профессия 1С-аналитик. Тариф Индивидуальн",
+              "columns": []
+            },
+            {
+              "location": "n/a",
+              "source_type": "pdf_text",
+              "text": "o Профессия Бренд-менеджер o Профессия Бренд-менеджер. Тариф Бренд-директор o Профессия Бренд-менеджер. Тариф Бренд-менеджер PRO o Профессия Бухгалтер o Профессия Бухгалтер (совместно с Geekbrains) o Профессия Бухгалтер. Тариф Оптимальный o",
+              "columns": []
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    }
+  ]
+}

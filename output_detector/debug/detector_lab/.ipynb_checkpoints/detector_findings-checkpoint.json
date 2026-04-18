@@ -1,0 +1,33 @@
+{
+  "source": "manual_input",
+  "findings": [
+    {
+      "entity_type": "email",
+      "masked_value": "iv***@mail.ru",
+      "confidence": 0.68,
+      "explanation": "email: regex/heuristic match",
+      "source_context": "ФИО: Иван Петров. Email: iv***@mail.ru. Телефон: +7*** ***-**-67"
+    },
+    {
+      "entity_type": "phone",
+      "masked_value": "+7*** ***-**-67",
+      "confidence": 0.9500000000000001,
+      "explanation": "phone: regex/heuristic match; nearby text context matched; validator passed",
+      "source_context": "в. Email: iv***@mail.ru. Телефон: +7*** ***-**-67"
+    },
+    {
+      "entity_type": "fio",
+      "masked_value": "Ив***ов",
+      "confidence": 0.7000000000000001,
+      "explanation": "fio: regex/heuristic match; nearby text context matched",
+      "source_context": "ФИО: Ив***ов. Email: iv***@mail.ru. Телефон: +"
+    },
+    {
+      "entity_type": "fio",
+      "masked_value": "Ив***ов",
+      "confidence": 0.5,
+      "explanation": "fio: regex/heuristic match; nearby text context matched",
+      "source_context": "ФИО: Ив***ов. Email: iv***@mail.ru. Телефон: +"
+    }
+  ]
+}

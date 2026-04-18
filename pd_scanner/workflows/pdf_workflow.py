@@ -1,0 +1,74 @@
+"""PDF-only workflow."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+from pd_scanner.core.config import AppConfig
+from pd_scanner.core.services import ScanProgressTracker
+from pd_scanner.core.utils import elapsed_seconds, time_now
+from pd_scanner.core.workflow_models import WorkflowPreview, WorkflowResult
+from pd_scanner.scanner.walker import iter_files
+from pd_scanner.workflows.helpers import build_summary_from_results, extraction_preview, write_debug_artifact
+from pd_scanner.workflows.single_file_workflow import scan_single_path
+
+
+def run_pdf_workflow(
+    config: AppConfig,
+    input_path: str | Path,
+    tracker: ScanProgressTracker | None = None,
+) -> WorkflowResult:
+    """Scan only PDF files and return workflow-specific previews."""
+    started = time_now()
+    input_root = Path(input_path).expanduser().resolve()
+    files = [input_root] if input_root.is_file() else [
+        path for path in iter_files(input_root, config) if path.suffix.lower() == ".pdf"
+    ]
+    debug_artifact = config.output_path / "debug" / "pdf_scan" / "pdf_workflow_preview.json"
+    if tracker is not None:
+        tracker.set_stage("discovery")
+        tracker.set_total_files(len(files))
+        tracker.set_queue_preview(files)
+        tracker.register_artifact("PDF debug artifact", debug_artifact)
+        tracker.log("INFO", f"Queued {len(files)} PDF files for the workflow.")
+    results = []
+    errors = []
+    previews: list[WorkflowPreview] = []
+    invalid_pdfs: list[str] = []
+
+    for path in files:
+        if tracker is not None and tracker.should_stop():
+            tracker.log("WARNING", "PDF workflow stopping after the current batch.")
+            break
+        result, extraction = scan_single_path(path, config, tracker=tracker)
+        if result.status == "error" and "pdf" in (result.error_message or "").lower():
+            invalid_pdfs.append(path.name)
+        results.append(result)
+        if result.status == "error":
+            errors.append({"path": result.path, "error_message": result.error_message or "unknown error"})
+        if extraction is not None:
+            preview = extraction_preview(path, extraction)
+            previews.append(preview)
+            if tracker is not None:
+                tracker.publish_preview(preview.title, preview.items)
+
+    summary = build_summary_from_results(results, elapsed_seconds(started))
+    debug_path = write_debug_artifact(
+        config,
+        "pdf_scan",
+        "pdf_workflow_preview",
+        {
+            "invalid_pdfs": invalid_pdfs[:50],
+            "preview_count": len(previews),
+            "files": [preview.to_dict() for preview in previews[:10]],
+        },
+    )
+    return WorkflowResult(
+        workflow_type="pdf_scan",
+        status="cancelled" if tracker is not None and tracker.should_stop() else "completed",
+        summary=summary,
+        results=results,
+        errors=errors,
+        previews=previews[:10],
+        metadata={"invalid_pdfs": invalid_pdfs, "debug_artifact": debug_path, "files_scanned": len(files)},
+    )

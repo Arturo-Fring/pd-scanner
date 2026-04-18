@@ -1,0 +1,393 @@
+{
+  "summary": {
+    "total_files": 15,
+    "processed_files": 0,
+    "files_with_pd": 0,
+    "files_by_uz": {
+      "NO_PD": 15
+    },
+    "entity_stats": {},
+    "errors_count": 15,
+    "unsupported_count": 0,
+    "processing_time_total_sec": 2.7369
+  },
+  "files": [
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\%D0%92%D1%81%D0%B5%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D1%8C_%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 1.2887,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\Sport24_Mediakit_2024.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.133,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\VKCT_Soglashenie_ob_informacionnom_vzaimodeistvii.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0414,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\VK_Soglashenie_ob_informacionnom_vzaimodeistvii.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0396,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\agreement_reg.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0594,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\agreement_reg_extra.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0747,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\capsula_instruction.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.074,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\capsula_neo_instruction.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.2734,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\google_privacy_policy_en.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.1907,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\google_terms_of_service_en.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.2188,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\ok_history_new.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0572,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\politika_konfidencialnosti.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0447,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\rules.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0678,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\version-090924.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0721,
+      "metadata": {},
+      "warnings": []
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\version-300824.pdf",
+      "file_type": "pdf",
+      "status": "error",
+      "error_message": "document closed",
+      "detected_entities": [],
+      "category_counts": {},
+      "group_flags": {
+        "has_common_pd": false,
+        "has_state_ids": false,
+        "has_payment": false,
+        "has_biometric": false,
+        "has_special": false
+      },
+      "estimated_volume": "none",
+      "volume_metric": 0,
+      "uz_level": "NO_PD",
+      "processing_time_sec": 0.0715,
+      "metadata": {},
+      "warnings": []
+    }
+  ],
+  "errors": [
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\%D0%92%D1%81%D0%B5%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D1%8C_%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\Sport24_Mediakit_2024.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\VKCT_Soglashenie_ob_informacionnom_vzaimodeistvii.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\VK_Soglashenie_ob_informacionnom_vzaimodeistvii.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\agreement_reg.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\agreement_reg_extra.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\capsula_instruction.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\capsula_neo_instruction.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\google_privacy_policy_en.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\google_terms_of_service_en.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\ok_history_new.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\politika_konfidencialnosti.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\rules.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\version-090924.pdf",
+      "error_message": "document closed"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Документы партнеров\\version-300824.pdf",
+      "error_message": "document closed"
+    }
+  ]
+}

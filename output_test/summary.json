@@ -1,0 +1,12 @@
+{
+  "total_files": 15,
+  "processed_files": 0,
+  "files_with_pd": 0,
+  "files_by_uz": {
+    "NO_PD": 15
+  },
+  "entity_stats": {},
+  "errors_count": 15,
+  "unsupported_count": 0,
+  "processing_time_total_sec": 2.7369
+}

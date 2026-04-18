@@ -1,0 +1,957 @@
+{
+  "is_running": false,
+  "scan_id": "0881e975744a49c18ba64b1c1163220e",
+  "workflow_type": "structured_scan",
+  "status": "completed",
+  "total_count": 5,
+  "processed_count": 5,
+  "files_with_pd": 5,
+  "warnings_count": 0,
+  "errors_count": 0,
+  "unsupported_count": 0,
+  "current_file": null,
+  "last_result_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+  "current_file_type": null,
+  "current_extractor_name": null,
+  "stop_requested": false,
+  "current_stage": "finished",
+  "started_at": "2026-04-18T09:36:14.912158+00:00",
+  "finished_at": "2026-04-18T09:37:40.924301+00:00",
+  "recent_events": [
+    {
+      "timestamp": "16:37:40",
+      "level": "INFO",
+      "message": "Scan finished with status=completed."
+    },
+    {
+      "timestamp": "16:37:40",
+      "level": "INFO",
+      "message": "CSV structured scan completed: logistics.csv"
+    },
+    {
+      "timestamp": "16:37:16",
+      "level": "INFO",
+      "message": "Processing logistics.csv (csv via CSVExtractor)."
+    },
+    {
+      "timestamp": "16:37:16",
+      "level": "INFO",
+      "message": "CSV structured scan completed: customers.csv"
+    },
+    {
+      "timestamp": "16:37:12",
+      "level": "INFO",
+      "message": "Processing customers.csv (csv via CSVExtractor)."
+    },
+    {
+      "timestamp": "16:37:12",
+      "level": "INFO",
+      "message": "PARQUET structured scan completed: company.parquet"
+    },
+    {
+      "timestamp": "16:36:58",
+      "level": "INFO",
+      "message": "Processing company.parquet (parquet via ParquetExtractor)."
+    },
+    {
+      "timestamp": "16:36:58",
+      "level": "INFO",
+      "message": "PARQUET structured scan completed: client.parquet"
+    },
+    {
+      "timestamp": "16:36:16",
+      "level": "INFO",
+      "message": "Processing client.parquet (parquet via ParquetExtractor)."
+    },
+    {
+      "timestamp": "16:36:16",
+      "level": "INFO",
+      "message": "Processed 1/5 files."
+    },
+    {
+      "timestamp": "16:36:16",
+      "level": "INFO",
+      "message": "CSV structured scan completed: pii_scan_results-checkpoint.csv"
+    },
+    {
+      "timestamp": "16:36:15",
+      "level": "INFO",
+      "message": "Processing pii_scan_results-checkpoint.csv (csv via CSVExtractor)."
+    },
+    {
+      "timestamp": "16:36:15",
+      "level": "INFO",
+      "message": "Queued 5 structured files (preview mode)."
+    },
+    {
+      "timestamp": "16:36:15",
+      "level": "INFO",
+      "message": "Discovered 5 files."
+    },
+    {
+      "timestamp": "16:36:14",
+      "level": "INFO",
+      "message": "structured_scan started."
+    }
+  ],
+  "aggregated_warnings": {},
+  "queued_files": [
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv"
+  ],
+  "recent_results": [
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+      "file_type": "csv",
+      "status": "ok",
+      "uz_level": "UZ-1",
+      "categories": "phone, special_health",
+      "entities": 35972,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+      "file_type": "csv",
+      "status": "ok",
+      "uz_level": "UZ-3",
+      "categories": "fio",
+      "entities": 4847,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+      "file_type": "parquet",
+      "status": "ok",
+      "uz_level": "UZ-2",
+      "categories": "address, bank_card, email, inn, phone, snils",
+      "entities": 31501,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+      "file_type": "parquet",
+      "status": "ok",
+      "uz_level": "UZ-2",
+      "categories": "bank_card, email, inn, phone, snils",
+      "entities": 54548,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+      "file_type": "csv",
+      "status": "ok",
+      "uz_level": "UZ-2",
+      "categories": "bank_card, email, inn, phone, snils",
+      "entities": 153,
+      "warnings": 0,
+      "error_message": ""
+    }
+  ],
+  "artifacts": [
+    {
+      "label": "Output directory",
+      "path": "C:\\Coding\\pytorchlabs\\hack\\output"
+    },
+    {
+      "label": "scan.log",
+      "path": "C:\\Coding\\pytorchlabs\\hack\\output\\scan.log"
+    },
+    {
+      "label": "scan_state.json",
+      "path": "C:\\Coding\\pytorchlabs\\hack\\output\\scan_state.json"
+    },
+    {
+      "label": "Structured debug artifact",
+      "path": "C:\\Coding\\pytorchlabs\\hack\\output\\debug\\structured_scan\\structured_preview.json"
+    }
+  ],
+  "live_previews": [
+    {
+      "title": "Extraction Preview: logistics.csv",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+          "file_type": "csv",
+          "metadata": {
+            "extractor_name": "CSVExtractor",
+            "structured": true,
+            "total_rows_scanned": 17978,
+            "encoding": "utf-8"
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 1 | sale_id: 1 | origin_store_id: 9 | destination_address: с. Брянск, наб. Специалистов, д. 615, 518360 | transport_mode: Грузовик | carrier: ЭкспрессДоставка | departure_date: 2023-08-12 00:25:00 | arrival_date: 2023-08-13 00:",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 2 | sale_id: 2 | origin_store_id: 9 | destination_address: п. Гремячинск (Перм.), алл. Короленко, д. 6/8 стр. 1, 758030 | transport_mode: Грузовик | carrier: ТрансЛогистик | departure_date: 2023-01-29 07:53:00 | arrival_date: 2",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 3 | sale_id: 3 | origin_store_id: 4 | destination_address: п. Оса, бул. Дружбы, д. 82 стр. 6/6, 060452 | transport_mode: Морской | carrier: ТрансЛогистик | departure_date: 2023-02-08 07:42:00 | arrival_date: 2023-02-10 15:42:00",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 4 | sale_id: 5 | origin_store_id: 10 | destination_address: с. Стерлитамак, бул. Декабристов, д. 227 стр. 4/5, 942902 | transport_mode: ЖД | carrier: ЭкспрессДоставка | departure_date: 2023-11-11 01:17:00 | arrival_date: 2023-1",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 5 | sale_id: 6 | origin_store_id: 2 | destination_address: д. Сусуман, ул. Высоцкого, д. 4 стр. 34, 288145 | transport_mode: Авиа | carrier: ТрансЛогистик | departure_date: 2023-11-19 23:04:00 | arrival_date: 2023-11-20 10:04:0",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            }
+          ],
+          "sample_rows": [
+            {
+              "shipment_id": "1",
+              "sale_id": "1",
+              "origin_store_id": "9",
+              "destination_address": "с. Брянск, наб. Специалистов, д. 615, 518360",
+              "transport_mode": "Грузовик",
+              "carrier": "ЭкспрессДоставка",
+              "departure_date": "2023-08-12 00:25:00",
+              "arrival_date": "2023-08-13 00:25:00",
+              "status": "Доставлено",
+              "distance": "162",
+              "cost": "184.73"
+            },
+            {
+              "shipment_id": "2",
+              "sale_id": "2",
+              "origin_store_id": "9",
+              "destination_address": "п. Гремячинск (Перм.), алл. Короленко, д. 6/8 стр. 1, 758030",
+              "transport_mode": "Грузовик",
+              "carrier": "ТрансЛогистик",
+              "departure_date": "2023-01-29 07:53:00",
+              "arrival_date": "2023-01-30 03:53:00",
+              "status": "Доставлено",
+              "distance": "375",
+              "cost": "597.33"
+            },
+            {
+              "shipment_id": "3",
+              "sale_id": "3",
+              "origin_store_id": "4",
+              "destination_address": "п. Оса, бул. Дружбы, д. 82 стр. 6/6, 060452",
+              "transport_mode": "Морской",
+              "carrier": "ТрансЛогистик",
+              "departure_date": "2023-02-08 07:42:00",
+              "arrival_date": "2023-02-10 15:42:00",
+              "status": "Доставлено",
+              "distance": "106",
+              "cost": "204.83"
+            },
+            {
+              "shipment_id": "4",
+              "sale_id": "5",
+              "origin_store_id": "10",
+              "destination_address": "с. Стерлитамак, бул. Декабристов, д. 227 стр. 4/5, 942902",
+              "transport_mode": "ЖД",
+              "carrier": "ЭкспрессДоставка",
+              "departure_date": "2023-11-11 01:17:00",
+              "arrival_date": "2023-11-11 05:17:00",
+              "status": "Доставлено",
+              "distance": "344",
+              "cost": "272.21"
+            },
+            {
+              "shipment_id": "5",
+              "sale_id": "6",
+              "origin_store_id": "2",
+              "destination_address": "д. Сусуман, ул. Высоцкого, д. 4 стр. 34, 288145",
+              "transport_mode": "Авиа",
+              "carrier": "ТрансЛогистик",
+              "departure_date": "2023-11-19 23:04:00",
+              "arrival_date": "2023-11-20 10:04:00",
+              "status": "Доставлено",
+              "distance": "696",
+              "cost": "589.83"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: customers.csv",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+          "file_type": "csv",
+          "metadata": {
+            "extractor_name": "CSVExtractor",
+            "structured": true,
+            "total_rows_scanned": 5000,
+            "encoding": "utf-8"
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 1 | customer_name: Филипп Елизарович Воробьев | customer_type: Физическое лицо | segment: B2C | city: Казань | region: Приволжский",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 2 | customer_name: Василиса Макаровна Смирнова | customer_type: Физическое лицо | segment: B2C | city: Сочи | region: Южный",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 3 | customer_name: Филарет Харлампьевич Власов | customer_type: Физическое лицо | segment: B2C | city: Санкт-Петербург | region: Северо-Западный",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 4 | customer_name: Шаров Евлампий Анисимович | customer_type: Физическое лицо | segment: B2B | city: Нижний Новгород | region: Центральный",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 5 | customer_name: Ильина Нина Леоновна | customer_type: Физическое лицо | segment: B2C | city: Екатеринбург | region: Уральский",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            }
+          ],
+          "sample_rows": [
+            {
+              "customer_id": "1",
+              "customer_name": "Филипп Елизарович Воробьев",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Казань",
+              "region": "Приволжский"
+            },
+            {
+              "customer_id": "2",
+              "customer_name": "Василиса Макаровна Смирнова",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Сочи",
+              "region": "Южный"
+            },
+            {
+              "customer_id": "3",
+              "customer_name": "Филарет Харлампьевич Власов",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Санкт-Петербург",
+              "region": "Северо-Западный"
+            },
+            {
+              "customer_id": "4",
+              "customer_name": "Шаров Евлампий Анисимович",
+              "customer_type": "Физическое лицо",
+              "segment": "B2B",
+              "city": "Нижний Новгород",
+              "region": "Центральный"
+            },
+            {
+              "customer_id": "5",
+              "customer_name": "Ильина Нина Леоновна",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Екатеринбург",
+              "region": "Уральский"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: company.parquet",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+          "file_type": "parquet",
+          "metadata": {
+            "structured": true,
+            "total_rows_scanned": 11459
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: 5e2ac544-ce43-4405-a85a-2ad5bba219fe | Contract: GB09LOGH81 | Documents: internal.store.com/clients/documents/GB09LOGH81 | Email: randallcordova@brady.com | IdPlan: 12 | Name: Mills, Tanner and Valdez Inc | Address: 87968 Jeffrey Curve\n",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: d76392e1-05e6-4307-9c38-68256180e711 | Contract: GB05AXIC78 | Documents: internal.store.com/clients/documents/GB05AXIC78 | Email: yfoster@luna.biz | IdPlan: 12 | Name: Miller, Hunter and Rodriguez and Sons | Address: 071 Kaitlyn Plaza S",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: d5aa7ac6-7b00-41d2-a11c-33b51e8ca21f | Contract: GB29OHDA53 | Documents: internal.store.com/clients/documents/GB29OHDA53 | Email: randerson@holmes.biz | IdPlan: 12 | Name: Wilson Inc Ltd | Address: 19926 Martin Avenue\nCliffordville, VI ",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: 1a7d5d3d-2a68-4f71-8688-f898e3c81bf0 | Contract: GB52WAQO27 | Documents: internal.store.com/clients/documents/GB52WAQO27 | Email: hernandezrobin@koch.biz | IdPlan: 12 | Name: Wright PLC Inc | Address: 89109 Cindy Manors Suite 448\nPort J",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: e3d83438-3e3a-46df-bf22-7b8aea61d0ec | Contract: GB76IGJU65 | Documents: internal.store.com/clients/documents/GB76IGJU65 | Email: icarey@roberts.org | IdPlan: 12 | Name: Paul-Coleman PLC | Address: 22657 Kevin Crossing\nLake Robert, MP 3",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            }
+          ],
+          "sample_rows": [
+            {
+              "Id": "5e2ac544-ce43-4405-a85a-2ad5bba219fe",
+              "Contract": "GB09LOGH81",
+              "Documents": "internal.store.com/clients/documents/GB09LOGH81",
+              "Email": "randallcordova@brady.com",
+              "IdPlan": "12",
+              "Name": "Mills, Tanner and Valdez Inc",
+              "Address": "87968 Jeffrey Curve\nSouth Rachelberg, PR 93873",
+              "Phones": "[\"+1 502-790-4334\",\"+1 661-780-6680\"]",
+              "Contact": "[\"Katie Baker\",\"Jose Pace\"]"
+            },
+            {
+              "Id": "d76392e1-05e6-4307-9c38-68256180e711",
+              "Contract": "GB05AXIC78",
+              "Documents": "internal.store.com/clients/documents/GB05AXIC78",
+              "Email": "yfoster@luna.biz",
+              "IdPlan": "12",
+              "Name": "Miller, Hunter and Rodriguez and Sons",
+              "Address": "071 Kaitlyn Plaza Suite 886\nPort Patricia, MO 37847",
+              "Phones": "[\"+1 (787)895-6069\",\"+1 211-986-8708\"]",
+              "Contact": "[\"Michael Watson\",\"Luis Myers\"]"
+            },
+            {
+              "Id": "d5aa7ac6-7b00-41d2-a11c-33b51e8ca21f",
+              "Contract": "GB29OHDA53",
+              "Documents": "internal.store.com/clients/documents/GB29OHDA53",
+              "Email": "randerson@holmes.biz",
+              "IdPlan": "12",
+              "Name": "Wilson Inc Ltd",
+              "Address": "19926 Martin Avenue\nCliffordville, VI 23702",
+              "Phones": "[\"+1 (587)539-5195\",\"+1 9469996390\",\"+1 6883438868\"]",
+              "Contact": "[\"Andre Baker\",\"Erin Phillips\"]"
+            },
+            {
+              "Id": "1a7d5d3d-2a68-4f71-8688-f898e3c81bf0",
+              "Contract": "GB52WAQO27",
+              "Documents": "internal.store.com/clients/documents/GB52WAQO27",
+              "Email": "hernandezrobin@koch.biz",
+              "IdPlan": "12",
+              "Name": "Wright PLC Inc",
+              "Address": "89109 Cindy Manors Suite 448\nPort Jasonview, NY 19064",
+              "Phones": "[\"+1 514-908-6580\",\"+1 (320)291-0944\"]",
+              "Contact": "[\"Tiffany Thomas\"]"
+            },
+            {
+              "Id": "e3d83438-3e3a-46df-bf22-7b8aea61d0ec",
+              "Contract": "GB76IGJU65",
+              "Documents": "internal.store.com/clients/documents/GB76IGJU65",
+              "Email": "icarey@roberts.org",
+              "IdPlan": "12",
+              "Name": "Paul-Coleman PLC",
+              "Address": "22657 Kevin Crossing\nLake Robert, MP 39091",
+              "Phones": "[\"+1 (998)679-5756\",\"+1 (997)545-0544\",\"+1 859-788-3259\"]",
+              "Contact": "[\"Xavier Mann\",\"Erin Martin\"]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: client.parquet",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+          "file_type": "parquet",
+          "metadata": {
+            "structured": true,
+            "total_rows_scanned": 50000
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: 24fadd55-526a-46a6-b994-3b4433777a11 | Contract: GB84ZKTO10 | Documents: internal.store.com/clients/documents/GB84ZKTO10 | Email: toddanderson@medina-holland.com | IdPlan: 3",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: c38f687f-1aec-4df5-8137-d3afe3b93404 | Contract: GB73KQUK34 | Documents: internal.store.com/clients/documents/GB73KQUK34 | Email: iyang@watts.com | IdPlan: 6",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: d2674faf-233c-416f-98f0-6b0eb0f01210 | Contract: GB49PVHM75 | Documents: internal.store.com/clients/documents/GB49PVHM75 | Email: amberguzman@white-barnes.com | IdPlan: 7",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: 5e2ac544-ce43-4405-a85a-2ad5bba219fe | Contract: GB09LOGH81 | Documents: internal.store.com/clients/documents/GB09LOGH81 | Email: randallcordova@brady.com | IdPlan: 12",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: 9249ddcb-be12-4c48-8e0a-5363d7d66cd8 | Contract: GB03QXIX42 | Documents: internal.store.com/clients/documents/GB03QXIX42 | Email: hamiltoncharles@gross.com | IdPlan: 0",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            }
+          ],
+          "sample_rows": [
+            {
+              "Id": "24fadd55-526a-46a6-b994-3b4433777a11",
+              "Contract": "GB84ZKTO10",
+              "Documents": "internal.store.com/clients/documents/GB84ZKTO10",
+              "Email": "toddanderson@medina-holland.com",
+              "IdPlan": "3"
+            },
+            {
+              "Id": "c38f687f-1aec-4df5-8137-d3afe3b93404",
+              "Contract": "GB73KQUK34",
+              "Documents": "internal.store.com/clients/documents/GB73KQUK34",
+              "Email": "iyang@watts.com",
+              "IdPlan": "6"
+            },
+            {
+              "Id": "d2674faf-233c-416f-98f0-6b0eb0f01210",
+              "Contract": "GB49PVHM75",
+              "Documents": "internal.store.com/clients/documents/GB49PVHM75",
+              "Email": "amberguzman@white-barnes.com",
+              "IdPlan": "7"
+            },
+            {
+              "Id": "5e2ac544-ce43-4405-a85a-2ad5bba219fe",
+              "Contract": "GB09LOGH81",
+              "Documents": "internal.store.com/clients/documents/GB09LOGH81",
+              "Email": "randallcordova@brady.com",
+              "IdPlan": "12"
+            },
+            {
+              "Id": "9249ddcb-be12-4c48-8e0a-5363d7d66cd8",
+              "Contract": "GB03QXIX42",
+              "Documents": "internal.store.com/clients/documents/GB03QXIX42",
+              "Email": "hamiltoncharles@gross.com",
+              "IdPlan": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: pii_scan_results-checkpoint.csv",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+          "file_type": "csv",
+          "metadata": {
+            "extractor_name": "CSVExtractor",
+            "structured": true,
+            "total_rows_scanned": 2893,
+            "encoding": "utf-8"
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: crowler.ipynb | categories: {} | uz: нет признаков | total_hits: 0 | ext: ipynb",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: Untitled.ipynb | categories: {} | uz: нет признаков | total_hits: 0 | ext: ipynb",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: pii_scanner_hackathon.ipynb | categories: {\"платёжные\": 1, \"биометрические\": 1, \"специальные\": 1} | uz: УЗ-1 | total_hits: 3 | ext: ipynb",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: dataset2/Sport24_Mediakit_2024.pdf | categories: {\"обычные\": 6} | uz: УЗ-3 | total_hits: 6 | ext: pdf",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            },
+            {
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: dataset2/rules.pdf | categories: {\"обычные\": 11, \"государственные\": 1, \"специальные\": 1} | uz: УЗ-1 | total_hits: 13 | ext: pdf",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
+              "metadata": {
+                "structured": true
+              }
+            }
+          ],
+          "sample_rows": [
+            {
+              "path": "crowler.ipynb",
+              "categories": "{}",
+              "uz": "нет признаков",
+              "total_hits": "0",
+              "ext": "ipynb"
+            },
+            {
+              "path": "Untitled.ipynb",
+              "categories": "{}",
+              "uz": "нет признаков",
+              "total_hits": "0",
+              "ext": "ipynb"
+            },
+            {
+              "path": "pii_scanner_hackathon.ipynb",
+              "categories": "{\"платёжные\": 1, \"биометрические\": 1, \"специальные\": 1}",
+              "uz": "УЗ-1",
+              "total_hits": "3",
+              "ext": "ipynb"
+            },
+            {
+              "path": "dataset2/Sport24_Mediakit_2024.pdf",
+              "categories": "{\"обычные\": 6}",
+              "uz": "УЗ-3",
+              "total_hits": "6",
+              "ext": "pdf"
+            },
+            {
+              "path": "dataset2/rules.pdf",
+              "categories": "{\"обычные\": 11, \"государственные\": 1, \"специальные\": 1}",
+              "uz": "УЗ-1",
+              "total_hits": "13",
+              "ext": "pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processed_by_type": {
+    "csv": 3,
+    "parquet": 2
+  }
+}

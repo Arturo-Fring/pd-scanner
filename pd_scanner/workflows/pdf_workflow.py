@@ -8,6 +8,7 @@ from pd_scanner.core.config import AppConfig
 from pd_scanner.core.services import ScanProgressTracker
 from pd_scanner.core.utils import elapsed_seconds, time_now
 from pd_scanner.core.workflow_models import WorkflowPreview, WorkflowResult
+from pd_scanner.extractors.ocr_service import OCRService
 from pd_scanner.scanner.walker import iter_files
 from pd_scanner.workflows.helpers import build_summary_from_results, extraction_preview, write_debug_artifact
 from pd_scanner.workflows.single_file_workflow import scan_single_path
@@ -26,11 +27,22 @@ def run_pdf_workflow(
     ]
     debug_artifact = config.output_path / "debug" / "pdf_scan" / "pdf_workflow_preview.json"
     if tracker is not None:
-        tracker.set_stage("discovery")
+        tracker.set_stage("discovering files")
         tracker.set_total_files(len(files))
         tracker.set_queue_preview(files)
         tracker.register_artifact("PDF debug artifact", debug_artifact)
         tracker.log("INFO", f"Queued {len(files)} PDF files for the workflow.")
+        tracker.set_stage("initializing OCR backend")
+    status_payload = OCRService(config).get_status_payload()
+    available = bool(status_payload["available"])
+    message = str(status_payload["message"])
+    if tracker is not None:
+        tracker.set_ocr_runtime(
+            backend=status_payload.get("backend"),
+            device=status_payload.get("device"),
+        )
+        tracker.set_stage("checking OCR availability")
+        tracker.log("INFO", message)
     results = []
     errors = []
     previews: list[WorkflowPreview] = []
@@ -40,7 +52,7 @@ def run_pdf_workflow(
         if tracker is not None and tracker.should_stop():
             tracker.log("WARNING", "PDF workflow stopping after the current batch.")
             break
-        result, extraction = scan_single_path(path, config, tracker=tracker)
+        result, extraction = scan_single_path(path, config, tracker=tracker, stage="processing file")
         if result.status == "error" and "pdf" in (result.error_message or "").lower():
             invalid_pdfs.append(path.name)
         results.append(result)
@@ -51,6 +63,8 @@ def run_pdf_workflow(
             previews.append(preview)
             if tracker is not None:
                 tracker.publish_preview(preview.title, preview.items)
+        if tracker is not None and result.warnings:
+            tracker.set_stage("continuing with warning")
 
     summary = build_summary_from_results(results, elapsed_seconds(started))
     debug_path = write_debug_artifact(
@@ -70,5 +84,14 @@ def run_pdf_workflow(
         results=results,
         errors=errors,
         previews=previews[:10],
-        metadata={"invalid_pdfs": invalid_pdfs, "debug_artifact": debug_path, "files_scanned": len(files)},
+        metadata={
+            "invalid_pdfs": invalid_pdfs,
+            "debug_artifact": debug_path,
+            "files_scanned": len(files),
+            "ocr_available": available,
+            "ocr_status": message,
+            "ocr_backend": status_payload.get("backend"),
+            "ocr_device": status_payload.get("device"),
+            "ocr_failures": sum(1 for item in results if any("ocr" in warning.lower() for warning in item.warnings)),
+        },
     )

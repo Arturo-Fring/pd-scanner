@@ -208,6 +208,33 @@ def render_runtime_controls(default_config: AppConfig, *, key_prefix: str, allow
     }
 
 
+def render_ocr_runtime_summary(config: AppConfig, *, workflow_label: str) -> None:
+    """Render compact OCR/deep-mode summary before workflow start."""
+    st.subheader("Runtime Summary")
+    cols = st.columns(4)
+    cols[0].metric("Mode", config.runtime.mode)
+    cols[1].metric("OCR enabled", "yes" if config.ocr.enabled else "no")
+    cols[2].metric("OCR backend", config.ocr.backend)
+    cols[3].metric("Offline-only OCR", "yes" if config.ocr.offline_only else "no")
+    if config.runtime.mode == "deep":
+        st.info(
+            f"{workflow_label} in deep mode enables OCR-heavy processing. "
+            "The app will initialize the OCR backend, check availability, then continue file-by-file."
+        )
+    else:
+        st.info(
+            f"{workflow_label} in fast mode skips OCR-heavy processing by design. "
+            "Those skips are aggregated instead of flooding the live event feed."
+        )
+    st.caption(
+        "Limits: "
+        f"max OCR calls/file={config.runtime.max_ocr_calls_per_file}, "
+        f"max embedded images/file={config.runtime.max_embedded_images_per_file}, "
+        f"max PDF OCR pages={config.runtime.max_pdf_ocr_pages}, "
+        f"max video frames={config.runtime.max_video_frames}."
+    )
+
+
 def render_start_stop_controls(
     state,
     *,

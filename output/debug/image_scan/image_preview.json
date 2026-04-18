@@ -1,6 +1,6 @@
 {
-  "ocr_available": false,
-  "ocr_status": "OCR disabled by current mode.",
+  "ocr_available": true,
+  "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
   "previews": [
     {
       "title": "Extraction Preview: 50308888-8889.tif",
@@ -9,13 +9,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza00d00\\50308888-8889.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza00d00\\50308888-8889.tif",
+              "text": "BIOGRAPHICAL SKETCH ANN KATHERINI' DALY Dite Rirh Octob:r [957 Eduaation BA in Biochcmislry (1978 Univcrsily Duhlin); Phb Biochcmistry (1982 Univcrsity Dublin) Prcscnt яppointment Scnior Kcscarch Associalc [cparimicnt Pharmaculagicai Scicnc",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -27,13 +38,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza01f00\\0011839665.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza01f00\\0011839665.tif",
+              "text": "111g241g ! 4 ~arunry 1974 НЕYFДD ых 19 ПэVл 5 JAJECT} EuEgat Еоп дин Caut RrducElon Енuскd ulцен arlar Suoa aцоп кпол Саз - 41ll Fen iавтлbца wuа cttar YapravaрUп t Gruiu Cаr1 € forvirdlnq UFЗlЦсr au =e \"Iiit Анн Kirksilng-Dtлan Fon:Idari-j",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -45,13 +67,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza04e00\\2040765768.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza04e00\\2040765768.tif",
+              "text": "LE 0 BURNETT U.S A: Ei]лn чuщчн СЫЧРАнU IыG ADVERTISING CUTDDOR ESTIMATE RECAP ODO1 ( 5 ) PER:OD DATE 06/09/99 01/01/39 TD 12/31/89 PAGE CLIENT : INC UFFICE; DESC : 7764 BENSCN HEDGES UUT EST NO; 91в3 REVISES EST DTР 05/05/g9 PUCKET-A-SLEVI",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -63,13 +96,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza17e00\\2031309105.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza17e00\\2031309105.tif",
+              "text": "LИЫр ШILЛОО DERCшW зтCсKтом JINEET иошьшч mm EГT ECT IVE DATE : 1/09/92 БОU.иY LICNIJ: ошъ RtCWR FiD I Yw ;Iы/Ь пи STANDARD PRODIICT 1OН BRАю СО0t-912т (umi 7 02j0/t 072/t 6510/5 9519 MCHI€ TYPE KПF FILIEN ACO LEROTM 103.0 FILTER CIAGIA Е^Е",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -81,13 +125,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza20e00\\04303523-a.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza20e00\\04303523-a.tif",
+              "text": "FEB 1 Tntuna l] Hedicinc Fй Jan 15-31 , 1982 RCSE АГСH In-Office Spirometry Can Aid Respiratory Disorder Diagnosis Thc FF;, ъс аппtаг In High-Risk Smoker Cuniun nol Чifecillu YalluEcd Гuпкллл dstut suh chu1 inU cle Kuukncss ГПFHn [иещими}ма",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -99,13 +154,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza23d00\\513327776_513327782.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza23d00\\513327776_513327782.tif",
+              "text": "Т(оuт € CONFIDENTIAL е7то 7,;ТА Уd?id Tobacco Company MARCH_MONIHLOPERATIONS_LEIIER Issucd Аргl 22,1994 DISTRIBUTION Mr J. W: Johnston Mr: J R: Helm Mr: D J Anderson Mr: R; 8; Hendrlx Dr: c Ehmann Mr: C:Т НШl Mr.Y: W Ford; Jr: Mr L J Inman ",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -117,13 +183,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza27d00\\2075165787.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza27d00\\2075165787.tif",
+              "text": "FFuV IFUINE тHя FHuNE ND 01245 ЕПHEВ1 Kv Т999 12:1qРП Fi 20 Athwoods Close Phone +4 (0)1245 602176 Galleywood Fax +44 (0)1245 608081 CHELMSFORD cM2 8QJ United Kingdom Fax То: Dr: Richard Bell; GTL From: Bill Irvine Mr: Dennis Boyd; GTL Di; ",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -135,13 +212,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza29e00\\2501172233_2501172290.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza29e00\\2501172233_2501172290.tif",
+              "text": "0 ат Е ' € 6 е3 1 2 28ъ 18 3 5 8 Il Рh#t с $ 3} я g : й цаншв Аенашe",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -153,13 +241,24 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza42d00\\2050801870_1873.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza42d00\\2050801870_1873.tif",
+              "text": "PHILIP YORRIS I ; I Е R F I € E C 0 R R Е 5 0 M D : : С = RLchmond; Witginia #г Dick Heretick Date : Jantarl 22, #988 Ercm : ',гоn Johnston Subject : Differences beEween Змocrs Ha-lboro Llgits end niaston Lights Peggy Martin noted her ПеПЕ ",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
@@ -171,16 +270,329 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza43e00\\2042537535.tif",
           "file_type": "image",
           "metadata": {
-            "ocr_used": false,
-            "structured": false
+            "extractor_name": "ImageOCRExtractor",
+            "ocr_used": true,
+            "structured": false,
+            "ocr_backend": "easyocr",
+            "ocr_status": "ok",
+            "ocr_warning_count": 0
           },
-          "warnings": [
-            "Image OCR skipped in fast mode."
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image\": 1}",
+              "source_type": "image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza43e00\\2042537535.tif",
+              "text": "$ з 1 3",
+              "columns": [],
+              "metadata": {}
+            }
           ],
-          "sample_chunks": [],
           "sample_rows": []
         }
       ]
+    }
+  ],
+  "results": [
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza00d00\\50308888-8889.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza01f00\\0011839665.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza04e00\\2040765768.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza17e00\\2031309105.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza20e00\\04303523-a.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza23d00\\513327776_513327782.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza27d00\\2075165787.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza29e00\\2501172233_2501172290.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza42d00\\2050801870_1873.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza43e00\\2042537535.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza44e00\\2023086413.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza49e00\\2501298013.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza50f00\\0000269666.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza51c00\\2085779941.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza54c00\\80702501.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza57d00\\2048755106.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza58c00\\2083822795.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza61e00\\00620531.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza65e00\\2046440775.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza70e00\\92023499_92023505.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza81c00\\2501741170_1183.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza90d00\\522746807+-6808.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza93c00\\2057800212.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza94a00\\2063196920.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza94d00\\505945066_505945074.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza96e00\\2057680263.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\a\\zza99d00\\500068563.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb02a00\\2023382980_2023382987.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb02c00\\2080731994.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb03e00\\2046468258.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb06d00\\50491022-1023.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb09d00\\50426112-6114.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb10a00\\10350601_10350605.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb11d00\\519689266+-9274.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb14c00\\2069729124.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb24c00\\2080143458.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb26d00\\50546182-6182.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb27e00\\2028703073.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb32d00\\2501929589.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb38c00\\508851993+-1993.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb42e00\\2062498262.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb51a00\\0071067500.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb55c00\\2076071228b.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb56d00\\CTRSP-FILES027573-75.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb61d00\\518079699+-9712.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb67d00\\2024298010_8018.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb70f00\\0011989252.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb77c00\\2084396137_6138.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb82c00\\2078772581.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Архив сканы\\b\\zzb82e00\\2040183521.tif",
+      "status": "ok",
+      "warnings": [],
+      "ocr_status": "ok"
     }
   ]
 }

@@ -199,6 +199,7 @@ Dedicated workflow for:
 Shows:
 
 - OCR availability
+- OCR runtime summary before start
 - OCR mode behavior
 - extracted sample chunks
 - debug artifacts under `output/debug/image_scan`
@@ -212,6 +213,7 @@ Shows:
 - frame step config
 - sampled-frame metadata
 - OCR availability
+- OCR warning summaries instead of raw frame-level spam
 - debug artifacts under `output/debug/video_scan`
 
 ### Detector Lab
@@ -269,6 +271,7 @@ Shows:
 
 - workflow started
 - files discovered
+- OCR backend initialization and availability checks for OCR-heavy workflows
 - processed counter
 - current file
 - current file type and extractor name
@@ -277,7 +280,7 @@ Shows:
 - queue preview and recent processed files
 - live preview snippets and artifact paths when the workflow publishes them
 - compact recent events
-- aggregated warning counters
+- aggregated warning counters, including OCR runtime summaries
 - workflow finished / failed
 
 ### Technical log
@@ -290,6 +293,7 @@ Repeated expected warnings are aggregated instead of flooding the operator feed.
 
 - `Image OCR skipped in fast mode`
 - `DOC support is best-effort binary text extraction`
+- `PaddleOCR inference runtime failed; OCR disabled for the remaining items.`
 
 These are counted and summarized instead of being surfaced as hundreds of live warnings.
 
@@ -305,6 +309,7 @@ These are counted and summarized instead of being surfaced as hundreds of live w
 
 - enables OCR where supported
 - uses OCR for scanned PDFs, images, and video frames when available
+- shows OCR runtime summary in the GUI before start, including offline-only behavior and OCR limits
 
 ## Extractor Stabilization Notes
 
@@ -326,6 +331,8 @@ These are counted and summarized instead of being surfaced as hundreds of live w
 - centralized OCR availability checks
 - GUI shows OCR status clearly
 - fast mode skips OCR-heavy steps by design
+- PaddleOCR runtime failures are normalized and aggregated in the GUI while full details stay in `scan.log`
+- offline runtime is preserved by requiring local OCR assets instead of downloading them during scans
 
 ### Detector Pipeline
 
@@ -370,6 +377,13 @@ OCR requires local Tesseract OCR.
 1. Install Tesseract for Windows.
 2. Install language packs required by your `--ocr-lang`.
 3. Ensure `tesseract.exe` is in `PATH`, or pass it explicitly.
+
+PaddleOCR is the preferred backend when local Paddle models are already prepared on disk. Runtime behavior is intentionally offline-safe:
+
+- `pd_scanner` uses minimal Paddle init via `PaddleOCR(lang=...)`, because that path is compatible with the current PaddleOCR v3 runtime
+- before init, `pd_scanner` checks for cached official models on disk so normal scans do not rely on downloads
+- if cached models are missing, OCR is marked unavailable instead of attempting a network fallback
+- if PaddleOCR inference fails at runtime, the workflow continues and the warning is aggregated instead of repeating for every image, PDF page, or video frame
 
 ## CLI Usage
 

@@ -17,7 +17,7 @@ from pd_scanner.core.logging_utils import configure_logging
 from pd_scanner.core.models import DetectedEntity, FileScanResult, GroupFlags, ReportArtifacts, ReportSummary
 from pd_scanner.core.pipeline import ScanPipeline
 from pd_scanner.core.utils import ensure_directory, safe_json_dump
-from pd_scanner.extractors.ocr_utils import get_ocr_status
+from pd_scanner.extractors.ocr_service import OCRService
 
 LOGGER = logging.getLogger(__name__)
 
@@ -49,6 +49,8 @@ class ScanProgressSnapshot:
     last_result_path: str | None
     current_file_type: str | None = None
     current_extractor_name: str | None = None
+    ocr_backend: str | None = None
+    ocr_device: str | None = None
     stop_requested: bool = False
     current_stage: str | None = None
     started_at: str | None = None
@@ -78,6 +80,8 @@ class ScanProgressSnapshot:
             "last_result_path": self.last_result_path,
             "current_file_type": self.current_file_type,
             "current_extractor_name": self.current_extractor_name,
+            "ocr_backend": self.ocr_backend,
+            "ocr_device": self.ocr_device,
             "stop_requested": self.stop_requested,
             "current_stage": self.current_stage,
             "started_at": self.started_at,
@@ -115,6 +119,8 @@ class ScanProgressTracker:
         self._last_result_path: str | None = None
         self._current_file_type: str | None = None
         self._current_extractor_name: str | None = None
+        self._ocr_backend: str | None = None
+        self._ocr_device: str | None = None
         self._stop_requested = False
         self._current_stage: str | None = None
         self._started_at: str | None = None
@@ -147,10 +153,19 @@ class ScanProgressTracker:
             self._current_file = None
             self._current_file_type = None
             self._current_extractor_name = None
+            self._ocr_backend = None
+            self._ocr_device = None
             self._processed_by_type = {}
             self._started_at = datetime.now(timezone.utc).isoformat()
             self._finished_at = None
             self._append_event("INFO", f"{workflow_type} started.")
+            self._persist_locked()
+
+    def set_ocr_runtime(self, *, backend: str | None, device: str | None) -> None:
+        """Expose active OCR backend/device for UI and state files."""
+        with self._lock:
+            self._ocr_backend = backend
+            self._ocr_device = device
             self._persist_locked()
 
     def set_total_files(self, total_files: int) -> None:
@@ -259,6 +274,9 @@ class ScanProgressTracker:
             key = aggregate_key or message
             self._warning_counts[key] = self._warning_counts.get(key, 0) + 1
             count = self._warning_counts[key]
+            lowered = message.lower()
+            if "ocr disabled for the remaining items" in lowered or "continuing without ocr" in lowered:
+                self._current_stage = "continuing with warning"
             if operator_visible and count in {1, 10, 100}:
                 suffix = "" if count == 1 else f" (repeated {count} times)"
                 self._append_event("WARNING", f"{message}{suffix}")
@@ -290,7 +308,7 @@ class ScanProgressTracker:
             self._finished_at = datetime.now(timezone.utc).isoformat()
             for warning_message, count in sorted(self._warning_counts.items(), key=lambda item: (-item[1], item[0])):
                 if count > 1:
-                    self._append_event("WARNING", f"{warning_message} for {count} files")
+                    self._append_event("WARNING", f"{warning_message} (repeated {count} times)")
             self._append_event("INFO", f"Scan finished with status={final_status}.")
             self._persist_locked()
 
@@ -315,6 +333,8 @@ class ScanProgressTracker:
             last_result_path=self._last_result_path,
             current_file_type=self._current_file_type,
             current_extractor_name=self._current_extractor_name,
+            ocr_backend=self._ocr_backend,
+            ocr_device=self._ocr_device,
             stop_requested=self._stop_requested,
             current_stage=self._current_stage,
             started_at=self._started_at,
@@ -385,7 +405,7 @@ class ScanService:
     @staticmethod
     def probe_ocr(config: AppConfig) -> tuple[bool, str]:
         """Return OCR availability and user-facing explanation."""
-        return get_ocr_status(config)
+        return OCRService(config).get_status()
 
     @staticmethod
     def run_scan(

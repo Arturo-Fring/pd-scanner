@@ -102,6 +102,9 @@ class PDFExtractor(BaseExtractor):
                                 )
                             )
                         warnings.extend(routed_warnings)
+                        if any(self.ocr_service.is_runtime_failure_warning(item) for item in routed_warnings):
+                            use_ocr = False
+                            warnings.append("PDF OCR disabled for remaining pages and embedded images after backend issue.")
                         if routed_chunks:
                             ocr_calls += 1
                             chunks.extend(routed_chunks)
@@ -125,7 +128,12 @@ class PDFExtractor(BaseExtractor):
                 try:
                     pixmap = page.get_pixmap(dpi=self.config.ocr.image_dpi)
                     with Image.open(io.BytesIO(pixmap.tobytes("png"))) as image:
-                        ocr_text = sanitize_whitespace(self.ocr_service.extract_text(image))
+                        ocr_result = self.ocr_service.extract_text_from_image(image)
+                    warnings.extend(ocr_result.warnings)
+                    if ocr_result.status in {"runtime_failed", "backend_unavailable", "models_missing"}:
+                        use_ocr = False
+                        warnings.append("PDF OCR disabled for remaining pages and embedded images after backend issue.")
+                    ocr_text = sanitize_whitespace(ocr_result.text)
                     ocr_pages += 1
                     ocr_calls += 1
                     if ocr_text:
@@ -136,7 +144,12 @@ class PDFExtractor(BaseExtractor):
                                 source_type="pdf_page_ocr",
                                 source_path=str(path),
                                 location={"page": page_index + 1},
-                                metadata={"page": page_index + 1, "ocr": True},
+                                metadata={
+                                    "page": page_index + 1,
+                                    "ocr": True,
+                                    "ocr_backend": ocr_result.backend,
+                                    "ocr_metadata": ocr_result.metadata,
+                                },
                             )
                         )
                         chunks.extend(routed_chunks)

@@ -92,6 +92,9 @@ class DOCXExtractor(BaseExtractor):
                         )
                     )
                 warnings.extend(routed_warnings)
+                if any(self.ocr_service.is_runtime_failure_warning(item) for item in routed_warnings):
+                    warnings.append("DOCX embedded image OCR disabled for remaining images after backend issue.")
+                    break
                 if routed_chunks:
                     ocr_calls += 1
                     chunks.extend(routed_chunks)

@@ -15,6 +15,7 @@ from pd_scanner.detectors.base import BaseDetector
 from pd_scanner.detectors.detection_pipeline import DetectionPipeline
 from pd_scanner.extractors.docx_extractor import DOCXExtractor
 from pd_scanner.extractors.html_extractor import HTMLExtractor
+from pd_scanner.extractors.ocr_service import OCRResult
 from pd_scanner.extractors.pdf_extractor import PDFExtractor
 
 
@@ -31,6 +32,16 @@ def build_config(tmp_path: Path, mode: str = "deep") -> AppConfig:
 
 def _mock_ocr(monkeypatch, text: str = "OCR_TEXT") -> None:
     monkeypatch.setattr("pd_scanner.extractors.ocr_service.OCRService.get_status", lambda self: (True, "mocked OCR"))
+    monkeypatch.setattr(
+        "pd_scanner.extractors.ocr_service.OCRService.extract_text_from_image",
+        lambda self, image, lang=None: OCRResult(
+            text=text,
+            available=True,
+            backend="mock_ocr",
+            warnings=[],
+            metadata={"backend": "mock_ocr", "lang": lang or self.config.ocr.lang},
+        ),
+    )
     monkeypatch.setattr("pd_scanner.extractors.ocr_service.OCRService.extract_text", lambda self, image: text)
 
 

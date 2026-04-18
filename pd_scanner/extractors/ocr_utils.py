@@ -1,4 +1,4 @@
-"""OCR helper functions with graceful fallbacks."""
+"""OCR helper functions used by OCRService."""
 
 from __future__ import annotations
 
@@ -52,10 +52,10 @@ def preprocess_image(image: Image.Image) -> Image.Image:
     return grayscale.point(lambda value: 0 if value < 160 else 255, mode="1")
 
 
-def ocr_image(image: Image.Image, config: AppConfig) -> str:
+def ocr_image(image: Image.Image, config: AppConfig, *, lang: str | None = None) -> str:
     """Run OCR on an image."""
     if pytesseract is None:
         raise RuntimeError("pytesseract is not installed")
     configure_tesseract(config)
     processed = preprocess_image(image)
-    return pytesseract.image_to_string(processed, lang=config.ocr.lang)
+    return pytesseract.image_to_string(processed, lang=lang or config.ocr.lang)

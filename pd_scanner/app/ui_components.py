@@ -13,6 +13,19 @@ from pd_scanner.core.services import ScanProgressSnapshot
 from pd_scanner.core.workflow_models import WorkflowResult
 
 
+STAGE_LABELS = {
+    "initializing": "initializing",
+    "discovering files": "discovering files",
+    "initializing OCR backend": "initializing OCR backend",
+    "checking OCR availability": "checking OCR availability",
+    "processing files": "processing files",
+    "processing file": "processing file",
+    "running OCR": "running OCR",
+    "continuing with warning": "continuing with warning",
+    "finished": "finished",
+}
+
+
 def render_summary_cards(summary) -> None:
     """Render top-level KPI cards."""
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -30,7 +43,8 @@ def render_progress(snapshot: ScanProgressSnapshot) -> None:
     """Render compact operator-facing progress."""
     total = snapshot.total_count or 1
     progress = min(snapshot.processed_count / total, 1.0)
-    st.progress(progress, text=f"{snapshot.processed_count}/{snapshot.total_count} processed")
+    stage_label = STAGE_LABELS.get(snapshot.current_stage or "", snapshot.current_stage or "n/a")
+    st.progress(progress, text=f"{snapshot.processed_count}/{snapshot.total_count} processed • {stage_label}")
     st.caption(
         f"Workflow: {snapshot.workflow_type or 'n/a'} | scan_id: {snapshot.scan_id or 'n/a'} | status: {snapshot.status}"
     )
@@ -40,7 +54,7 @@ def render_progress(snapshot: ScanProgressSnapshot) -> None:
     info_cols[2].metric("Warnings", snapshot.warnings_count)
     info_cols[3].metric("Errors", snapshot.errors_count)
     info_cols[4].metric("Unsupported", snapshot.unsupported_count)
-    info_cols[5].metric("Stage", snapshot.current_stage or "n/a")
+    info_cols[5].metric("Stage", stage_label)
     if snapshot.current_file:
         st.info(f"Current file: `{snapshot.current_file}`")
         handler_parts = []
@@ -54,6 +68,17 @@ def render_progress(snapshot: ScanProgressSnapshot) -> None:
         st.caption(f"Last completed file: `{snapshot.last_result_path}`")
     if snapshot.stop_requested and snapshot.is_running:
         st.warning("Stop requested. The workflow is finishing the current step before shutting down.")
+    ocr_warnings = [
+        {"warning": key, "count": value}
+        for key, value in snapshot.aggregated_warnings.items()
+        if "ocr" in key.lower() or "paddle" in key.lower() or "tesseract" in key.lower()
+    ]
+    if ocr_warnings:
+        st.warning(
+            "OCR warnings are aggregated here so the live feed stays readable. "
+            "Full backend details remain in scan.log."
+        )
+        st.dataframe(pd.DataFrame(ocr_warnings[:5]), use_container_width=True, hide_index=True, height=180)
     if snapshot.artifacts:
         with st.expander("Artifact paths", expanded=True):
             for item in snapshot.artifacts:

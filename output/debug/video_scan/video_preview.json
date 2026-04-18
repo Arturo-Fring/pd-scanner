@@ -1,6 +1,6 @@
 {
-  "ocr_available": false,
-  "ocr_status": "OCR disabled by current mode.",
+  "ocr_available": true,
+  "ocr_status": "OCR available via PaddleOCR (ru).",
   "previews": [
     {
       "title": "Extraction Preview: CS10.mp4",
@@ -9,11 +9,16 @@
           "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\CS10.mp4",
           "file_type": "video",
           "metadata": {
+            "extractor_name": "VideoExtractor",
             "structured": false,
-            "ocr_used": false
+            "ocr_used": true,
+            "sampled_frames": 2,
+            "fps": 30.04352216733255,
+            "frame_step": 90
           },
           "warnings": [
-            "Deep video OCR skipped in fast mode."
+            "OCR failed: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n",
+            "OCR failed: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
           ],
           "sample_chunks": [],
           "sample_rows": []

@@ -1,568 +1,363 @@
 {
   "is_running": false,
-  "scan_id": "d849214c34f84d9b9aa92b71fc14b802",
-  "workflow_type": "pdf_scan",
-  "status": "completed",
-  "total_count": 1651,
-  "processed_count": 1651,
-  "files_with_pd": 546,
-  "warnings_count": 6482,
-  "errors_count": 14,
+  "scan_id": "3c6eac5b655543fcbda5e1d438d52ef6",
+  "workflow_type": "text_scan",
+  "status": "failed",
+  "total_count": 105,
+  "processed_count": 21,
+  "files_with_pd": 14,
+  "warnings_count": 0,
+  "errors_count": 1,
   "unsupported_count": 0,
   "current_file": null,
-  "last_result_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
+  "last_result_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
   "current_file_type": null,
   "current_extractor_name": null,
+  "ocr_backend": null,
+  "ocr_device": null,
   "stop_requested": false,
   "current_stage": "finished",
-  "started_at": "2026-04-18T10:00:30.179941+00:00",
-  "finished_at": "2026-04-18T10:05:37.222413+00:00",
+  "started_at": "2026-04-18T20:38:57.312978+00:00",
+  "finished_at": "2026-04-18T20:38:58.053486+00:00",
   "recent_events": [
     {
-      "timestamp": "17:05:37",
+      "timestamp": "03:38:58",
       "level": "INFO",
-      "message": "Scan finished with status=completed."
+      "message": "Scan finished with status=failed."
     },
     {
-      "timestamp": "17:05:37",
-      "level": "WARNING",
-      "message": "PDF embedded image limit reached; remaining images skipped. for 6482 files"
+      "timestamp": "03:38:58",
+      "level": "ERROR",
+      "message": "Fatal workflow error: Missing dependency for .rtf extractor: striprtf"
     },
     {
-      "timestamp": "17:05:37",
+      "timestamp": "03:38:58",
       "level": "INFO",
-      "message": "PDF text extracted: السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf"
+      "message": "DOCX extracted: 100_bak_Urmosh.docx"
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:58",
       "level": "INFO",
-      "message": "Processing السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf (pdf via PDFExtractor)."
+      "message": "Processing 100_bak_Urmosh.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:58",
       "level": "INFO",
-      "message": "Processed 1650/1651 files."
+      "message": "DOCX extracted: 100_bak.docx"
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: ЮФУ информация по письму МН-17 83-АО от 16.04.2020.pdf"
+      "message": "Processing 100_bak.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing ЮФУ информация по письму МН-17 83-АО от 16.04.2020.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: 100_asp.docx"
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: фототека1.pdf"
+      "message": "Processing 100_asp.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing фототека1.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx"
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Устав Российского Союза ректоров.pdf"
+      "message": "Processing %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Устав Российского Союза ректоров.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx"
     },
     {
-      "timestamp": "17:05:36",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Соглашение о сотрудничестве и взаимодействии,.pdf"
+      "message": "Processing %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Соглашение о сотрудничестве и взаимодействии,.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: %D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 37.04.02.pdf"
+      "message": "Processing %D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 37.04.02.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: %D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 37.04.01.pdf"
+      "message": "Processing %D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 37.04.01.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: %D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 37.03.02.pdf"
+      "message": "Processing %D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 37.03.02.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: %D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 27.04.06.pdf"
+      "message": "Processing %D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 27.04.06.pdf (pdf via PDFExtractor)."
+      "message": "DOCX extracted: %D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 27.04.04.pdf"
+      "message": "Processing %D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx (docx via DOCXExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 27.04.04.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: zayavlenie_dostavka_oborudovaniya_domoi.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 27.04.03.pdf"
+      "message": "Processing zayavlenie_dostavka_oborudovaniya_domoi.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 27.04.03.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: zayavka_na_propusk_v_zhk.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 21.04.02.pdf"
+      "message": "Processing zayavka_na_propusk_v_zhk.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 21.04.02.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: zayavka_kompensaciya_interneta.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 16.03.01.pdf"
+      "message": "Processing zayavka_kompensaciya_interneta.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 16.03.01.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: soglasie_na_obrabotku_pd.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 12.04.04.pdf"
+      "message": "Processing soglasie_na_obrabotku_pd.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 12.04.04.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: servisnaya_zayavka_vyezd_inzhenera.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 12.04.01.pdf"
+      "message": "Processing servisnaya_zayavka_vyezd_inzhenera.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 12.04.01.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: raspiska_poluchenie_noutbuka.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 11.04.04.pdf"
+      "message": "Processing raspiska_poluchenie_noutbuka.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 11.04.04.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: perepiska_email_dostavka_kresla.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 11.04.02.pdf"
+      "message": "Processing perepiska_email_dostavka_kresla.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 11.04.02.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: doverennost_na_poluchenie_posylki.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 11.04.01.pdf"
+      "message": "Processing doverennost_na_poluchenie_posylki.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 11.04.01.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: anketa_dms.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 07.03.01.pdf"
+      "message": "Processing anketa_dms.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 07.03.01.pdf (pdf via PDFExtractor)."
+      "message": "TXT loaded: akt_priema_peredachi_rabochego_mesta.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 05.04.06.pdf"
+      "message": "Processing akt_priema_peredachi_rabochego_mesta.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 05.04.06.pdf (pdf via PDFExtractor)."
+      "message": "Processed 1/105 files."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 03.04.03.pdf"
+      "message": "TXT loaded: toc-checkpoint.txt"
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 03.04.03.pdf (pdf via PDFExtractor)."
+      "message": "Processing toc-checkpoint.txt (txt via TXTExtractor)."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 03.04.02.pdf"
+      "message": "OCR disabled by current mode."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 03.04.02.pdf (pdf via PDFExtractor)."
+      "message": "Queued 105 text documents."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 01.04.03.pdf"
+      "message": "Discovered 105 files."
     },
     {
-      "timestamp": "17:05:35",
+      "timestamp": "03:38:57",
       "level": "INFO",
-      "message": "Processing Свидетельство ПОА 01.04.03.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 01.04.02.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство ПОА 01.04.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство ПОА 01.04.01.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство ПОА 01.04.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 51.04.01.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство 51.04.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processed 1625/1651 files."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 51.03.01.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство 51.03.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 48.03.01.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство 48.03.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 47.04.01.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство 47.04.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 47.03.01.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство 47.03.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 46.04.01.pdf"
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "Processing Свидетельство 46.04.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:35",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 45.04.01.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 45.04.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 45.03.02.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 45.03.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 45.03.01.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 45.03.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 44.03.05.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 44.03.05.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 44.03.04.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 44.03.04.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 44.03.03.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 44.03.03.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 44.03.02.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 44.03.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 44.03.01.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 44.03.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 43.04.03.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 43.04.03.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 43.04.02.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 43.04.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 43.03.02.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 43.03.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 43.03.01.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 43.03.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 42.04.02.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 42.04.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 42.03.02.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 42.03.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 42.03.01.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 42.03.01.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 41.04.02.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 41.04.02.pdf (pdf via PDFExtractor)."
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "PDF text extracted: Свидетельство 41.04.01.pdf"
-    },
-    {
-      "timestamp": "17:05:34",
-      "level": "INFO",
-      "message": "Processing Свидетельство 41.04.01.pdf (pdf via PDFExtractor)."
+      "message": "text_scan started."
     }
   ],
-  "aggregated_warnings": {
-    "PDF embedded image limit reached; remaining images skipped.": 6482
-  },
+  "aggregated_warnings": {},
   "queued_files": [
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1679555052_Центр событий РБК .pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542163_Медиакит РБК 360.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542279_Отраслевые форумы РБК 2024.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542337_Медиакит РБК Телеканал.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542351_Медиакит РБК Онлайн.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1738660894_Приложения к договору субаренды (2).pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20240306_fin_result_2023.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20241017-euco-conclusions-en.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\COMPS-1071.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\contract.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\FCC-12-9A1.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\GlobalCriticalMineralsOutlook2024.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\HEAD%204q2024%20release%20050324.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\license_telematika_2017-2022.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\mcs2025-rare-earths.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\neutrality-treaty.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\Paulzovatelskoe_soglashenie_PAOSPB.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\preprint-frn-2023-critical-materials-list.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\presentation.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\price-list.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\pril1_14112652.pdf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\Privacy_policy_upd.pdf"
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\toc-checkpoint.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\akt_priema_peredachi_rabochego_mesta.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\anketa_dms.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\doverennost_na_poluchenie_posylki.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\perepiska_email_dostavka_kresla.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\raspiska_poluchenie_noutbuka.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\servisnaya_zayavka_vyezd_inzhenera.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\soglasie_na_obrabotku_pd.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_kompensaciya_interneta.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_na_propusk_v_zhk.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavlenie_dostavka_oborudovaniya_domoi.txt",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\1C_Science-pattern.rtf",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\200_bak_Urmosh.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\24.11.2020 - форма заявления на участие в конкурсе.docx",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\24.11.2020 - форма согласия соискателя.docx"
   ],
   "recent_results": [
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+      "file_type": "docx",
       "status": "ok",
-      "uz_level": "UZ-2",
-      "categories": "bank_card, inn, phone",
+      "uz_level": "NO_PD",
+      "categories": "n/a",
+      "entities": 0,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+      "file_type": "docx",
+      "status": "ok",
+      "uz_level": "NO_PD",
+      "categories": "n/a",
+      "entities": 0,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+      "file_type": "docx",
+      "status": "ok",
+      "uz_level": "NO_PD",
+      "categories": "n/a",
+      "entities": 0,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+      "file_type": "docx",
+      "status": "ok",
+      "uz_level": "UZ-4",
+      "categories": "address",
+      "entities": 1,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+      "file_type": "docx",
+      "status": "ok",
+      "uz_level": "NO_PD",
+      "categories": "n/a",
+      "entities": 0,
+      "warnings": 0,
+      "error_message": ""
+    },
+    {
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+      "file_type": "docx",
+      "status": "ok",
+      "uz_level": "UZ-3",
+      "categories": "address, email, inn, phone",
       "entities": 7,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\ЮФУ информация по письму МН-17 83-АО от 16.04.2020.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+      "file_type": "docx",
       "status": "ok",
       "uz_level": "NO_PD",
       "categories": "n/a",
@@ -571,18 +366,18 @@
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\фототека1.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+      "file_type": "docx",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 9,
+      "uz_level": "UZ-4",
+      "categories": "address, birth_place, phone",
+      "entities": 11,
+      "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Устав Российского Союза ректоров.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx",
+      "file_type": "docx",
       "status": "ok",
       "uz_level": "NO_PD",
       "categories": "n/a",
@@ -591,162 +386,112 @@
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Соглашение о сотрудничестве и взаимодействии,.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx",
+      "file_type": "docx",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "address",
+      "entities": 2,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 37.04.02.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavlenie_dostavka_oborudovaniya_domoi.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "email, phone",
+      "entities": 2,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 37.04.01.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_na_propusk_v_zhk.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "address, phone",
+      "entities": 3,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 37.03.02.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_kompensaciya_interneta.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "address, email, phone",
+      "entities": 3,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 27.04.06.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\soglasie_na_obrabotku_pd.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-3",
+      "categories": "address, email, inn, phone, snils",
+      "entities": 6,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 27.04.04.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\servisnaya_zayavka_vyezd_inzhenera.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "address, email, phone",
+      "entities": 4,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 27.04.03.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\raspiska_poluchenie_noutbuka.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "phone",
+      "entities": 1,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 21.04.02.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\perepiska_email_dostavka_kresla.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "address, email, phone",
+      "entities": 8,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 16.03.01.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\doverennost_na_poluchenie_posylki.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "address, phone",
+      "entities": 2,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 12.04.04.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\anketa_dms.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-3",
+      "categories": "address, email, phone, snils",
+      "entities": 7,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 12.04.01.pdf",
-      "file_type": "pdf",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\akt_priema_peredachi_rabochego_mesta.txt",
+      "file_type": "txt",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 11.04.04.pdf",
-      "file_type": "pdf",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 11.04.02.pdf",
-      "file_type": "pdf",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 11.04.01.pdf",
-      "file_type": "pdf",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 07.03.01.pdf",
-      "file_type": "pdf",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 05.04.06.pdf",
-      "file_type": "pdf",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-4",
+      "categories": "address, phone",
+      "entities": 4,
       "warnings": 0,
       "error_message": ""
     }
@@ -765,78 +510,76 @@
       "path": "C:\\Coding\\pytorchlabs\\hack\\output\\scan_state.json"
     },
     {
-      "label": "PDF debug artifact",
-      "path": "C:\\Coding\\pytorchlabs\\hack\\output\\debug\\pdf_scan\\pdf_workflow_preview.json"
+      "label": "Text debug artifact",
+      "path": "C:\\Coding\\pytorchlabs\\hack\\output\\debug\\text_scan\\preview.json"
     }
   ],
   "live_previews": [
     {
-      "title": "Extraction Preview: السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
+      "title": "Extraction Preview: 100_bak_Urmosh.docx",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
-          "file_type": "pdf",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+          "file_type": "docx",
           "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 17,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 7,
-            "ocr_calls": 0
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 14,
+            "paragraph_count": 19,
+            "table_count": 0,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
           },
           "warnings": [],
           "sample_chunks": [
             {
-              "location": "{\"page\": 1}",
-              "source_type": "pdf_text",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
-              "text": "نهَٛل األٍزبم انلكزٕه صبحً شعبان علً شرف َبئت هئٌٛ عبيؼخ انًُٕفٛخ نشئٌٕ فليخ انًغزًغ ٔرًُٛخ انجٛئخ السٌرة الذاتٌة",
+              "location": "{\"paragraph\": 1}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+              "text": "Ответственному секретарю",
               "columns": [],
               "metadata": {
-                "page": 1
+                "paragraph": 1
               }
             },
             {
-              "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
-              "text": "نهَٛل األٍزبم انلكزٕه صبحً شعبان علً شرف َبئت هئٌٛ عبيؼخ انًُٕفٛخ نشئٌٕ فليخ انًغزًغ ٔرًُٛخ انجٛئخ السٌرة الذاتٌة",
+              "location": "{\"paragraph\": 2}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+              "text": "приемной комиссии ЮФУ",
               "columns": [],
               "metadata": {
-                "page": 1,
-                "sparse_text": true
+                "paragraph": 2
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
-              "text": "2 أوالً: البٌانات الشخصٌة - : االٍى طجؾٙ شؼجبٌ ػهٙ شوف - انٕظٛفخ انٔ ؾبنٛخ : أٍزبم أطٕل انزوثٛخ ػًٛل كهٛخ انزوثٛخ- عبيؼخ انًُٕفٛخ - : ربهٚـ انًٛالك71 / 9 / 7911 - ٗيؾم انًـٛالك : ثقبر– يوكي شجٍٛ انكٕو– يؾبفظخ انًُٕفٛخ - انؼُٕاٌ : شجٍٛ انكٕو",
+              "location": "{\"paragraph\": 3}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+              "text": "поступающего",
               "columns": [],
               "metadata": {
-                "page": 2
+                "paragraph": 3
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
-              "text": "2 أوالً: البٌانات الشخصٌة - : االٍى طجؾٙ شؼجبٌ ػهٙ شوف - انٕظٛفخ انٔ ؾبنٛخ : أٍزبم أطٕل انزوثٛخ ػًٛل كهٛخ انزوثٛخ- عبيؼخ انًُٕفٛخ - : ربهٚـ انًٛالك71 / 9 / 7911 - ٗيؾم انًـٛالك : ثقبر– يوكي شجٍٛ انكٕو– يؾبفظخ انًُٕفٛخ - انؼُٕاٌ : شجٍٛ انكٕو",
+              "location": "{\"paragraph\": 4}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+              "text": "______________________________________",
               "columns": [],
               "metadata": {
-                "page": 2,
-                "sparse_text": true
+                "paragraph": 4
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\السيرة الذاتية د. صبحي شرف عميد الكلية 13-3 - Copy.pdf",
-              "text": "3 - ػًٛل كهٛخ انزوثٛخ عبيؼخانًُٕفٛخ ػبو4179 .)ٗو . (كٔهح أٔن - ػؼٕ يغهٌ عبيؼخ انًُٕفٛخ يُن ػب و4179و - هئٌٛ رؾوٚو ٍيغهخ انجؾٕس انزوثٕٚخ ٔانُفَٛخ ثبنكهٛخ اػزجبه ي ػبو4179 . - ٌٛهئٌيغه إكاهح يوكي رؼهٛى انكجبه– كهٛخ انزوثٛخ- عبيؼخ انًُٕفٛخ ػبو",
+              "location": "{\"paragraph\": 5}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+              "text": "______________________________________",
               "columns": [],
               "metadata": {
-                "page": 3
+                "paragraph": 5
               }
             }
           ],
@@ -845,106 +588,70 @@
       ]
     },
     {
-      "title": "Extraction Preview: ЮФУ информация по письму МН-17 83-АО от 16.04.2020.pdf",
+      "title": "Extraction Preview: 100_bak.docx",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\ЮФУ информация по письму МН-17 83-АО от 16.04.2020.pdf",
-          "file_type": "pdf",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+          "file_type": "docx",
           "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 1,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 1,
-            "ocr_calls": 0
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 14,
+            "paragraph_count": 22,
+            "table_count": 0,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
           },
           "warnings": [],
-          "sample_chunks": [],
-          "sample_rows": []
-        }
-      ]
-    },
-    {
-      "title": "Extraction Preview: фототека1.pdf",
-      "items": [
-        {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\фототека1.pdf",
-          "file_type": "pdf",
-          "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 29,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 29,
-            "ocr_calls": 0
-          },
-          "warnings": [
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped.",
-            "PDF embedded image limit reached; remaining images skipped."
-          ],
           "sample_chunks": [
             {
-              "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\фототека1.pdf",
-              "text": "Aspidistra elatior Blume",
+              "location": "{\"paragraph\": 1}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+              "text": "Ответственному секретарю",
               "columns": [],
               "metadata": {
-                "page": 1,
-                "sparse_text": true
+                "paragraph": 1
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\фототека1.pdf",
-              "text": "Murraya exotica L.",
+              "location": "{\"paragraph\": 2}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+              "text": "приемной комиссии ЮФУ",
               "columns": [],
               "metadata": {
-                "page": 2,
-                "sparse_text": true
+                "paragraph": 2
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\фототека1.pdf",
-              "text": "Schefflera arboricola (Hayata) Merr.",
+              "location": "{\"paragraph\": 4}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+              "text": "______________________________________",
               "columns": [],
               "metadata": {
-                "page": 3,
-                "sparse_text": true
+                "paragraph": 4
               }
             },
             {
-              "location": "{\"page\": 4}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\фототека1.pdf",
-              "text": "Schefflera arboricola (Hayata) Merr. ‘Variegata’",
+              "location": "{\"paragraph\": 5}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+              "text": "______________________________________",
               "columns": [],
               "metadata": {
-                "page": 4,
-                "sparse_text": true
+                "paragraph": 5
               }
             },
             {
-              "location": "{\"page\": 5}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\фототека1.pdf",
-              "text": "Ficus binnendijkii L. ‘Alii’",
+              "location": "{\"paragraph\": 8}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
+              "text": "заявление",
               "columns": [],
               "metadata": {
-                "page": 5,
-                "sparse_text": true
+                "paragraph": 8
               }
             }
           ],
@@ -953,112 +660,440 @@
       ]
     },
     {
-      "title": "Extraction Preview: Устав Российского Союза ректоров.pdf",
+      "title": "Extraction Preview: 100_asp.docx",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Устав Российского Союза ректоров.pdf",
-          "file_type": "pdf",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+          "file_type": "docx",
           "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 19,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 19,
-            "ocr_calls": 0
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 12,
+            "paragraph_count": 16,
+            "table_count": 0,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
           },
           "warnings": [],
-          "sample_chunks": [],
+          "sample_chunks": [
+            {
+              "location": "{\"paragraph\": 1}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+              "text": "Ответственному секретарю",
+              "columns": [],
+              "metadata": {
+                "paragraph": 1
+              }
+            },
+            {
+              "location": "{\"paragraph\": 2}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+              "text": "приемной комиссии ЮФУ",
+              "columns": [],
+              "metadata": {
+                "paragraph": 2
+              }
+            },
+            {
+              "location": "{\"paragraph\": 4}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+              "text": "______________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 4
+              }
+            },
+            {
+              "location": "{\"paragraph\": 5}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+              "text": "______________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 5
+              }
+            },
+            {
+              "location": "{\"paragraph\": 7}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
+              "text": "заявление",
+              "columns": [],
+              "metadata": {
+                "paragraph": 7
+              }
+            }
+          ],
           "sample_rows": []
         }
       ]
     },
     {
-      "title": "Extraction Preview: Соглашение о сотрудничестве и взаимодействии,.pdf",
+      "title": "Extraction Preview: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Соглашение о сотрудничестве и взаимодействии,.pdf",
-          "file_type": "pdf",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+          "file_type": "docx",
           "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 3,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 3,
-            "ocr_calls": 0
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 27,
+            "paragraph_count": 36,
+            "table_count": 0,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
           },
           "warnings": [],
-          "sample_chunks": [],
+          "sample_chunks": [
+            {
+              "location": "{\"paragraph\": 4}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+              "text": "Проректору _______________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 4
+              }
+            },
+            {
+              "location": "{\"paragraph\": 5}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+              "text": "_________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 5
+              }
+            },
+            {
+              "location": "{\"paragraph\": 6}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+              "text": "Выпускника _________________ года",
+              "columns": [],
+              "metadata": {
+                "paragraph": 6
+              }
+            },
+            {
+              "location": "{\"paragraph\": 7}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+              "text": "_________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 7
+              }
+            },
+            {
+              "location": "{\"paragraph\": 8}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+              "text": "_________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 8
+              }
+            }
+          ],
           "sample_rows": []
         }
       ]
     },
     {
-      "title": "Extraction Preview: Свидетельство ПОА 37.04.02.pdf",
+      "title": "Extraction Preview: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 37.04.02.pdf",
-          "file_type": "pdf",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+          "file_type": "docx",
           "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 1,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 1,
-            "ocr_calls": 0
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 7,
+            "paragraph_count": 18,
+            "table_count": 0,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
           },
           "warnings": [],
-          "sample_chunks": [],
+          "sample_chunks": [
+            {
+              "location": "{\"paragraph\": 3}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+              "text": "Ректору ФГАОУ ВО",
+              "columns": [],
+              "metadata": {
+                "paragraph": 3
+              }
+            },
+            {
+              "location": "{\"paragraph\": 4}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+              "text": "«Южный федеральный университет»",
+              "columns": [],
+              "metadata": {
+                "paragraph": 4
+              }
+            },
+            {
+              "location": "{\"paragraph\": 5}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+              "text": "Шевченко И.К.",
+              "columns": [],
+              "metadata": {
+                "paragraph": 5
+              }
+            },
+            {
+              "location": "{\"paragraph\": 6}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+              "text": "Фамилия Имя Отчество",
+              "columns": [],
+              "metadata": {
+                "paragraph": 6
+              }
+            },
+            {
+              "location": "{\"paragraph\": 12}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+              "text": "заявление.",
+              "columns": [],
+              "metadata": {
+                "paragraph": 12
+              }
+            }
+          ],
           "sample_rows": []
         }
       ]
     },
     {
-      "title": "Extraction Preview: Свидетельство ПОА 37.04.01.pdf",
+      "title": "Extraction Preview: %D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 37.04.01.pdf",
-          "file_type": "pdf",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+          "file_type": "docx",
           "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 1,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 1,
-            "ocr_calls": 0
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 54,
+            "paragraph_count": 80,
+            "table_count": 2,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
           },
           "warnings": [],
-          "sample_chunks": [],
+          "sample_chunks": [
+            {
+              "location": "{\"paragraph\": 2}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+              "text": "Договор №_____________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 2
+              }
+            },
+            {
+              "location": "{\"paragraph\": 3}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+              "text": "возмездного оказания услуг по оформлению и выдаче",
+              "columns": [],
+              "metadata": {
+                "paragraph": 3
+              }
+            },
+            {
+              "location": "{\"paragraph\": 4}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+              "text": "Европейского приложения к диплому",
+              "columns": [],
+              "metadata": {
+                "paragraph": 4
+              }
+            },
+            {
+              "location": "{\"paragraph\": 5}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+              "text": "г. Ростов-на-Дону \"___\" _________ 20___ г.",
+              "columns": [],
+              "metadata": {
+                "paragraph": 5
+              }
+            },
+            {
+              "location": "{\"paragraph\": 7}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
+              "text": "Федеральное государственное автономное образовательное учреждение высшего образования «Южный федеральный университет», именуемое в дальнейшем «Университет», в лице проректора по международной и проектной деятельности Бондарева М. Г., действ",
+              "columns": [],
+              "metadata": {
+                "paragraph": 7
+              }
+            }
+          ],
           "sample_rows": []
         }
       ]
     },
     {
-      "title": "Extraction Preview: Свидетельство ПОА 37.03.02.pdf",
+      "title": "Extraction Preview: %D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Свидетельство ПОА 37.03.02.pdf",
-          "file_type": "pdf",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+          "file_type": "docx",
           "metadata": {
-            "extractor_name": "PDFExtractor",
-            "structured": false,
-            "page_count": 1,
-            "ocr_used": false,
-            "ocr_pages": 0,
-            "embedded_images": 1,
-            "ocr_calls": 0
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 18,
+            "paragraph_count": 48,
+            "table_count": 0,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
           },
           "warnings": [],
-          "sample_chunks": [],
+          "sample_chunks": [
+            {
+              "location": "{\"paragraph\": 4}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+              "text": "Анкета выпускника",
+              "columns": [],
+              "metadata": {
+                "paragraph": 4
+              }
+            },
+            {
+              "location": "{\"paragraph\": 5}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+              "text": "для оформления Европейского приложения к диплому",
+              "columns": [],
+              "metadata": {
+                "paragraph": 5
+              }
+            },
+            {
+              "location": "{\"paragraph\": 8}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+              "text": "Фамилия, имя_________________________________________________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 8
+              }
+            },
+            {
+              "location": "{\"paragraph\": 10}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+              "text": "Факультет____________________________________________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 10
+              }
+            },
+            {
+              "location": "{\"paragraph\": 12}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
+              "text": "Фамилия, имя (по-английски)____________________________________________________",
+              "columns": [],
+              "metadata": {
+                "paragraph": 12
+              }
+            }
+          ],
+          "sample_rows": []
+        }
+      ]
+    },
+    {
+      "title": "Extraction Preview: %D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+      "items": [
+        {
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+          "file_type": "docx",
+          "metadata": {
+            "extractor_name": "DOCXExtractor",
+            "chunk_count": 54,
+            "paragraph_count": 17,
+            "table_count": 11,
+            "embedded_images": 0,
+            "ocr_calls": 0,
+            "structured": false
+          },
+          "warnings": [],
+          "sample_chunks": [
+            {
+              "location": "{\"paragraph\": 2}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+              "text": "Я, нижеподписавшийся, настоящим выражаю свое согласие на заключение договора на оказание комплекса услуг по открытию Счета, предоставлению и обслуживанию Карты (далее по тексту: Договор) путем присоединения к Правилам обслуживания и пользов",
+              "columns": [],
+              "metadata": {
+                "paragraph": 2
+              }
+            },
+            {
+              "location": "{\"paragraph\": 3}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+              "text": "Персональные данные заявителя",
+              "columns": [],
+              "metadata": {
+                "paragraph": 3
+              }
+            },
+            {
+              "location": "{\"paragraph\": 12}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+              "text": "Я, нижеподписавшийся, в целях получения любых услуг, оказываемых физическим лицам ПАО КБ «Центр-инвест» (адрес: . Ростов-на-Дону, пр. Соколова, 62), далее именуемое «Банк», и проведения операций через Банк, в т.ч. связанных с открытием и ве",
+              "columns": [],
+              "metadata": {
+                "paragraph": 12
+              }
+            },
+            {
+              "location": "{\"paragraph\": 13}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+              "text": "Согласие действует в течение всего срока действия Договора, а также в течение 75 лет с даты прекращения обязательств сторон по Договору, либо с даты подачи документов в случае если по каким-либо причинам банковская карта не будет выдана. Пе",
+              "columns": [],
+              "metadata": {
+                "paragraph": 13
+              }
+            },
+            {
+              "location": "{\"paragraph\": 14}",
+              "source_type": "docx_paragraph",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
+              "text": "Я заявляю, что вся предоставленная мною информация является достоверной и полной. Я признаю за Банком право обращаться в любой источник за необходимой информацией. Я признаю за Банком право отклонить мое заявление без каких-либо устных или ",
+              "columns": [],
+              "metadata": {
+                "paragraph": 14
+              }
+            }
+          ],
           "sample_rows": []
         }
       ]
     }
   ],
   "processed_by_type": {
-    "pdf": 1651
+    "docx": 10,
+    "txt": 11
   }
 }

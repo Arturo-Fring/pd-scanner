@@ -41,6 +41,7 @@ class VideoExtractor(BaseExtractor):
         sampled = 0
         chunks = []
         seen_hashes: set[str] = set()
+        ocr_runtime_failed = False
 
         try:
             while sampled < self.config.runtime.max_video_frames:
@@ -59,7 +60,11 @@ class VideoExtractor(BaseExtractor):
                         frame_index += 1
                         continue
                     seen_hashes.add(digest)
-                    text = sanitize_whitespace(self.ocr_service.extract_text(pil_image))
+                    ocr_result = self.ocr_service.extract_text_from_image(pil_image)
+                    warnings.extend(ocr_result.warnings)
+                    if ocr_result.status in {"runtime_failed", "backend_unavailable", "models_missing"}:
+                        ocr_runtime_failed = True
+                    text = sanitize_whitespace(ocr_result.text)
                     if text:
                         chunks.append(
                             self.make_chunk(
@@ -67,13 +72,16 @@ class VideoExtractor(BaseExtractor):
                                 source_type="video_frame_ocr",
                                 source_path=str(path),
                                 location={"frame_index": frame_index},
-                                metadata={"frame_index": frame_index},
+                                metadata={"frame_index": frame_index, "ocr_backend": ocr_result.backend},
                             )
                         )
                 except Exception as exc:
-                    warnings.append(f"OCR failed for frame {frame_index}: {exc}")
+                    warnings.append("Video frame OCR step failed; continuing with next sampled frame.")
                 sampled += 1
                 frame_index += 1
+                if ocr_runtime_failed:
+                    warnings.append("Video OCR disabled for remaining frames after backend issue.")
+                    break
         finally:
             capture.release()
 
@@ -88,6 +96,7 @@ class VideoExtractor(BaseExtractor):
                 "sampled_frames": sampled,
                 "fps": fps,
                 "frame_step": frame_step,
+                "ocr_runtime_failed": ocr_runtime_failed,
             },
             warnings=warnings,
         )

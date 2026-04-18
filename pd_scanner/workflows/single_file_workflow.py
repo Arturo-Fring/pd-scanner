@@ -20,6 +20,8 @@ def scan_single_path(
     path: Path,
     config: AppConfig,
     tracker: ScanProgressTracker | None = None,
+    *,
+    stage: str = "processing file",
 ) -> tuple[FileScanResult, object | None]:
     """Extract and detect entities for one file path."""
     started = time_now()
@@ -30,7 +32,7 @@ def scan_single_path(
             file_type=extractor.file_type if extractor is not None else (path.suffix.lower().lstrip(".") or "unknown"),
             extractor_name=extractor.__class__.__name__ if extractor is not None else "Unsupported",
         )
-        tracker.set_stage("extract-detect")
+        tracker.set_stage(stage)
     if extractor is None:
         result = FileScanResult(
             path=str(path),

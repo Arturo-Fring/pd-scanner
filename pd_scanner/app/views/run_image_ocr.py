@@ -8,6 +8,7 @@ from pd_scanner.app.ui_components import render_progress, render_workflow_result
 from pd_scanner.app.views.common import (
     build_runtime_config,
     render_inventory_section,
+    render_ocr_runtime_summary,
     render_path_selector,
     render_runtime_controls,
     render_start_stop_controls,
@@ -27,6 +28,7 @@ def render_image_ocr_page(state, default_config) -> None:
     resolved_input, resolved_output = render_path_selector(state, default_config, key_prefix="image_scan")
     runtime = render_runtime_controls(default_config, key_prefix="image_scan_runtime", allow_workers=False)
     config = build_runtime_config(input_path=resolved_input, output_path=resolved_output, **runtime)
+    render_ocr_runtime_summary(config, workflow_label="Image OCR")
     available, message = ScanService.probe_ocr(config)
     if available:
         st.success(f"OCR available: {message}")
@@ -45,4 +47,3 @@ def render_image_ocr_page(state, default_config) -> None:
         render_progress(snapshot)
     if state.workflow_result is not None and state.workflow_result.workflow_type == "image_scan":
         render_workflow_result(state.workflow_result)
-

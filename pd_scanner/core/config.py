@@ -34,8 +34,14 @@ class OCRConfig:
     """OCR-related settings."""
 
     enabled: bool = True
+    backend: str = "easyocr"
     lang: str = "rus+eng"
     tesseract_cmd: str | None = None
+    use_angle_cls: bool = True
+    suppress_backend_logs: bool = True
+    use_gpu: bool = True
+    offline_only: bool = True
+    paddle_model_root: str | None = None
     min_pdf_text_chars: int = 80
     image_dpi: int = 200
 

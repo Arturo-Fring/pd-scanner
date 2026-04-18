@@ -1,14 +1,8 @@
 {
   "invalid_pdfs": [
-    "Russia.pdf",
-    "20120518_D212-208-10_01-04-03_TimoshenkoPE.pdf",
-    "5776_28_95fdcc53bcbe0af1e40685a74fe55ce6.pdf",
-    "podiadok-priema-bakalavr-spets-2025.pdf",
-    "resh_minobr_10111998.pdf",
-    "resh_minobr_19082002.pdf",
-    "Ð Ð¾ÑÑÐ¾Ð²-Ð½Ð°-ÐÐ¾Ð½Ñ.pdf"
+    "Russia.pdf"
   ],
-  "preview_count": 1644,
+  "preview_count": 84,
   "files": [
     {
       "title": "Extraction Preview: %D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
@@ -20,13 +14,128 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 2,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "ocr_used": true,
+            "ocr_pages": 2,
             "embedded_images": 2,
-            "ocr_calls": 0
+            "ocr_calls": 4
           },
           "warnings": [],
-          "sample_chunks": [],
+          "sample_chunks": [
+            {
+              "location": "{\"image_index\": 1, \"page\": 1}",
+              "source_type": "pdf_image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
+              "text": "ПОСОЛ РОССИЙСКОЙ ФЕДЕРАЦИИ В США ОСНОВАТЕЛЮ И ДИРЕКТОРУ ПИР-ЦЕНТРА ВА ОРЛОВУ Уважаемый Владимир Андреевич; От всего сердца поздравляю Вас c ЗО-летием ПИР-Центра! Для меня большая честь работать вместе ПИР-Центром практически момента его осн",
+              "columns": [],
+              "metadata": {
+                "page": 1,
+                "image_index": 1,
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 77
+                }
+              }
+            },
+            {
+              "location": "{\"page\": 1}",
+              "source_type": "pdf_page_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
+              "text": "ПОСОЛ РОССИЙСКОЙ ФЕДЕРАЦИИ В США ОСНОВАТЕЛЮ И ДИРЕКТОРУ ПИР-ЦЕНТРА ВА.ОРЛОВУ Уважаемый Владимир Андреевич, От всего сердца поздравляю Вас c 3О-летием ПИР-Центра! Для меня большая честь работать вместе C ПИР-Центром практически с момента его",
+              "columns": [],
+              "metadata": {
+                "page": 1,
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 80
+                }
+              }
+            },
+            {
+              "location": "{\"image_index\": 1, \"page\": 2}",
+              "source_type": "pdf_image_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
+              "text": "Международной ШКОЛЫ ПО проблемам глобальной безопасности, проходившие B атмосфере высОкого профессионализма; открытого диалога и обмена идеями; ЧТО всегда присуще всем Вашим мероприятиям: Именно такие моменты подтверждают ПИР-Центр уникальн",
+              "columns": [],
+              "metadata": {
+                "page": 2,
+                "image_index": 1,
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 87
+                }
+              }
+            },
+            {
+              "location": "{\"page\": 2}",
+              "source_type": "pdf_page_ocr",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
+              "text": "2 Международной ШКОЛЫ ПО проблемам глобальной безопасности, проходившие BВ атмосфере ВЫсОкого профессионализма; открытого диалога и обмена идеями; ЧТО всегда присуще всем Вашим мероприятиям: Именно такие моменты подтверждают; ПИР-Центр уник",
+              "columns": [],
+              "metadata": {
+                "page": 2,
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 85
+                }
+              }
+            }
+          ],
           "sample_rows": []
         }
       ]
@@ -57,17 +166,6 @@
               "metadata": {
                 "page": 1
               }
-            },
-            {
-              "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf",
-              "text": "Access Denied You do not have permission to view this page. Please check your credentials and try again. Error Code: 403",
-              "columns": [],
-              "metadata": {
-                "page": 1,
-                "sparse_text": true
-              }
             }
           ],
           "sample_rows": []
@@ -84,22 +182,39 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "ocr_used": true,
+            "ocr_pages": 3,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "ocr_calls": 3
           },
           "warnings": [],
           "sample_chunks": [
             {
               "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
+              "source_type": "pdf_page_ocr",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1679555052_Центр событий РБК .pdf",
-              "text": "[image] О нас Проекты Группа компаний Инвесторам",
+              "text": "[image] РРБК 0 нас Проекты Группа компаний Инвесторам",
               "columns": [],
               "metadata": {
                 "page": 1,
-                "sparse_text": true
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 6
+                }
               }
             },
             {
@@ -113,17 +228,6 @@
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1679555052_Центр событий РБК .pdf",
-              "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 3}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1679555052_Центр событий РБК .pdf",
@@ -134,14 +238,23 @@
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text_sparse",
+              "location": "{\"page\": 4}",
+              "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1679555052_Центр событий РБК .pdf",
-              "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
+              "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 3,
-                "sparse_text": true
+                "page": 4
+              }
+            },
+            {
+              "location": "{\"page\": 5}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1679555052_Центр событий РБК .pdf",
+              "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
+              "columns": [],
+              "metadata": {
+                "page": 5
               }
             }
           ],
@@ -159,22 +272,39 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "ocr_used": true,
+            "ocr_pages": 3,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "ocr_calls": 3
           },
           "warnings": [],
           "sample_chunks": [
             {
               "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
+              "source_type": "pdf_page_ocr",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542163_Медиакит РБК 360.pdf",
-              "text": "[image] О нас Проекты Группа компаний Инвесторам",
+              "text": "[image] РРБК 0 нас Проекты Группа компаний Инвесторам",
               "columns": [],
               "metadata": {
                 "page": 1,
-                "sparse_text": true
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 6
+                }
               }
             },
             {
@@ -188,17 +318,6 @@
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542163_Медиакит РБК 360.pdf",
-              "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 3}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542163_Медиакит РБК 360.pdf",
@@ -209,14 +328,23 @@
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text_sparse",
+              "location": "{\"page\": 4}",
+              "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542163_Медиакит РБК 360.pdf",
-              "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
+              "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 3,
-                "sparse_text": true
+                "page": 4
+              }
+            },
+            {
+              "location": "{\"page\": 5}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542163_Медиакит РБК 360.pdf",
+              "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
+              "columns": [],
+              "metadata": {
+                "page": 5
               }
             }
           ],
@@ -234,22 +362,39 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "ocr_used": true,
+            "ocr_pages": 3,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "ocr_calls": 3
           },
           "warnings": [],
           "sample_chunks": [
             {
               "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
+              "source_type": "pdf_page_ocr",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542279_Отраслевые форумы РБК 2024.pdf",
-              "text": "[image] О нас Проекты Группа компаний Инвесторам",
+              "text": "[image] РРБК 0 нас Проекты Группа компаний Инвесторам",
               "columns": [],
               "metadata": {
                 "page": 1,
-                "sparse_text": true
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 6
+                }
               }
             },
             {
@@ -263,17 +408,6 @@
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542279_Отраслевые форумы РБК 2024.pdf",
-              "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 3}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542279_Отраслевые форумы РБК 2024.pdf",
@@ -284,14 +418,23 @@
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text_sparse",
+              "location": "{\"page\": 4}",
+              "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542279_Отраслевые форумы РБК 2024.pdf",
-              "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
+              "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 3,
-                "sparse_text": true
+                "page": 4
+              }
+            },
+            {
+              "location": "{\"page\": 5}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542279_Отраслевые форумы РБК 2024.pdf",
+              "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
+              "columns": [],
+              "metadata": {
+                "page": 5
               }
             }
           ],
@@ -309,22 +452,39 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "ocr_used": true,
+            "ocr_pages": 3,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "ocr_calls": 3
           },
           "warnings": [],
           "sample_chunks": [
             {
               "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
+              "source_type": "pdf_page_ocr",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542337_Медиакит РБК Телеканал.pdf",
-              "text": "[image] О нас Проекты Группа компаний Инвесторам",
+              "text": "[image] РРБК 0 нас Проекты Группа компаний Инвесторам",
               "columns": [],
               "metadata": {
                 "page": 1,
-                "sparse_text": true
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 6
+                }
               }
             },
             {
@@ -338,17 +498,6 @@
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542337_Медиакит РБК Телеканал.pdf",
-              "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 3}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542337_Медиакит РБК Телеканал.pdf",
@@ -359,14 +508,23 @@
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text_sparse",
+              "location": "{\"page\": 4}",
+              "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542337_Медиакит РБК Телеканал.pdf",
-              "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
+              "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 3,
-                "sparse_text": true
+                "page": 4
+              }
+            },
+            {
+              "location": "{\"page\": 5}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542337_Медиакит РБК Телеканал.pdf",
+              "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
+              "columns": [],
+              "metadata": {
+                "page": 5
               }
             }
           ],
@@ -384,22 +542,39 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "ocr_used": true,
+            "ocr_pages": 3,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "ocr_calls": 3
           },
           "warnings": [],
           "sample_chunks": [
             {
               "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
+              "source_type": "pdf_page_ocr",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542351_Медиакит РБК Онлайн.pdf",
-              "text": "[image] О нас Проекты Группа компаний Инвесторам",
+              "text": "[image] РРБК 0 нас Проекты Группа компаний Инвесторам",
               "columns": [],
               "metadata": {
                 "page": 1,
-                "sparse_text": true
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 6
+                }
               }
             },
             {
@@ -413,17 +588,6 @@
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542351_Медиакит РБК Онлайн.pdf",
-              "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 3}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542351_Медиакит РБК Онлайн.pdf",
@@ -434,14 +598,23 @@
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text_sparse",
+              "location": "{\"page\": 4}",
+              "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542351_Медиакит РБК Онлайн.pdf",
-              "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
+              "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 3,
-                "sparse_text": true
+                "page": 4
+              }
+            },
+            {
+              "location": "{\"page\": 5}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1725542351_Медиакит РБК Онлайн.pdf",
+              "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
+              "columns": [],
+              "metadata": {
+                "page": 5
               }
             }
           ],
@@ -459,22 +632,39 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "ocr_used": true,
+            "ocr_pages": 3,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "ocr_calls": 3
           },
           "warnings": [],
           "sample_chunks": [
             {
               "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
+              "source_type": "pdf_page_ocr",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1738660894_Приложения к договору субаренды (2).pdf",
-              "text": "[image] О нас Проекты Группа компаний Инвесторам",
+              "text": "[image] РРБК 0 нас Проекты Группа компаний Инвесторам",
               "columns": [],
               "metadata": {
                 "page": 1,
-                "sparse_text": true
+                "ocr": true,
+                "ocr_backend": "easyocr",
+                "ocr_metadata": {
+                  "requested_backend": "easyocr",
+                  "requested_lang": "rus+eng",
+                  "backend_langs": [
+                    "ru",
+                    "en"
+                  ],
+                  "device": "cuda",
+                  "init_args": {
+                    "gpu": true,
+                    "download_enabled": false,
+                    "verbose": false
+                  },
+                  "backend": "easyocr",
+                  "line_count": 6
+                }
               }
             },
             {
@@ -488,17 +678,6 @@
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1738660894_Приложения к договору субаренды (2).pdf",
-              "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 3}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1738660894_Приложения к договору субаренды (2).pdf",
@@ -509,14 +688,23 @@
               }
             },
             {
-              "location": "{\"page\": 3}",
-              "source_type": "pdf_text_sparse",
+              "location": "{\"page\": 4}",
+              "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1738660894_Приложения к договору субаренды (2).pdf",
-              "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
+              "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 3,
-                "sparse_text": true
+                "page": 4
+              }
+            },
+            {
+              "location": "{\"page\": 5}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\1738660894_Приложения к договору субаренды (2).pdf",
+              "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
+              "columns": [],
+              "metadata": {
+                "page": 5
               }
             }
           ],
@@ -552,17 +740,6 @@
               }
             },
             {
-              "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20240306_fin_result_2023.pdf",
-              "text": "HeadHunter Group PLC объявляет финансовые результаты за четвертый квартал 2023 года и полный 2023 год Москва, Россия, 6 марта, 2024 – HeadHunter Group PLC (MOEX: HHRU) объявляет финансовые результаты за четвертый квартал 2023 года и полный ",
-              "columns": [],
-              "metadata": {
-                "page": 1,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 2}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20240306_fin_result_2023.pdf",
@@ -573,17 +750,6 @@
               }
             },
             {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20240306_fin_result_2023.pdf",
-              "text": "• Чистые денежные средства по состоянию на 31 декабря 2023 года составили 19 520 млн рублей против 1 777 млн рублей по состоянию на 31 декабря 2022 года, что связано с ростом чистого денежного потока от операционной деятельности, а также по",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "sparse_text": true
-              }
-            },
-            {
               "location": "{\"page\": 3}",
               "source_type": "pdf_text",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20240306_fin_result_2023.pdf",
@@ -591,6 +757,26 @@
               "columns": [],
               "metadata": {
                 "page": 3
+              }
+            },
+            {
+              "location": "{\"page\": 4}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20240306_fin_result_2023.pdf",
+              "text": "ключевых операционных показателей среди всех операционных сегментов на фоне повышенного спроса на кандидатов в сочетании с дефицитом соискателей. В таблице ниже представлена выручка в разрезе продуктов за указанные периоды: За три месяца, з",
+              "columns": [],
+              "metadata": {
+                "page": 4
+              }
+            },
+            {
+              "location": "{\"page\": 5}",
+              "source_type": "pdf_text",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20240306_fin_result_2023.pdf",
+              "text": "В таблице ниже приведены сведения о нашей выручке, количестве платящих клиентов и ARPC за обозначенные отчетные периоды с разбивкой по типам клиентов и регионам: За три месяца, закончившихся 31 декабря 2023 2022 Изменение Выручка (в тыс. ру",
+              "columns": [],
+              "metadata": {
+                "page": 5
               }
             }
           ],
@@ -623,17 +809,6 @@
               "columns": [],
               "metadata": {
                 "page": 1
-              }
-            },
-            {
-              "location": "{\"page\": 1}",
-              "source_type": "pdf_text_sparse",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\20241017-euco-conclusions-en.pdf",
-              "text": "Checking your browser before accessing a GSC Managed Website Enable JavaScript and cookies to continue",
-              "columns": [],
-              "metadata": {
-                "page": 1,
-                "sparse_text": true
               }
             }
           ],

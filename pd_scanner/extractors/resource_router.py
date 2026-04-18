@@ -62,7 +62,9 @@ class EmbeddedResourceRouter:
             warnings.append(f"{resource.source_type} skipped: {status}")
             return [], warnings
 
-        text = sanitize_whitespace(self.ocr_service.extract_text(resource.payload))
+        ocr_result = self.ocr_service.extract_text_from_image(resource.payload)
+        warnings.extend(ocr_result.warnings)
+        text = sanitize_whitespace(ocr_result.text)
         if not text:
             return [], warnings
         return [
@@ -71,6 +73,11 @@ class EmbeddedResourceRouter:
                 source_type=resource.source_type,
                 source_path=resource.source_path,
                 location=resource.location,
-                metadata={**resource.metadata, "ocr": True},
+                metadata={
+                    **resource.metadata,
+                    "ocr": True,
+                    "ocr_backend": ocr_result.backend,
+                    "ocr_metadata": ocr_result.metadata,
+                },
             )
         ], warnings

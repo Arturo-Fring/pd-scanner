@@ -17,20 +17,24 @@ class ImageOCRExtractor(BaseExtractor):
 
     def extract(self, path: Path):
         warnings: list[str] = []
-        available, status = self.ocr_service.get_status()
         if self.config.runtime.mode == "fast":
             warnings.append("Image OCR skipped in fast mode.")
             return self.build_result(metadata={"ocr_used": False, "structured": False}, warnings=warnings)
-        if not available:
-            warnings.append(status)
-            return self.build_result(metadata={"ocr_used": False, "structured": False}, warnings=warnings)
         try:
             with Image.open(path) as image:
-                text = sanitize_whitespace(self.ocr_service.extract_text(image))
+                ocr_result = self.ocr_service.extract_text_from_image(image)
+                warnings.extend(ocr_result.warnings)
+                text = sanitize_whitespace(ocr_result.text)
         except UnidentifiedImageError as exc:
             raise RuntimeError(f"Unable to decode image: {exc}") from exc
         return self.build_result(
             chunks=[self.make_chunk(text, source_type="image_ocr", source_path=str(path), location={"image": 1})] if text else [],
-            metadata={"ocr_used": True, "structured": False},
+            metadata={
+                "ocr_used": bool(text),
+                "structured": False,
+                "ocr_backend": ocr_result.backend,
+                "ocr_status": ocr_result.status,
+                "ocr_warning_count": len(ocr_result.warnings),
+            },
             warnings=warnings,
         )

@@ -46,11 +46,13 @@ class ScanPipeline:
         """Scan input directory and write reports."""
         ensure_directory(self.config.output_path)
         start = time_now()
+        if self.progress_tracker is not None:
+            self.progress_tracker.set_stage("discovering files")
         files = iter_files(self.config.input_path, self.config, progress_tracker=self.progress_tracker)
         if self.progress_tracker is not None:
             self.progress_tracker.set_total_files(len(files))
             self.progress_tracker.set_queue_preview(files)
-            self.progress_tracker.set_stage("scan")
+            self.progress_tracker.set_stage("processing files")
         LOGGER.info("Discovered %s files for scanning.", len(files))
 
         results: list[FileScanResult] = []
@@ -98,7 +100,7 @@ class ScanPipeline:
                     file_type=extractor.file_type if extractor is not None else (path.suffix.lower().lstrip(".") or "unknown"),
                     extractor_name=extractor.__class__.__name__ if extractor is not None else "Unsupported",
                 )
-                self.progress_tracker.set_stage("extract-detect")
+                self.progress_tracker.set_stage("processing file")
             if extractor is None:
                 result = FileScanResult(
                     path=str(path),

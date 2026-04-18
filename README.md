@@ -372,18 +372,27 @@ python -m pip install -r requirements.txt
 
 ## OCR / Tesseract
 
-OCR requires local Tesseract OCR.
+Primary OCR backend is EasyOCR. PaddleOCR and Tesseract remain optional fallbacks when available.
 
-1. Install Tesseract for Windows.
-2. Install language packs required by your `--ocr-lang`.
-3. Ensure `tesseract.exe` is in `PATH`, or pass it explicitly.
+Runtime behavior is intentionally offline-safe:
 
-PaddleOCR is the preferred backend when local Paddle models are already prepared on disk. Runtime behavior is intentionally offline-safe:
+- EasyOCR is initialized lazily and reused through the shared `OCRService`
+- no extractor talks to EasyOCR directly
+- OCR-heavy workflows expose backend/device status in GUI progress
+- if the selected backend is unavailable or fails at runtime, extraction continues with controlled warnings instead of aborting the whole scan
+- PaddleOCR is only used as an optional fallback path and stays behind the same `OCRService` contract
+- Tesseract is optional and can still be configured through `tesseract.exe` in `PATH` or an explicit CLI/config path
 
-- `pd_scanner` uses minimal Paddle init via `PaddleOCR(lang=...)`, because that path is compatible with the current PaddleOCR v3 runtime
-- before init, `pd_scanner` checks for cached official models on disk so normal scans do not rely on downloads
-- if cached models are missing, OCR is marked unavailable instead of attempting a network fallback
-- if PaddleOCR inference fails at runtime, the workflow continues and the warning is aggregated instead of repeating for every image, PDF page, or video frame
+RTF/TXT/HTML text loading now uses best-effort local encoding selection with mojibake detection, and `.rtf` files that actually contain HTML/error-page content are surfaced with explicit fallback warnings instead of being silently treated as healthy RTF.
+
+PDF extraction now prefers the native text layer, uses embedded-image OCR before page OCR, and keeps more honest metadata such as:
+
+- `dense_text_pages`
+- `sparse_text_pages`
+- `embedded_image_ocr_attempts`
+- `page_ocr_attempts`
+- `page_ocr_successes`
+- `page_debug`
 
 ## CLI Usage
 

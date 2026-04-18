@@ -48,6 +48,11 @@ def render_progress(snapshot: ScanProgressSnapshot) -> None:
     st.caption(
         f"Workflow: {snapshot.workflow_type or 'n/a'} | scan_id: {snapshot.scan_id or 'n/a'} | status: {snapshot.status}"
     )
+    if snapshot.ocr_backend or snapshot.ocr_device:
+        st.caption(
+            f"OCR runtime: {snapshot.ocr_backend or 'n/a'}"
+            + (f" on {snapshot.ocr_device.upper()}" if snapshot.ocr_device else "")
+        )
     info_cols = st.columns(6)
     info_cols[0].metric("Processed", snapshot.processed_count)
     info_cols[1].metric("With PD", snapshot.files_with_pd)

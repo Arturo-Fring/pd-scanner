@@ -6,7 +6,7 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
-from pd_scanner.core.utils import sanitize_whitespace
+from pd_scanner.core.utils import safe_read_text_details, sanitize_whitespace
 from pd_scanner.extractors.base import BaseExtractor
 from pd_scanner.extractors.resource_router import EmbeddedResource
 
@@ -17,16 +17,21 @@ class HTMLExtractor(BaseExtractor):
     file_type = "html"
 
     def extract(self, path: Path) -> ExtractionResult:
-        html = path.read_text(encoding="utf-8", errors="ignore")
+        html, encoding, looks_mojibake = safe_read_text_details(path)
         soup = BeautifulSoup(html, "html.parser")
         for tag in soup(["script", "style", "noscript"]):
             tag.decompose()
         chunks = []
         warnings: list[str] = []
-        ocr_calls = 0
+        ocr_attempts = 0
+        ocr_successes = 0
         image_count = 0
         use_ocr = self.config.runtime.mode == "deep"
-        ocr_available, ocr_status = self.ocr_service.get_status() if use_ocr else (False, "OCR disabled in fast mode.")
+        ocr_status_payload = self.ocr_service.get_status_payload() if use_ocr else None
+        ocr_available = bool(ocr_status_payload["available"]) if ocr_status_payload else False
+        ocr_status = str(ocr_status_payload["message"]) if ocr_status_payload else "OCR disabled in fast mode."
+        if looks_mojibake:
+            warnings.append("HTML text still looks suspiciously garbled after decoding; review source encoding.")
 
         text = sanitize_whitespace(soup.get_text(separator=" "))
         if text:
@@ -63,7 +68,7 @@ class HTMLExtractor(BaseExtractor):
             if image_count > self.config.runtime.max_embedded_images_per_file:
                 warnings.append("HTML embedded image limit reached; remaining images skipped.")
                 break
-            if ocr_calls >= self.config.runtime.max_ocr_calls_per_file:
+            if ocr_attempts >= self.config.runtime.max_ocr_calls_per_file:
                 warnings.append("HTML OCR call limit reached; remaining images skipped.")
                 break
             if not use_ocr:
@@ -85,7 +90,7 @@ class HTMLExtractor(BaseExtractor):
                 from PIL import Image
 
                 with Image.open(image_path) as image:
-                    routed_chunks, routed_warnings = self.route_resource(
+                    route_result = self.route_resource_detailed(
                         EmbeddedResource(
                             resource_type="image",
                             payload=image.copy(),
@@ -95,13 +100,16 @@ class HTMLExtractor(BaseExtractor):
                             metadata={"image_index": index, "src": str(image_path)},
                         )
                     )
-                warnings.extend(routed_warnings)
-                if any(self.ocr_service.is_runtime_failure_warning(item) for item in routed_warnings):
+                warnings.extend(route_result.warnings)
+                if route_result.attempted_ocr:
+                    ocr_attempts += 1
+                if route_result.chunks:
+                    chunks.extend(route_result.chunks)
+                if route_result.ocr_text_found:
+                    ocr_successes += 1
+                if any(self.ocr_service.is_runtime_failure_warning(item) for item in route_result.warnings):
                     warnings.append("HTML embedded image OCR disabled for remaining images after backend issue.")
                     break
-                if routed_chunks:
-                    ocr_calls += 1
-                    chunks.extend(routed_chunks)
             except Exception as exc:
                 warnings.append(f"HTML image OCR failed for {src}: {exc}")
 
@@ -147,8 +155,15 @@ class HTMLExtractor(BaseExtractor):
             chunks=chunks,
             metadata={
                 "structured": False,
+                "encoding": encoding,
                 "embedded_images": image_count,
-                "ocr_calls": ocr_calls,
+                "ocr_available": ocr_available,
+                "ocr_status": ocr_status,
+                "ocr_backend": ocr_status_payload.get("backend") if ocr_status_payload else None,
+                "ocr_device": ocr_status_payload.get("device") if ocr_status_payload else None,
+                "ocr_calls": ocr_attempts,
+                "ocr_successes": ocr_successes,
+                "ocr_used": ocr_attempts > 0,
             },
             warnings=warnings,
         )

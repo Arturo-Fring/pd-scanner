@@ -19,7 +19,10 @@ class ImageOCRExtractor(BaseExtractor):
         warnings: list[str] = []
         if self.config.runtime.mode == "fast":
             warnings.append("Image OCR skipped in fast mode.")
-            return self.build_result(metadata={"ocr_used": False, "structured": False}, warnings=warnings)
+            return self.build_result(
+                metadata={"ocr_used": False, "ocr_attempted": False, "structured": False, "ocr_status": "disabled"},
+                warnings=warnings,
+            )
         try:
             with Image.open(path) as image:
                 ocr_result = self.ocr_service.extract_text_from_image(image)
@@ -30,10 +33,13 @@ class ImageOCRExtractor(BaseExtractor):
         return self.build_result(
             chunks=[self.make_chunk(text, source_type="image_ocr", source_path=str(path), location={"image": 1})] if text else [],
             metadata={
-                "ocr_used": bool(text),
+                "ocr_used": ocr_result.status in {"ok", "inference_failed", "runtime_failed"},
+                "ocr_attempted": ocr_result.status in {"ok", "inference_failed", "runtime_failed"},
+                "ocr_text_found": bool(text),
                 "structured": False,
                 "ocr_backend": ocr_result.backend,
                 "ocr_status": ocr_result.status,
+                "ocr_device": ocr_result.metadata.get("device"),
                 "ocr_warning_count": len(ocr_result.warnings),
             },
             warnings=warnings,

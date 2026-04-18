@@ -9,7 +9,7 @@ from typing import Any
 from pd_scanner.core.config import AppConfig
 from pd_scanner.core.models import ExtractedChunk, ExtractionResult
 from pd_scanner.extractors.ocr_service import OCRService
-from pd_scanner.extractors.resource_router import EmbeddedResource, EmbeddedResourceRouter
+from pd_scanner.extractors.resource_router import EmbeddedResource, EmbeddedResourceRouter, EmbeddedRouteResult
 
 
 class BaseExtractor(ABC):
@@ -68,3 +68,7 @@ class BaseExtractor(ABC):
     def route_resource(self, resource: EmbeddedResource) -> tuple[list[ExtractedChunk], list[str]]:
         """Route a structural resource through the multimodal router."""
         return self.resource_router.route(resource)
+
+    def route_resource_detailed(self, resource: EmbeddedResource) -> EmbeddedRouteResult:
+        """Route a structural resource and keep OCR/runtime details."""
+        return self.resource_router.route_detailed(resource)

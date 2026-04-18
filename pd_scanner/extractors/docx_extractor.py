@@ -24,10 +24,13 @@ class DOCXExtractor(BaseExtractor):
         document = Document(path)
         chunks: list[ExtractedChunk] = []
         warnings: list[str] = []
-        ocr_calls = 0
+        ocr_attempts = 0
+        ocr_successes = 0
         image_count = 0
         use_ocr = self.config.runtime.mode == "deep"
-        ocr_available, ocr_status = self.ocr_service.get_status() if use_ocr else (False, "OCR disabled in fast mode.")
+        ocr_status_payload = self.ocr_service.get_status_payload() if use_ocr else None
+        ocr_available = bool(ocr_status_payload["available"]) if ocr_status_payload else False
+        ocr_status = str(ocr_status_payload["message"]) if ocr_status_payload else "OCR disabled in fast mode."
         for index, paragraph in enumerate(document.paragraphs):
             text = sanitize_whitespace(paragraph.text)
             if text:
@@ -71,7 +74,7 @@ class DOCXExtractor(BaseExtractor):
             if image_count > self.config.runtime.max_embedded_images_per_file:
                 warnings.append("DOCX embedded image limit reached; remaining images skipped.")
                 break
-            if ocr_calls >= self.config.runtime.max_ocr_calls_per_file:
+            if ocr_attempts >= self.config.runtime.max_ocr_calls_per_file:
                 warnings.append("DOCX OCR call limit reached; remaining images skipped.")
                 break
             if not use_ocr:
@@ -81,7 +84,7 @@ class DOCXExtractor(BaseExtractor):
                 break
             try:
                 with Image.open(io.BytesIO(relationship.target_part.blob)) as image:
-                    routed_chunks, routed_warnings = self.route_resource(
+                    route_result = self.route_resource_detailed(
                         EmbeddedResource(
                             resource_type="image",
                             payload=image.copy(),
@@ -91,13 +94,16 @@ class DOCXExtractor(BaseExtractor):
                             metadata={"image_index": image_index},
                         )
                     )
-                warnings.extend(routed_warnings)
-                if any(self.ocr_service.is_runtime_failure_warning(item) for item in routed_warnings):
+                warnings.extend(route_result.warnings)
+                if route_result.attempted_ocr:
+                    ocr_attempts += 1
+                if route_result.chunks:
+                    chunks.extend(route_result.chunks)
+                if route_result.ocr_text_found:
+                    ocr_successes += 1
+                if any(self.ocr_service.is_runtime_failure_warning(item) for item in route_result.warnings):
                     warnings.append("DOCX embedded image OCR disabled for remaining images after backend issue.")
                     break
-                if routed_chunks:
-                    ocr_calls += 1
-                    chunks.extend(routed_chunks)
             except Exception as exc:
                 warnings.append(f"DOCX embedded image OCR failed for image {image_index}: {exc}")
 
@@ -108,7 +114,13 @@ class DOCXExtractor(BaseExtractor):
                 "paragraph_count": len(document.paragraphs),
                 "table_count": len(document.tables),
                 "embedded_images": image_count,
-                "ocr_calls": ocr_calls,
+                "ocr_available": ocr_available,
+                "ocr_status": ocr_status,
+                "ocr_backend": ocr_status_payload.get("backend") if ocr_status_payload else None,
+                "ocr_device": ocr_status_payload.get("device") if ocr_status_payload else None,
+                "ocr_calls": ocr_attempts,
+                "ocr_successes": ocr_successes,
+                "ocr_used": ocr_attempts > 0,
                 "structured": False,
             },
             warnings=warnings,

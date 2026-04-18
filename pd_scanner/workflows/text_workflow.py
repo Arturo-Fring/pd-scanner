@@ -36,8 +36,14 @@ def run_text_workflow(
         tracker.register_artifact("Text debug artifact", debug_artifact)
         tracker.log("INFO", f"Queued {len(files)} text documents.")
         tracker.set_stage("initializing OCR backend")
-    available, message = OCRService(config).get_status()
+    status_payload = OCRService(config).get_status_payload()
+    available = bool(status_payload["available"])
+    message = str(status_payload["message"])
     if tracker is not None:
+        tracker.set_ocr_runtime(
+            backend=status_payload.get("backend"),
+            device=status_payload.get("device"),
+        )
         tracker.set_stage("checking OCR availability")
         tracker.log("INFO", message)
 
@@ -99,6 +105,8 @@ def run_text_workflow(
             "files_scanned": len(results),
             "ocr_available": available,
             "ocr_status": message,
+            "ocr_backend": status_payload.get("backend"),
+            "ocr_device": status_payload.get("device"),
             "ocr_failures": sum(1 for item in results if any("ocr" in warning.lower() for warning in item.warnings)),
         },
     )

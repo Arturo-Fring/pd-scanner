@@ -2,7 +2,7 @@
   "invalid_pdfs": [
     "Russia.pdf"
   ],
-  "preview_count": 84,
+  "preview_count": 54,
   "files": [
     {
       "title": "Extraction Preview: %D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
@@ -14,12 +14,47 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 2,
-            "ocr_used": true,
-            "ocr_pages": 2,
+            "dense_text_pages": 0,
+            "sparse_text_pages": 0,
+            "empty_text_pages": 2,
             "embedded_images": 2,
-            "ocr_calls": 4
+            "embedded_image_ocr_attempts": 2,
+            "embedded_image_ocr_successes": 2,
+            "page_ocr_attempts": 0,
+            "page_ocr_successes": 0,
+            "ocr_pages": 0,
+            "ocr_calls": 2,
+            "ocr_used": true,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 0,
+                "classification": "empty_text",
+                "embedded_images": 1,
+                "embedded_image_text_chars": 971,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_embedded_image_text_sufficient"
+              },
+              {
+                "page": 2,
+                "text_chars": 0,
+                "classification": "empty_text",
+                "embedded_images": 1,
+                "embedded_image_text_chars": 992,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_embedded_image_text_sufficient"
+              }
+            ]
           },
-          "warnings": [],
+          "warnings": [
+            "PDF page OCR skipped for 2 pages because embedded image OCR already produced enough text."
+          ],
           "sample_chunks": [
             {
               "location": "{\"image_index\": 1, \"page\": 1}",
@@ -51,34 +86,6 @@
               }
             },
             {
-              "location": "{\"page\": 1}",
-              "source_type": "pdf_page_ocr",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
-              "text": "ПОСОЛ РОССИЙСКОЙ ФЕДЕРАЦИИ В США ОСНОВАТЕЛЮ И ДИРЕКТОРУ ПИР-ЦЕНТРА ВА.ОРЛОВУ Уважаемый Владимир Андреевич, От всего сердца поздравляю Вас c 3О-летием ПИР-Центра! Для меня большая честь работать вместе C ПИР-Центром практически с момента его",
-              "columns": [],
-              "metadata": {
-                "page": 1,
-                "ocr": true,
-                "ocr_backend": "easyocr",
-                "ocr_metadata": {
-                  "requested_backend": "easyocr",
-                  "requested_lang": "rus+eng",
-                  "backend_langs": [
-                    "ru",
-                    "en"
-                  ],
-                  "device": "cuda",
-                  "init_args": {
-                    "gpu": true,
-                    "download_enabled": false,
-                    "verbose": false
-                  },
-                  "backend": "easyocr",
-                  "line_count": 80
-                }
-              }
-            },
-            {
               "location": "{\"image_index\": 1, \"page\": 2}",
               "source_type": "pdf_image_ocr",
               "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
@@ -106,34 +113,6 @@
                   "line_count": 87
                 }
               }
-            },
-            {
-              "location": "{\"page\": 2}",
-              "source_type": "pdf_page_ocr",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\Сайты\\Доки\\%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf",
-              "text": "2 Международной ШКОЛЫ ПО проблемам глобальной безопасности, проходившие BВ атмосфере ВЫсОкого профессионализма; открытого диалога и обмена идеями; ЧТО всегда присуще всем Вашим мероприятиям: Именно такие моменты подтверждают; ПИР-Центр уник",
-              "columns": [],
-              "metadata": {
-                "page": 2,
-                "ocr": true,
-                "ocr_backend": "easyocr",
-                "ocr_metadata": {
-                  "requested_backend": "easyocr",
-                  "requested_lang": "rus+eng",
-                  "backend_langs": [
-                    "ru",
-                    "en"
-                  ],
-                  "device": "cuda",
-                  "init_args": {
-                    "gpu": true,
-                    "download_enabled": false,
-                    "verbose": false
-                  },
-                  "backend": "easyocr",
-                  "line_count": 85
-                }
-              }
             }
           ],
           "sample_rows": []
@@ -150,10 +129,33 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 1,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "dense_text_pages": 1,
+            "sparse_text_pages": 0,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 0,
+            "page_ocr_successes": 0,
+            "ocr_pages": 0,
+            "ocr_calls": 0,
+            "ocr_used": false,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 120,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -164,7 +166,8 @@
               "text": "Access Denied You do not have permission to view this page. Please check your credentials and try again. Error Code: 403",
               "columns": [],
               "metadata": {
-                "page": 1
+                "page": 1,
+                "text_chars": 120
               }
             }
           ],
@@ -182,10 +185,103 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": true,
-            "ocr_pages": 3,
+            "dense_text_pages": 5,
+            "sparse_text_pages": 3,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 3
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 3,
+            "page_ocr_successes": 3,
+            "ocr_pages": 3,
+            "ocr_calls": 3,
+            "ocr_used": true,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 48,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 53,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 2,
+                "text_chars": 441,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 3,
+                "text_chars": 590,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 4,
+                "text_chars": 475,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 5,
+                "text_chars": 127,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 6,
+                "text_chars": 481,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 7,
+                "text_chars": 74,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 74,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 8,
+                "text_chars": 8,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 8,
+                "page_ocr_decision": "page_ocr_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -224,7 +320,8 @@
               "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
               "columns": [],
               "metadata": {
-                "page": 2
+                "page": 2,
+                "text_chars": 441
               }
             },
             {
@@ -234,7 +331,8 @@
               "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
               "columns": [],
               "metadata": {
-                "page": 3
+                "page": 3,
+                "text_chars": 590
               }
             },
             {
@@ -244,7 +342,8 @@
               "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 4
+                "page": 4,
+                "text_chars": 475
               }
             },
             {
@@ -254,7 +353,8 @@
               "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
               "columns": [],
               "metadata": {
-                "page": 5
+                "page": 5,
+                "text_chars": 127
               }
             }
           ],
@@ -272,10 +372,103 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": true,
-            "ocr_pages": 3,
+            "dense_text_pages": 5,
+            "sparse_text_pages": 3,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 3
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 3,
+            "page_ocr_successes": 3,
+            "ocr_pages": 3,
+            "ocr_calls": 3,
+            "ocr_used": true,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 48,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 53,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 2,
+                "text_chars": 441,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 3,
+                "text_chars": 590,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 4,
+                "text_chars": 475,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 5,
+                "text_chars": 127,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 6,
+                "text_chars": 481,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 7,
+                "text_chars": 74,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 74,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 8,
+                "text_chars": 8,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 8,
+                "page_ocr_decision": "page_ocr_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -314,7 +507,8 @@
               "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
               "columns": [],
               "metadata": {
-                "page": 2
+                "page": 2,
+                "text_chars": 441
               }
             },
             {
@@ -324,7 +518,8 @@
               "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
               "columns": [],
               "metadata": {
-                "page": 3
+                "page": 3,
+                "text_chars": 590
               }
             },
             {
@@ -334,7 +529,8 @@
               "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 4
+                "page": 4,
+                "text_chars": 475
               }
             },
             {
@@ -344,7 +540,8 @@
               "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
               "columns": [],
               "metadata": {
-                "page": 5
+                "page": 5,
+                "text_chars": 127
               }
             }
           ],
@@ -362,10 +559,103 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": true,
-            "ocr_pages": 3,
+            "dense_text_pages": 5,
+            "sparse_text_pages": 3,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 3
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 3,
+            "page_ocr_successes": 3,
+            "ocr_pages": 3,
+            "ocr_calls": 3,
+            "ocr_used": true,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 48,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 53,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 2,
+                "text_chars": 441,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 3,
+                "text_chars": 590,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 4,
+                "text_chars": 475,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 5,
+                "text_chars": 127,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 6,
+                "text_chars": 481,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 7,
+                "text_chars": 74,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 74,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 8,
+                "text_chars": 8,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 8,
+                "page_ocr_decision": "page_ocr_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -404,7 +694,8 @@
               "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
               "columns": [],
               "metadata": {
-                "page": 2
+                "page": 2,
+                "text_chars": 441
               }
             },
             {
@@ -414,7 +705,8 @@
               "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
               "columns": [],
               "metadata": {
-                "page": 3
+                "page": 3,
+                "text_chars": 590
               }
             },
             {
@@ -424,7 +716,8 @@
               "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 4
+                "page": 4,
+                "text_chars": 475
               }
             },
             {
@@ -434,7 +727,8 @@
               "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
               "columns": [],
               "metadata": {
-                "page": 5
+                "page": 5,
+                "text_chars": 127
               }
             }
           ],
@@ -452,10 +746,103 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": true,
-            "ocr_pages": 3,
+            "dense_text_pages": 5,
+            "sparse_text_pages": 3,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 3
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 3,
+            "page_ocr_successes": 3,
+            "ocr_pages": 3,
+            "ocr_calls": 3,
+            "ocr_used": true,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 48,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 53,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 2,
+                "text_chars": 441,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 3,
+                "text_chars": 590,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 4,
+                "text_chars": 475,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 5,
+                "text_chars": 127,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 6,
+                "text_chars": 481,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 7,
+                "text_chars": 74,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 74,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 8,
+                "text_chars": 8,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 8,
+                "page_ocr_decision": "page_ocr_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -494,7 +881,8 @@
               "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
               "columns": [],
               "metadata": {
-                "page": 2
+                "page": 2,
+                "text_chars": 441
               }
             },
             {
@@ -504,7 +892,8 @@
               "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
               "columns": [],
               "metadata": {
-                "page": 3
+                "page": 3,
+                "text_chars": 590
               }
             },
             {
@@ -514,7 +903,8 @@
               "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 4
+                "page": 4,
+                "text_chars": 475
               }
             },
             {
@@ -524,7 +914,8 @@
               "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
               "columns": [],
               "metadata": {
-                "page": 5
+                "page": 5,
+                "text_chars": 127
               }
             }
           ],
@@ -542,10 +933,103 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": true,
-            "ocr_pages": 3,
+            "dense_text_pages": 5,
+            "sparse_text_pages": 3,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 3
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 3,
+            "page_ocr_successes": 3,
+            "ocr_pages": 3,
+            "ocr_calls": 3,
+            "ocr_used": true,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 48,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 53,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 2,
+                "text_chars": 441,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 3,
+                "text_chars": 590,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 4,
+                "text_chars": 475,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 5,
+                "text_chars": 127,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 6,
+                "text_chars": 481,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 7,
+                "text_chars": 74,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 74,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 8,
+                "text_chars": 8,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 8,
+                "page_ocr_decision": "page_ocr_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -584,7 +1068,8 @@
               "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
               "columns": [],
               "metadata": {
-                "page": 2
+                "page": 2,
+                "text_chars": 441
               }
             },
             {
@@ -594,7 +1079,8 @@
               "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
               "columns": [],
               "metadata": {
-                "page": 3
+                "page": 3,
+                "text_chars": 590
               }
             },
             {
@@ -604,7 +1090,8 @@
               "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 4
+                "page": 4,
+                "text_chars": 475
               }
             },
             {
@@ -614,7 +1101,8 @@
               "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
               "columns": [],
               "metadata": {
-                "page": 5
+                "page": 5,
+                "text_chars": 127
               }
             }
           ],
@@ -632,10 +1120,103 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 8,
-            "ocr_used": true,
-            "ocr_pages": 3,
+            "dense_text_pages": 5,
+            "sparse_text_pages": 3,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 3
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 3,
+            "page_ocr_successes": 3,
+            "ocr_pages": 3,
+            "ocr_calls": 3,
+            "ocr_used": true,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 48,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 53,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 2,
+                "text_chars": 441,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 3,
+                "text_chars": 590,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 4,
+                "text_chars": 475,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 5,
+                "text_chars": 127,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 6,
+                "text_chars": 481,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 7,
+                "text_chars": 74,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 74,
+                "page_ocr_decision": "page_ocr_text"
+              },
+              {
+                "page": 8,
+                "text_chars": 8,
+                "classification": "sparse_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": true,
+                "page_ocr_text_chars": 8,
+                "page_ocr_decision": "page_ocr_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -674,7 +1255,8 @@
               "text": "Рекламодателям Лента Контакты Рекламодателям Все возможности для вашего бизнеса со знаком качества РБК РБК 360 Онлайн Телеканал Пресса События РБК 360 Онлайн Телеканал Пресса События РБК 360 Мы используем телеканал, периодику, мероприятия и",
               "columns": [],
               "metadata": {
-                "page": 2
+                "page": 2,
+                "text_chars": 441
               }
             },
             {
@@ -684,7 +1266,8 @@
               "text": "Онлайн Онлайн-проекты – это тематические вертикали, представленные на различных платформах экосистемы РБК 42 млн уникальных посетителей сайта среднемесячно 4,2 млн пользователей в соцсетях Медиакит РБК 360 PDF Медиакит Онлайн PDF Прайс лист",
               "columns": [],
               "metadata": {
-                "page": 3
+                "page": 3,
+                "text_chars": 590
               }
             },
             {
@@ -694,7 +1277,8 @@
               "text": "главные новости страны и мира, а также экспертную оценку происходящего 4,4 млн читателей 186 % рост аудитории журнала Прайс лист 2024 год Смотреть кейсы События Эксперты в проведении мероприятий, реализованных как под собственным брендом, т",
               "columns": [],
               "metadata": {
-                "page": 4
+                "page": 4,
+                "text_chars": 475
               }
             },
             {
@@ -704,7 +1288,8 @@
               "text": "Группа компаний, объединяющая медиа, IT‑сервисы и инфраструктуру для бизнеса Структура Проекты Группа компаний Инвесторам Лента",
               "columns": [],
               "metadata": {
-                "page": 5
+                "page": 5,
+                "text_chars": 127
               }
             }
           ],
@@ -722,10 +1307,243 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 22,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "dense_text_pages": 22,
+            "sparse_text_pages": 0,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 0,
+            "page_ocr_successes": 0,
+            "ocr_pages": 0,
+            "ocr_calls": 0,
+            "ocr_used": false,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 3111,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 2,
+                "text_chars": 3241,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 3,
+                "text_chars": 3110,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 4,
+                "text_chars": 833,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 5,
+                "text_chars": 1702,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 6,
+                "text_chars": 1346,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 7,
+                "text_chars": 1716,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 8,
+                "text_chars": 2929,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 9,
+                "text_chars": 3154,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 10,
+                "text_chars": 2236,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 11,
+                "text_chars": 2666,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 12,
+                "text_chars": 1275,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 13,
+                "text_chars": 3609,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 14,
+                "text_chars": 992,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 15,
+                "text_chars": 2171,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 16,
+                "text_chars": 2356,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 17,
+                "text_chars": 3565,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 18,
+                "text_chars": 4130,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 19,
+                "text_chars": 4909,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 20,
+                "text_chars": 2198,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 21,
+                "text_chars": 2957,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              },
+              {
+                "page": 22,
+                "text_chars": 557,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -736,7 +1554,8 @@
               "text": "HeadHunter Group PLC объявляет финансовые результаты за четвертый квартал 2023 года и полный 2023 год Москва, Россия, 6 марта, 2024 – HeadHunter Group PLC (MOEX: HHRU) объявляет финансовые результаты за четвертый квартал 2023 года и полный ",
               "columns": [],
               "metadata": {
-                "page": 1
+                "page": 1,
+                "text_chars": 3111
               }
             },
             {
@@ -746,7 +1565,8 @@
               "text": "• Чистые денежные средства по состоянию на 31 декабря 2023 года составили 19 520 млн рублей против 1 777 млн рублей по состоянию на 31 декабря 2022 года, что связано с ростом чистого денежного потока от операционной деятельности, а также по",
               "columns": [],
               "metadata": {
-                "page": 2
+                "page": 2,
+                "text_chars": 3241
               }
             },
             {
@@ -756,7 +1576,8 @@
               "text": "Краткий обзор 2023 года • Предыдущий год стал рекордным для нас с точки зрения количества входящих заявок на регистрацию компаний на нашей платформе (увеличение более чем на 40% по сравнению с 2022 годом). Дальнейшая персонализация нашего п",
               "columns": [],
               "metadata": {
-                "page": 3
+                "page": 3,
+                "text_chars": 3110
               }
             },
             {
@@ -766,7 +1587,8 @@
               "text": "ключевых операционных показателей среди всех операционных сегментов на фоне повышенного спроса на кандидатов в сочетании с дефицитом соискателей. В таблице ниже представлена выручка в разрезе продуктов за указанные периоды: За три месяца, з",
               "columns": [],
               "metadata": {
-                "page": 4
+                "page": 4,
+                "text_chars": 833
               }
             },
             {
@@ -776,7 +1598,8 @@
               "text": "В таблице ниже приведены сведения о нашей выручке, количестве платящих клиентов и ARPC за обозначенные отчетные периоды с разбивкой по типам клиентов и регионам: За три месяца, закончившихся 31 декабря 2023 2022 Изменение Выручка (в тыс. ру",
               "columns": [],
               "metadata": {
-                "page": 5
+                "page": 5,
+                "text_chars": 1702
               }
             }
           ],
@@ -794,10 +1617,33 @@
             "extractor_name": "PDFExtractor",
             "structured": false,
             "page_count": 1,
-            "ocr_used": false,
-            "ocr_pages": 0,
+            "dense_text_pages": 1,
+            "sparse_text_pages": 0,
+            "empty_text_pages": 0,
             "embedded_images": 0,
-            "ocr_calls": 0
+            "embedded_image_ocr_attempts": 0,
+            "embedded_image_ocr_successes": 0,
+            "page_ocr_attempts": 0,
+            "page_ocr_successes": 0,
+            "ocr_pages": 0,
+            "ocr_calls": 0,
+            "ocr_used": false,
+            "ocr_available": true,
+            "ocr_status": "OCR available via EasyOCR (ru+en, CUDA).",
+            "ocr_backend": "easyocr",
+            "ocr_device": "cuda",
+            "page_debug": [
+              {
+                "page": 1,
+                "text_chars": 102,
+                "classification": "dense_text",
+                "embedded_images": 0,
+                "embedded_image_text_chars": 0,
+                "page_ocr_attempted": false,
+                "page_ocr_text_chars": 0,
+                "page_ocr_decision": "skipped_dense_text"
+              }
+            ]
           },
           "warnings": [],
           "sample_chunks": [
@@ -808,7 +1654,8 @@
               "text": "Checking your browser before accessing a GSC Managed Website Enable JavaScript and cookies to continue",
               "columns": [],
               "metadata": {
-                "page": 1
+                "page": 1,
+                "text_chars": 102
               }
             }
           ],

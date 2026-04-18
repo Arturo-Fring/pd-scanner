@@ -178,8 +178,10 @@
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\200_bak_Urmosh.docx",
@@ -226,8 +228,10 @@
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\APS.docx",
@@ -250,24 +254,30 @@
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Azov_conf-example.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Azov_conf-requirements.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\BAKSPEC.docx",
@@ -290,16 +300,20 @@
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Bid_Magistracy.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Congreso_Anexos_rus_2025.docx",
@@ -312,7 +326,7 @@
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Course%20syllabus%20Biogeochemistry.docx",
       "file_type": "docx",
-      "chunk_count": 17,
+      "chunk_count": 18,
       "extractor_name": "DOCXExtractor",
       "sample_text": "1. Course Title:",
       "warnings": []
@@ -322,21 +336,25 @@
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\EBBondarevskaia_conference-info.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Environmental%20problems%20and%20environmental%20pollution%20.docx",
       "file_type": "docx",
-      "chunk_count": 17,
+      "chunk_count": 18,
       "extractor_name": "DOCXExtractor",
       "sample_text": "1. Course Title:",
       "warnings": []
@@ -346,45 +364,55 @@
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\FCP_competitions-notice.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\formo.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\FZ 273.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "\\ql | Федеральный закон от 25.12.2008 N 273-ФЗ (ред. от 22.12.2014) \"О противодействии коррупции\" | Документ предоставлен КонсультантПлюс www.consultant.ru Дата сохранения: 25.04.2",
-      "warnings": []
+      "sample_text": "屻瑲ㅦ慜敤汦湡ㅧ㈰尵湡楳慜獮捩杰㈱ㄵ畜ㅣ慜敤晦ㄳ〵尷敤晦尰瑳桳摦换㍨㔱㔰獜獴晨潬档ㄳ〵尶瑳桳桦捩㍨㔱㘰獜獴晨楢尰敤汦湡ㅧ㐰尹敤汦湡晧ㅥ㐰尹桴浥汥湡ㅧ㐰尹桴浥汥湡晧づ瑜敨敭慬杮獣笰晜湯瑴汢屻て晜楢楤尠牦浯湡晜档牡敳㉴㐰晜牰㉱屻尪慰潮敳〠〲〲〶〳〵〴〵〲〳紴楔敭⁳敎⁷潒慭㭮筽晜就扦摩⁩晜睳獩屳捦慨獲瑥〲尴灦煲笲⩜灜湡獯⁥㈰戰㘰㐰㈰㈰㈰㈰㈰㐰䅽楲污紻਍屻㉦晜楢楤尠",
+      "warnings": [
+        "File has .rtf extension but content does not look like valid RTF; used raw-text fallback."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\GenerationS-info.rtf",
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Global%20research%20trends%20in%20branches%20of%20sociology.docx",
       "file_type": "docx",
-      "chunk_count": 19,
+      "chunk_count": 20,
       "extractor_name": "DOCXExtractor",
       "sample_text": "1. Course Title:",
       "warnings": []
@@ -394,8 +422,10 @@
       "file_type": "rtf",
       "chunk_count": 1,
       "extractor_name": "RTFExtractor",
-      "sample_text": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"><html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an intern",
-      "warnings": []
+      "sample_text": "500 Internal Server Error Internal Server Error The server encountered an internal error or misconfiguration and was unable to complete your request. Please contact the server admi",
+      "warnings": [
+        "File has .rtf extension but content looks like HTML; used HTML-like fallback extraction."
+      ]
     },
     {
       "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\Horario_Aula_Hispánica_marzo-junio-2021.docx",
@@ -416,6 +446,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -442,6 +473,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -468,6 +500,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -494,6 +527,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -520,6 +554,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -546,6 +581,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -572,6 +608,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -598,6 +635,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -624,6 +662,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],
@@ -650,6 +689,7 @@
           "metadata": {
             "extractor_name": "TXTExtractor",
             "chunk_count": 1,
+            "encoding": "utf-8-sig",
             "structured": false
           },
           "warnings": [],

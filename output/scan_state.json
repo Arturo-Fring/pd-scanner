@@ -1,497 +1,157 @@
 {
   "is_running": false,
-  "scan_id": "3c6eac5b655543fcbda5e1d438d52ef6",
-  "workflow_type": "text_scan",
-  "status": "failed",
-  "total_count": 105,
-  "processed_count": 21,
-  "files_with_pd": 14,
+  "scan_id": "64338f5eb8314fbe88d480c79a93d8a4",
+  "workflow_type": "structured_scan",
+  "status": "completed",
+  "total_count": 5,
+  "processed_count": 5,
+  "files_with_pd": 5,
   "warnings_count": 0,
-  "errors_count": 1,
+  "errors_count": 0,
   "unsupported_count": 0,
   "current_file": null,
-  "last_result_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
+  "last_result_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
   "current_file_type": null,
   "current_extractor_name": null,
   "ocr_backend": null,
   "ocr_device": null,
   "stop_requested": false,
   "current_stage": "finished",
-  "started_at": "2026-04-18T20:38:57.312978+00:00",
-  "finished_at": "2026-04-18T20:38:58.053486+00:00",
+  "started_at": "2026-04-18T21:32:05.109058+00:00",
+  "finished_at": "2026-04-18T21:33:11.129941+00:00",
   "recent_events": [
     {
-      "timestamp": "03:38:58",
+      "timestamp": "04:33:11",
       "level": "INFO",
-      "message": "Scan finished with status=failed."
+      "message": "Scan finished with status=completed."
     },
     {
-      "timestamp": "03:38:58",
-      "level": "ERROR",
-      "message": "Fatal workflow error: Missing dependency for .rtf extractor: striprtf"
+      "timestamp": "04:33:11",
+      "level": "INFO",
+      "message": "CSV structured scan completed: logistics.csv"
     },
     {
-      "timestamp": "03:38:58",
+      "timestamp": "04:32:51",
       "level": "INFO",
-      "message": "DOCX extracted: 100_bak_Urmosh.docx"
+      "message": "Processing logistics.csv (csv via CSVExtractor)."
     },
     {
-      "timestamp": "03:38:58",
+      "timestamp": "04:32:51",
       "level": "INFO",
-      "message": "Processing 100_bak_Urmosh.docx (docx via DOCXExtractor)."
+      "message": "CSV structured scan completed: customers.csv"
     },
     {
-      "timestamp": "03:38:58",
+      "timestamp": "04:32:49",
       "level": "INFO",
-      "message": "DOCX extracted: 100_bak.docx"
+      "message": "Processing customers.csv (csv via CSVExtractor)."
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:49",
       "level": "INFO",
-      "message": "Processing 100_bak.docx (docx via DOCXExtractor)."
+      "message": "PARQUET structured scan completed: company.parquet"
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:36",
       "level": "INFO",
-      "message": "DOCX extracted: 100_asp.docx"
+      "message": "Processing company.parquet (parquet via ParquetExtractor)."
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:36",
       "level": "INFO",
-      "message": "Processing 100_asp.docx (docx via DOCXExtractor)."
+      "message": "PARQUET structured scan completed: client.parquet"
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:06",
       "level": "INFO",
-      "message": "DOCX extracted: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx"
+      "message": "Processing client.parquet (parquet via ParquetExtractor)."
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:06",
       "level": "INFO",
-      "message": "Processing %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx (docx via DOCXExtractor)."
+      "message": "Processed 1/5 files."
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:06",
       "level": "INFO",
-      "message": "DOCX extracted: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx"
+      "message": "CSV structured scan completed: pii_scan_results-checkpoint.csv"
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:05",
       "level": "INFO",
-      "message": "Processing %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx (docx via DOCXExtractor)."
+      "message": "Processing pii_scan_results-checkpoint.csv (csv via CSVExtractor)."
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:05",
       "level": "INFO",
-      "message": "DOCX extracted: %D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx"
+      "message": "Queued 5 structured files (preview mode)."
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:05",
       "level": "INFO",
-      "message": "Processing %D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx (docx via DOCXExtractor)."
+      "message": "Discovered 5 files."
     },
     {
-      "timestamp": "03:38:57",
+      "timestamp": "04:32:05",
       "level": "INFO",
-      "message": "DOCX extracted: %D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing %D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx (docx via DOCXExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "DOCX extracted: %D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing %D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx (docx via DOCXExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "DOCX extracted: %D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing %D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx (docx via DOCXExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "DOCX extracted: %D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing %D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx (docx via DOCXExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: zayavlenie_dostavka_oborudovaniya_domoi.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing zayavlenie_dostavka_oborudovaniya_domoi.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: zayavka_na_propusk_v_zhk.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing zayavka_na_propusk_v_zhk.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: zayavka_kompensaciya_interneta.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing zayavka_kompensaciya_interneta.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: soglasie_na_obrabotku_pd.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing soglasie_na_obrabotku_pd.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: servisnaya_zayavka_vyezd_inzhenera.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing servisnaya_zayavka_vyezd_inzhenera.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: raspiska_poluchenie_noutbuka.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing raspiska_poluchenie_noutbuka.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: perepiska_email_dostavka_kresla.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing perepiska_email_dostavka_kresla.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: doverennost_na_poluchenie_posylki.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing doverennost_na_poluchenie_posylki.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: anketa_dms.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing anketa_dms.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: akt_priema_peredachi_rabochego_mesta.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing akt_priema_peredachi_rabochego_mesta.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processed 1/105 files."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "TXT loaded: toc-checkpoint.txt"
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Processing toc-checkpoint.txt (txt via TXTExtractor)."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "OCR disabled by current mode."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Queued 105 text documents."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "Discovered 105 files."
-    },
-    {
-      "timestamp": "03:38:57",
-      "level": "INFO",
-      "message": "text_scan started."
+      "message": "structured_scan started."
     }
   ],
   "aggregated_warnings": {},
   "queued_files": [
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\toc-checkpoint.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\akt_priema_peredachi_rabochego_mesta.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\anketa_dms.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\doverennost_na_poluchenie_posylki.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\perepiska_email_dostavka_kresla.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\raspiska_poluchenie_noutbuka.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\servisnaya_zayavka_vyezd_inzhenera.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\soglasie_na_obrabotku_pd.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_kompensaciya_interneta.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_na_propusk_v_zhk.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavlenie_dostavka_oborudovaniya_domoi.txt",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\1C_Science-pattern.rtf",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\200_bak_Urmosh.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\24.11.2020 - форма заявления на участие в конкурсе.docx",
-    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\24.11.2020 - форма согласия соискателя.docx"
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+    "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv"
   ],
   "recent_results": [
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-      "file_type": "docx",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+      "file_type": "csv",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-1",
+      "categories": "phone, special_health",
+      "entities": 35972,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-      "file_type": "docx",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-      "file_type": "docx",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-      "file_type": "docx",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address",
-      "entities": 1,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-      "file_type": "docx",
-      "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-      "file_type": "docx",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+      "file_type": "csv",
       "status": "ok",
       "uz_level": "UZ-3",
-      "categories": "address, email, inn, phone",
-      "entities": 7,
+      "categories": "fio",
+      "entities": 4847,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-      "file_type": "docx",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+      "file_type": "parquet",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
+      "uz_level": "UZ-2",
+      "categories": "address, bank_card, email, inn, phone, snils",
+      "entities": 31501,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-      "file_type": "docx",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+      "file_type": "parquet",
       "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address, birth_place, phone",
-      "entities": 11,
+      "uz_level": "UZ-2",
+      "categories": "bank_card, email, inn, phone, snils",
+      "entities": 54548,
       "warnings": 0,
       "error_message": ""
     },
     {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5.docx",
-      "file_type": "docx",
+      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+      "file_type": "csv",
       "status": "ok",
-      "uz_level": "NO_PD",
-      "categories": "n/a",
-      "entities": 0,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%90%D0%9D%D0%9A%D0%95%D0%A2%D0%90-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC-%D1%83%D1%87%D0%B5%D1%82%D0%B5.docx",
-      "file_type": "docx",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address",
-      "entities": 2,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavlenie_dostavka_oborudovaniya_domoi.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "email, phone",
-      "entities": 2,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_na_propusk_v_zhk.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address, phone",
-      "entities": 3,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\zayavka_kompensaciya_interneta.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address, email, phone",
-      "entities": 3,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\soglasie_na_obrabotku_pd.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-3",
-      "categories": "address, email, inn, phone, snils",
-      "entities": 6,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\servisnaya_zayavka_vyezd_inzhenera.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address, email, phone",
-      "entities": 4,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\raspiska_poluchenie_noutbuka.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "phone",
-      "entities": 1,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\perepiska_email_dostavka_kresla.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address, email, phone",
-      "entities": 8,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\doverennost_na_poluchenie_posylki.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address, phone",
-      "entities": 2,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\anketa_dms.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-3",
-      "categories": "address, email, phone, snils",
-      "entities": 7,
-      "warnings": 0,
-      "error_message": ""
-    },
-    {
-      "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Employes\\akt_priema_peredachi_rabochego_mesta.txt",
-      "file_type": "txt",
-      "status": "ok",
-      "uz_level": "UZ-4",
-      "categories": "address, phone",
-      "entities": 4,
+      "uz_level": "UZ-2",
+      "categories": "bank_card, email, inn, phone, snils",
+      "entities": 153,
       "warnings": 0,
       "error_message": ""
     }
@@ -510,590 +170,790 @@
       "path": "C:\\Coding\\pytorchlabs\\hack\\output\\scan_state.json"
     },
     {
-      "label": "Text debug artifact",
-      "path": "C:\\Coding\\pytorchlabs\\hack\\output\\debug\\text_scan\\preview.json"
+      "label": "Structured debug artifact",
+      "path": "C:\\Coding\\pytorchlabs\\hack\\output\\debug\\structured_scan\\structured_preview.json"
     }
   ],
   "live_previews": [
     {
-      "title": "Extraction Preview: 100_bak_Urmosh.docx",
+      "title": "Extraction Preview: logistics.csv",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-          "file_type": "docx",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+          "file_type": "csv",
           "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 14,
-            "paragraph_count": 19,
-            "table_count": 0,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
+            "extractor_name": "CSVExtractor",
+            "structured": true,
+            "total_rows_scanned": 17978,
+            "encoding": "utf-8"
           },
           "warnings": [],
           "sample_chunks": [
             {
-              "location": "{\"paragraph\": 1}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-              "text": "Ответственному секретарю",
-              "columns": [],
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 1 | sale_id: 1 | origin_store_id: 9 | destination_address: с. Брянск, наб. Специалистов, д. 615, 518360 | transport_mode: Грузовик | carrier: ЭкспрессДоставка | departure_date: 2023-08-12 00:25:00 | arrival_date: 2023-08-13 00:",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
               "metadata": {
-                "paragraph": 1
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 2}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-              "text": "приемной комиссии ЮФУ",
-              "columns": [],
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 2 | sale_id: 2 | origin_store_id: 9 | destination_address: п. Гремячинск (Перм.), алл. Короленко, д. 6/8 стр. 1, 758030 | transport_mode: Грузовик | carrier: ТрансЛогистик | departure_date: 2023-01-29 07:53:00 | arrival_date: 2",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
               "metadata": {
-                "paragraph": 2
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 3}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-              "text": "поступающего",
-              "columns": [],
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 3 | sale_id: 3 | origin_store_id: 4 | destination_address: п. Оса, бул. Дружбы, д. 82 стр. 6/6, 060452 | transport_mode: Морской | carrier: ТрансЛогистик | departure_date: 2023-02-08 07:42:00 | arrival_date: 2023-02-10 15:42:00",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
               "metadata": {
-                "paragraph": 3
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 4}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-              "text": "______________________________________",
-              "columns": [],
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 4 | sale_id: 5 | origin_store_id: 10 | destination_address: с. Стерлитамак, бул. Декабристов, д. 227 стр. 4/5, 942902 | transport_mode: ЖД | carrier: ЭкспрессДоставка | departure_date: 2023-11-11 01:17:00 | arrival_date: 2023-1",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
               "metadata": {
-                "paragraph": 4
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 5}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak_Urmosh.docx",
-              "text": "______________________________________",
-              "columns": [],
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\logistics.csv",
+              "text": "shipment_id: 5 | sale_id: 6 | origin_store_id: 2 | destination_address: д. Сусуман, ул. Высоцкого, д. 4 стр. 34, 288145 | transport_mode: Авиа | carrier: ТрансЛогистик | departure_date: 2023-11-19 23:04:00 | arrival_date: 2023-11-20 10:04:0",
+              "columns": [
+                "shipment_id",
+                "sale_id",
+                "origin_store_id",
+                "destination_address",
+                "transport_mode",
+                "carrier",
+                "departure_date",
+                "arrival_date",
+                "status",
+                "distance"
+              ],
               "metadata": {
-                "paragraph": 5
+                "structured": true
               }
             }
           ],
-          "sample_rows": []
+          "sample_rows": [
+            {
+              "shipment_id": "1",
+              "sale_id": "1",
+              "origin_store_id": "9",
+              "destination_address": "с. Брянск, наб. Специалистов, д. 615, 518360",
+              "transport_mode": "Грузовик",
+              "carrier": "ЭкспрессДоставка",
+              "departure_date": "2023-08-12 00:25:00",
+              "arrival_date": "2023-08-13 00:25:00",
+              "status": "Доставлено",
+              "distance": "162",
+              "cost": "184.73"
+            },
+            {
+              "shipment_id": "2",
+              "sale_id": "2",
+              "origin_store_id": "9",
+              "destination_address": "п. Гремячинск (Перм.), алл. Короленко, д. 6/8 стр. 1, 758030",
+              "transport_mode": "Грузовик",
+              "carrier": "ТрансЛогистик",
+              "departure_date": "2023-01-29 07:53:00",
+              "arrival_date": "2023-01-30 03:53:00",
+              "status": "Доставлено",
+              "distance": "375",
+              "cost": "597.33"
+            },
+            {
+              "shipment_id": "3",
+              "sale_id": "3",
+              "origin_store_id": "4",
+              "destination_address": "п. Оса, бул. Дружбы, д. 82 стр. 6/6, 060452",
+              "transport_mode": "Морской",
+              "carrier": "ТрансЛогистик",
+              "departure_date": "2023-02-08 07:42:00",
+              "arrival_date": "2023-02-10 15:42:00",
+              "status": "Доставлено",
+              "distance": "106",
+              "cost": "204.83"
+            },
+            {
+              "shipment_id": "4",
+              "sale_id": "5",
+              "origin_store_id": "10",
+              "destination_address": "с. Стерлитамак, бул. Декабристов, д. 227 стр. 4/5, 942902",
+              "transport_mode": "ЖД",
+              "carrier": "ЭкспрессДоставка",
+              "departure_date": "2023-11-11 01:17:00",
+              "arrival_date": "2023-11-11 05:17:00",
+              "status": "Доставлено",
+              "distance": "344",
+              "cost": "272.21"
+            },
+            {
+              "shipment_id": "5",
+              "sale_id": "6",
+              "origin_store_id": "2",
+              "destination_address": "д. Сусуман, ул. Высоцкого, д. 4 стр. 34, 288145",
+              "transport_mode": "Авиа",
+              "carrier": "ТрансЛогистик",
+              "departure_date": "2023-11-19 23:04:00",
+              "arrival_date": "2023-11-20 10:04:00",
+              "status": "Доставлено",
+              "distance": "696",
+              "cost": "589.83"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Extraction Preview: 100_bak.docx",
+      "title": "Extraction Preview: customers.csv",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-          "file_type": "docx",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+          "file_type": "csv",
           "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 14,
-            "paragraph_count": 22,
-            "table_count": 0,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
+            "extractor_name": "CSVExtractor",
+            "structured": true,
+            "total_rows_scanned": 5000,
+            "encoding": "utf-8"
           },
           "warnings": [],
           "sample_chunks": [
             {
-              "location": "{\"paragraph\": 1}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-              "text": "Ответственному секретарю",
-              "columns": [],
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 1 | customer_name: Филипп Елизарович Воробьев | customer_type: Физическое лицо | segment: B2C | city: Казань | region: Приволжский",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
               "metadata": {
-                "paragraph": 1
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 2}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-              "text": "приемной комиссии ЮФУ",
-              "columns": [],
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 2 | customer_name: Василиса Макаровна Смирнова | customer_type: Физическое лицо | segment: B2C | city: Сочи | region: Южный",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
               "metadata": {
-                "paragraph": 2
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 4}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-              "text": "______________________________________",
-              "columns": [],
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 3 | customer_name: Филарет Харлампьевич Власов | customer_type: Физическое лицо | segment: B2C | city: Санкт-Петербург | region: Северо-Западный",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
               "metadata": {
-                "paragraph": 4
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 5}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-              "text": "______________________________________",
-              "columns": [],
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 4 | customer_name: Шаров Евлампий Анисимович | customer_type: Физическое лицо | segment: B2B | city: Нижний Новгород | region: Центральный",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
               "metadata": {
-                "paragraph": 5
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 8}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_bak.docx",
-              "text": "заявление",
-              "columns": [],
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\full\\customers.csv",
+              "text": "customer_id: 5 | customer_name: Ильина Нина Леоновна | customer_type: Физическое лицо | segment: B2C | city: Екатеринбург | region: Уральский",
+              "columns": [
+                "customer_id",
+                "customer_name",
+                "customer_type",
+                "segment",
+                "city",
+                "region"
+              ],
               "metadata": {
-                "paragraph": 8
+                "structured": true
               }
             }
           ],
-          "sample_rows": []
+          "sample_rows": [
+            {
+              "customer_id": "1",
+              "customer_name": "Филипп Елизарович Воробьев",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Казань",
+              "region": "Приволжский"
+            },
+            {
+              "customer_id": "2",
+              "customer_name": "Василиса Макаровна Смирнова",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Сочи",
+              "region": "Южный"
+            },
+            {
+              "customer_id": "3",
+              "customer_name": "Филарет Харлампьевич Власов",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Санкт-Петербург",
+              "region": "Северо-Западный"
+            },
+            {
+              "customer_id": "4",
+              "customer_name": "Шаров Евлампий Анисимович",
+              "customer_type": "Физическое лицо",
+              "segment": "B2B",
+              "city": "Нижний Новгород",
+              "region": "Центральный"
+            },
+            {
+              "customer_id": "5",
+              "customer_name": "Ильина Нина Леоновна",
+              "customer_type": "Физическое лицо",
+              "segment": "B2C",
+              "city": "Екатеринбург",
+              "region": "Уральский"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Extraction Preview: 100_asp.docx",
+      "title": "Extraction Preview: company.parquet",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-          "file_type": "docx",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+          "file_type": "parquet",
           "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 12,
-            "paragraph_count": 16,
-            "table_count": 0,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
+            "structured": true,
+            "total_rows_scanned": 11459
           },
           "warnings": [],
           "sample_chunks": [
             {
-              "location": "{\"paragraph\": 1}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-              "text": "Ответственному секретарю",
-              "columns": [],
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: 5e2ac544-ce43-4405-a85a-2ad5bba219fe | Contract: GB09LOGH81 | Documents: internal.store.com/clients/documents/GB09LOGH81 | Email: randallcordova@brady.com | IdPlan: 12 | Name: Mills, Tanner and Valdez Inc | Address: 87968 Jeffrey Curve\n",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
               "metadata": {
-                "paragraph": 1
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 2}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-              "text": "приемной комиссии ЮФУ",
-              "columns": [],
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: d76392e1-05e6-4307-9c38-68256180e711 | Contract: GB05AXIC78 | Documents: internal.store.com/clients/documents/GB05AXIC78 | Email: yfoster@luna.biz | IdPlan: 12 | Name: Miller, Hunter and Rodriguez and Sons | Address: 071 Kaitlyn Plaza S",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
               "metadata": {
-                "paragraph": 2
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 4}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-              "text": "______________________________________",
-              "columns": [],
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: d5aa7ac6-7b00-41d2-a11c-33b51e8ca21f | Contract: GB29OHDA53 | Documents: internal.store.com/clients/documents/GB29OHDA53 | Email: randerson@holmes.biz | IdPlan: 12 | Name: Wilson Inc Ltd | Address: 19926 Martin Avenue\nCliffordville, VI ",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
               "metadata": {
-                "paragraph": 4
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 5}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-              "text": "______________________________________",
-              "columns": [],
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: 1a7d5d3d-2a68-4f71-8688-f898e3c81bf0 | Contract: GB52WAQO27 | Documents: internal.store.com/clients/documents/GB52WAQO27 | Email: hernandezrobin@koch.biz | IdPlan: 12 | Name: Wright PLC Inc | Address: 89109 Cindy Manors Suite 448\nPort J",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
               "metadata": {
-                "paragraph": 5
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 7}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\100_asp.docx",
-              "text": "заявление",
-              "columns": [],
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\company.parquet",
+              "text": "Id: e3d83438-3e3a-46df-bf22-7b8aea61d0ec | Contract: GB76IGJU65 | Documents: internal.store.com/clients/documents/GB76IGJU65 | Email: icarey@roberts.org | IdPlan: 12 | Name: Paul-Coleman PLC | Address: 22657 Kevin Crossing\nLake Robert, MP 3",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan",
+                "Name",
+                "Address",
+                "Phones",
+                "Contact"
+              ],
               "metadata": {
-                "paragraph": 7
+                "structured": true
               }
             }
           ],
-          "sample_rows": []
+          "sample_rows": [
+            {
+              "Id": "5e2ac544-ce43-4405-a85a-2ad5bba219fe",
+              "Contract": "GB09LOGH81",
+              "Documents": "internal.store.com/clients/documents/GB09LOGH81",
+              "Email": "randallcordova@brady.com",
+              "IdPlan": "12",
+              "Name": "Mills, Tanner and Valdez Inc",
+              "Address": "87968 Jeffrey Curve\nSouth Rachelberg, PR 93873",
+              "Phones": "[\"+1 502-790-4334\",\"+1 661-780-6680\"]",
+              "Contact": "[\"Katie Baker\",\"Jose Pace\"]"
+            },
+            {
+              "Id": "d76392e1-05e6-4307-9c38-68256180e711",
+              "Contract": "GB05AXIC78",
+              "Documents": "internal.store.com/clients/documents/GB05AXIC78",
+              "Email": "yfoster@luna.biz",
+              "IdPlan": "12",
+              "Name": "Miller, Hunter and Rodriguez and Sons",
+              "Address": "071 Kaitlyn Plaza Suite 886\nPort Patricia, MO 37847",
+              "Phones": "[\"+1 (787)895-6069\",\"+1 211-986-8708\"]",
+              "Contact": "[\"Michael Watson\",\"Luis Myers\"]"
+            },
+            {
+              "Id": "d5aa7ac6-7b00-41d2-a11c-33b51e8ca21f",
+              "Contract": "GB29OHDA53",
+              "Documents": "internal.store.com/clients/documents/GB29OHDA53",
+              "Email": "randerson@holmes.biz",
+              "IdPlan": "12",
+              "Name": "Wilson Inc Ltd",
+              "Address": "19926 Martin Avenue\nCliffordville, VI 23702",
+              "Phones": "[\"+1 (587)539-5195\",\"+1 9469996390\",\"+1 6883438868\"]",
+              "Contact": "[\"Andre Baker\",\"Erin Phillips\"]"
+            },
+            {
+              "Id": "1a7d5d3d-2a68-4f71-8688-f898e3c81bf0",
+              "Contract": "GB52WAQO27",
+              "Documents": "internal.store.com/clients/documents/GB52WAQO27",
+              "Email": "hernandezrobin@koch.biz",
+              "IdPlan": "12",
+              "Name": "Wright PLC Inc",
+              "Address": "89109 Cindy Manors Suite 448\nPort Jasonview, NY 19064",
+              "Phones": "[\"+1 514-908-6580\",\"+1 (320)291-0944\"]",
+              "Contact": "[\"Tiffany Thomas\"]"
+            },
+            {
+              "Id": "e3d83438-3e3a-46df-bf22-7b8aea61d0ec",
+              "Contract": "GB76IGJU65",
+              "Documents": "internal.store.com/clients/documents/GB76IGJU65",
+              "Email": "icarey@roberts.org",
+              "IdPlan": "12",
+              "Name": "Paul-Coleman PLC",
+              "Address": "22657 Kevin Crossing\nLake Robert, MP 39091",
+              "Phones": "[\"+1 (998)679-5756\",\"+1 (997)545-0544\",\"+1 859-788-3259\"]",
+              "Contact": "[\"Xavier Mann\",\"Erin Martin\"]"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Extraction Preview: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
+      "title": "Extraction Preview: client.parquet",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-          "file_type": "docx",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+          "file_type": "parquet",
           "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 27,
-            "paragraph_count": 36,
-            "table_count": 0,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
+            "structured": true,
+            "total_rows_scanned": 50000
           },
           "warnings": [],
           "sample_chunks": [
             {
-              "location": "{\"paragraph\": 4}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-              "text": "Проректору _______________________",
-              "columns": [],
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: 24fadd55-526a-46a6-b994-3b4433777a11 | Contract: GB84ZKTO10 | Documents: internal.store.com/clients/documents/GB84ZKTO10 | Email: toddanderson@medina-holland.com | IdPlan: 3",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
               "metadata": {
-                "paragraph": 4
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 5}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-              "text": "_________________________________",
-              "columns": [],
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: c38f687f-1aec-4df5-8137-d3afe3b93404 | Contract: GB73KQUK34 | Documents: internal.store.com/clients/documents/GB73KQUK34 | Email: iyang@watts.com | IdPlan: 6",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
               "metadata": {
-                "paragraph": 5
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 6}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-              "text": "Выпускника _________________ года",
-              "columns": [],
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: d2674faf-233c-416f-98f0-6b0eb0f01210 | Contract: GB49PVHM75 | Documents: internal.store.com/clients/documents/GB49PVHM75 | Email: amberguzman@white-barnes.com | IdPlan: 7",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
               "metadata": {
-                "paragraph": 6
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 7}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-              "text": "_________________________________",
-              "columns": [],
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: 5e2ac544-ce43-4405-a85a-2ad5bba219fe | Contract: GB09LOGH81 | Documents: internal.store.com/clients/documents/GB09LOGH81 | Email: randallcordova@brady.com | IdPlan: 12",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
               "metadata": {
-                "paragraph": 7
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 8}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.docx",
-              "text": "_________________________________",
-              "columns": [],
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Выгрузки\\дочерние предприятия\\Billing\\client.parquet",
+              "text": "Id: 9249ddcb-be12-4c48-8e0a-5363d7d66cd8 | Contract: GB03QXIX42 | Documents: internal.store.com/clients/documents/GB03QXIX42 | Email: hamiltoncharles@gross.com | IdPlan: 0",
+              "columns": [
+                "Id",
+                "Contract",
+                "Documents",
+                "Email",
+                "IdPlan"
+              ],
               "metadata": {
-                "paragraph": 8
+                "structured": true
               }
             }
           ],
-          "sample_rows": []
+          "sample_rows": [
+            {
+              "Id": "24fadd55-526a-46a6-b994-3b4433777a11",
+              "Contract": "GB84ZKTO10",
+              "Documents": "internal.store.com/clients/documents/GB84ZKTO10",
+              "Email": "toddanderson@medina-holland.com",
+              "IdPlan": "3"
+            },
+            {
+              "Id": "c38f687f-1aec-4df5-8137-d3afe3b93404",
+              "Contract": "GB73KQUK34",
+              "Documents": "internal.store.com/clients/documents/GB73KQUK34",
+              "Email": "iyang@watts.com",
+              "IdPlan": "6"
+            },
+            {
+              "Id": "d2674faf-233c-416f-98f0-6b0eb0f01210",
+              "Contract": "GB49PVHM75",
+              "Documents": "internal.store.com/clients/documents/GB49PVHM75",
+              "Email": "amberguzman@white-barnes.com",
+              "IdPlan": "7"
+            },
+            {
+              "Id": "5e2ac544-ce43-4405-a85a-2ad5bba219fe",
+              "Contract": "GB09LOGH81",
+              "Documents": "internal.store.com/clients/documents/GB09LOGH81",
+              "Email": "randallcordova@brady.com",
+              "IdPlan": "12"
+            },
+            {
+              "Id": "9249ddcb-be12-4c48-8e0a-5363d7d66cd8",
+              "Contract": "GB03QXIX42",
+              "Documents": "internal.store.com/clients/documents/GB03QXIX42",
+              "Email": "hamiltoncharles@gross.com",
+              "IdPlan": "0"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Extraction Preview: %D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
+      "title": "Extraction Preview: pii_scan_results-checkpoint.csv",
       "items": [
         {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-          "file_type": "docx",
+          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+          "file_type": "csv",
           "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 7,
-            "paragraph_count": 18,
-            "table_count": 0,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
+            "extractor_name": "CSVExtractor",
+            "structured": true,
+            "total_rows_scanned": 2893,
+            "encoding": "utf-8"
           },
           "warnings": [],
           "sample_chunks": [
             {
-              "location": "{\"paragraph\": 3}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-              "text": "Ректору ФГАОУ ВО",
-              "columns": [],
+              "location": "row:0",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: crowler.ipynb | categories: {} | uz: нет признаков | total_hits: 0 | ext: ipynb",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
               "metadata": {
-                "paragraph": 3
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 4}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-              "text": "«Южный федеральный университет»",
-              "columns": [],
+              "location": "row:1",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: Untitled.ipynb | categories: {} | uz: нет признаков | total_hits: 0 | ext: ipynb",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
               "metadata": {
-                "paragraph": 4
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 5}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-              "text": "Шевченко И.К.",
-              "columns": [],
+              "location": "row:2",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: pii_scanner_hackathon.ipynb | categories: {\"платёжные\": 1, \"биометрические\": 1, \"специальные\": 1} | uz: УЗ-1 | total_hits: 3 | ext: ipynb",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
               "metadata": {
-                "paragraph": 5
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 6}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-              "text": "Фамилия Имя Отчество",
-              "columns": [],
+              "location": "row:3",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: dataset2/Sport24_Mediakit_2024.pdf | categories: {\"обычные\": 6} | uz: УЗ-3 | total_hits: 6 | ext: pdf",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
               "metadata": {
-                "paragraph": 6
+                "structured": true
               }
             },
             {
-              "location": "{\"paragraph\": 12}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83.docx",
-              "text": "заявление.",
-              "columns": [],
+              "location": "row:4",
+              "source_type": "table_row",
+              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\.ipynb_checkpoints\\pii_scan_results-checkpoint.csv",
+              "text": "path: dataset2/rules.pdf | categories: {\"обычные\": 11, \"государственные\": 1, \"специальные\": 1} | uz: УЗ-1 | total_hits: 13 | ext: pdf",
+              "columns": [
+                "path",
+                "categories",
+                "uz",
+                "total_hits",
+                "ext"
+              ],
               "metadata": {
-                "paragraph": 12
+                "structured": true
               }
             }
           ],
-          "sample_rows": []
-        }
-      ]
-    },
-    {
-      "title": "Extraction Preview: %D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-      "items": [
-        {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-          "file_type": "docx",
-          "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 54,
-            "paragraph_count": 80,
-            "table_count": 2,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
-          },
-          "warnings": [],
-          "sample_chunks": [
+          "sample_rows": [
             {
-              "location": "{\"paragraph\": 2}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-              "text": "Договор №_____________________",
-              "columns": [],
-              "metadata": {
-                "paragraph": 2
-              }
+              "path": "crowler.ipynb",
+              "categories": "{}",
+              "uz": "нет признаков",
+              "total_hits": "0",
+              "ext": "ipynb"
             },
             {
-              "location": "{\"paragraph\": 3}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-              "text": "возмездного оказания услуг по оформлению и выдаче",
-              "columns": [],
-              "metadata": {
-                "paragraph": 3
-              }
+              "path": "Untitled.ipynb",
+              "categories": "{}",
+              "uz": "нет признаков",
+              "total_hits": "0",
+              "ext": "ipynb"
             },
             {
-              "location": "{\"paragraph\": 4}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-              "text": "Европейского приложения к диплому",
-              "columns": [],
-              "metadata": {
-                "paragraph": 4
-              }
+              "path": "pii_scanner_hackathon.ipynb",
+              "categories": "{\"платёжные\": 1, \"биометрические\": 1, \"специальные\": 1}",
+              "uz": "УЗ-1",
+              "total_hits": "3",
+              "ext": "ipynb"
             },
             {
-              "location": "{\"paragraph\": 5}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-              "text": "г. Ростов-на-Дону \"___\" _________ 20___ г.",
-              "columns": [],
-              "metadata": {
-                "paragraph": 5
-              }
+              "path": "dataset2/Sport24_Mediakit_2024.pdf",
+              "categories": "{\"обычные\": 6}",
+              "uz": "УЗ-3",
+              "total_hits": "6",
+              "ext": "pdf"
             },
             {
-              "location": "{\"paragraph\": 7}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B8%D1%8E%D0%BB%D1%8C.docx",
-              "text": "Федеральное государственное автономное образовательное учреждение высшего образования «Южный федеральный университет», именуемое в дальнейшем «Университет», в лице проректора по международной и проектной деятельности Бондарева М. Г., действ",
-              "columns": [],
-              "metadata": {
-                "paragraph": 7
-              }
+              "path": "dataset2/rules.pdf",
+              "categories": "{\"обычные\": 11, \"государственные\": 1, \"специальные\": 1}",
+              "uz": "УЗ-1",
+              "total_hits": "13",
+              "ext": "pdf"
             }
-          ],
-          "sample_rows": []
-        }
-      ]
-    },
-    {
-      "title": "Extraction Preview: %D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-      "items": [
-        {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-          "file_type": "docx",
-          "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 18,
-            "paragraph_count": 48,
-            "table_count": 0,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
-          },
-          "warnings": [],
-          "sample_chunks": [
-            {
-              "location": "{\"paragraph\": 4}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-              "text": "Анкета выпускника",
-              "columns": [],
-              "metadata": {
-                "paragraph": 4
-              }
-            },
-            {
-              "location": "{\"paragraph\": 5}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-              "text": "для оформления Европейского приложения к диплому",
-              "columns": [],
-              "metadata": {
-                "paragraph": 5
-              }
-            },
-            {
-              "location": "{\"paragraph\": 8}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-              "text": "Фамилия, имя_________________________________________________________________________",
-              "columns": [],
-              "metadata": {
-                "paragraph": 8
-              }
-            },
-            {
-              "location": "{\"paragraph\": 10}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-              "text": "Факультет____________________________________________________________________",
-              "columns": [],
-              "metadata": {
-                "paragraph": 10
-              }
-            },
-            {
-              "location": "{\"paragraph\": 12}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%B0.docx",
-              "text": "Фамилия, имя (по-английски)____________________________________________________",
-              "columns": [],
-              "metadata": {
-                "paragraph": 12
-              }
-            }
-          ],
-          "sample_rows": []
-        }
-      ]
-    },
-    {
-      "title": "Extraction Preview: %D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-      "items": [
-        {
-          "path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-          "file_type": "docx",
-          "metadata": {
-            "extractor_name": "DOCXExtractor",
-            "chunk_count": 54,
-            "paragraph_count": 17,
-            "table_count": 11,
-            "embedded_images": 0,
-            "ocr_calls": 0,
-            "structured": false
-          },
-          "warnings": [],
-          "sample_chunks": [
-            {
-              "location": "{\"paragraph\": 2}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-              "text": "Я, нижеподписавшийся, настоящим выражаю свое согласие на заключение договора на оказание комплекса услуг по открытию Счета, предоставлению и обслуживанию Карты (далее по тексту: Договор) путем присоединения к Правилам обслуживания и пользов",
-              "columns": [],
-              "metadata": {
-                "paragraph": 2
-              }
-            },
-            {
-              "location": "{\"paragraph\": 3}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-              "text": "Персональные данные заявителя",
-              "columns": [],
-              "metadata": {
-                "paragraph": 3
-              }
-            },
-            {
-              "location": "{\"paragraph\": 12}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-              "text": "Я, нижеподписавшийся, в целях получения любых услуг, оказываемых физическим лицам ПАО КБ «Центр-инвест» (адрес: . Ростов-на-Дону, пр. Соколова, 62), далее именуемое «Банк», и проведения операций через Банк, в т.ч. связанных с открытием и ве",
-              "columns": [],
-              "metadata": {
-                "paragraph": 12
-              }
-            },
-            {
-              "location": "{\"paragraph\": 13}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-              "text": "Согласие действует в течение всего срока действия Договора, а также в течение 75 лет с даты прекращения обязательств сторон по Договору, либо с даты подачи документов в случае если по каким-либо причинам банковская карта не будет выдана. Пе",
-              "columns": [],
-              "metadata": {
-                "paragraph": 13
-              }
-            },
-            {
-              "location": "{\"paragraph\": 14}",
-              "source_type": "docx_paragraph",
-              "source_path": "C:\\Coding\\pytorchlabs\\ПДнDataset\\ПДнDataset\\share\\Прочее\\%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%B0%D1%80%D1%82%D1%8B.docx",
-              "text": "Я заявляю, что вся предоставленная мною информация является достоверной и полной. Я признаю за Банком право обращаться в любой источник за необходимой информацией. Я признаю за Банком право отклонить мое заявление без каких-либо устных или ",
-              "columns": [],
-              "metadata": {
-                "paragraph": 14
-              }
-            }
-          ],
-          "sample_rows": []
+          ]
         }
       ]
     }
   ],
   "processed_by_type": {
-    "docx": 10,
-    "txt": 11
+    "csv": 3,
+    "parquet": 2
   }
 }

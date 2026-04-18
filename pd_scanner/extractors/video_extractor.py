@@ -23,10 +23,22 @@ class VideoExtractor(BaseExtractor):
             warnings.append("Deep video OCR skipped in fast mode.")
             return self.build_result(metadata={"structured": False, "ocr_used": False}, warnings=warnings)
 
-        available, status = self.ocr_service.get_status()
+        ocr_status_payload = self.ocr_service.get_status_payload()
+        available = bool(ocr_status_payload["available"])
+        status = str(ocr_status_payload["message"])
         if not available:
             warnings.append(status)
-            return self.build_result(metadata={"structured": False, "ocr_used": False}, warnings=warnings)
+            return self.build_result(
+                metadata={
+                    "structured": False,
+                    "ocr_used": False,
+                    "ocr_calls": 0,
+                    "ocr_status": ocr_status_payload.get("status"),
+                    "ocr_backend": ocr_status_payload.get("backend"),
+                    "ocr_device": ocr_status_payload.get("device"),
+                },
+                warnings=warnings,
+            )
 
         capture = cv2.VideoCapture(str(path))
         if not capture.isOpened():
@@ -42,6 +54,8 @@ class VideoExtractor(BaseExtractor):
         chunks = []
         seen_hashes: set[str] = set()
         ocr_runtime_failed = False
+        ocr_calls = 0
+        duplicate_frames = 0
 
         try:
             while sampled < self.config.runtime.max_video_frames:
@@ -57,10 +71,12 @@ class VideoExtractor(BaseExtractor):
                     pil_image = Image.fromarray(rgb)
                     digest = hashlib.md5(pil_image.resize((32, 32)).tobytes()).hexdigest()
                     if digest in seen_hashes:
+                        duplicate_frames += 1
                         frame_index += 1
                         continue
                     seen_hashes.add(digest)
                     ocr_result = self.ocr_service.extract_text_from_image(pil_image)
+                    ocr_calls += 1
                     warnings.extend(ocr_result.warnings)
                     if ocr_result.status in {"runtime_failed", "backend_unavailable", "models_missing"}:
                         ocr_runtime_failed = True
@@ -92,11 +108,16 @@ class VideoExtractor(BaseExtractor):
             chunks=chunks,
             metadata={
                 "structured": False,
-                "ocr_used": True,
+                "ocr_used": ocr_calls > 0,
+                "ocr_calls": ocr_calls,
                 "sampled_frames": sampled,
+                "duplicate_frames_skipped": duplicate_frames,
                 "fps": fps,
                 "frame_step": frame_step,
                 "ocr_runtime_failed": ocr_runtime_failed,
+                "ocr_backend": ocr_status_payload.get("backend"),
+                "ocr_device": ocr_status_payload.get("device"),
+                "ocr_status": ocr_status_payload.get("status"),
             },
             warnings=warnings,
         )

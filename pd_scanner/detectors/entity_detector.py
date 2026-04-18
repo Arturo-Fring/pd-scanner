@@ -52,7 +52,7 @@ class RuleBasedDetector(BaseDetector):
                 0.55,
                 normalizer=normalize_phone,
                 validator=lambda value: normalize_phone(value) is not None,
-                keyword_context=("С‚РµР»РµС„РѕРЅ", "phone", "mobile", "РєРѕРЅС‚Р°РєС‚"),
+                keyword_context=("телефон", "phone", "mobile", "контакт"),
             )
         )
         findings.extend(
@@ -63,7 +63,7 @@ class RuleBasedDetector(BaseDetector):
                 0.5,
                 normalizer=lambda value: digits_only(value),
                 validator=lambda value: len(digits_only(value)) == 10,
-                required_context=("РїР°СЃРїРѕСЂС‚", "passport", "СЃРµСЂРёСЏ", "РЅРѕРјРµСЂ РїР°СЃРїРѕСЂС‚Р°", "РєРѕРґ РїРѕРґСЂР°Р·РґРµР»РµРЅРёСЏ"),
+                required_context=("паспорт", "passport", "серия", "номер паспорта", "код подразделения"),
             )
         )
         findings.extend(
@@ -94,7 +94,7 @@ class RuleBasedDetector(BaseDetector):
                 0.52,
                 normalizer=lambda value: digits_only(value),
                 validator=luhn_check,
-                keyword_context=("РєР°СЂС‚Р°", "card", "pan", "visa", "mastercard", "РјРёСЂ"),
+                keyword_context=("карта", "card", "pan", "visa", "mastercard", "мир"),
             )
         )
         findings.extend(
@@ -105,7 +105,7 @@ class RuleBasedDetector(BaseDetector):
                 0.42,
                 normalizer=lambda value: digits_only(value),
                 validator=lambda value: len(digits_only(value)) == 20,
-                required_context=("СЃС‡РµС‚", "СЂ/СЃ", "СЂР°СЃС‡РµС‚РЅС‹Р№ СЃС‡РµС‚", "account"),
+                required_context=("счет", "р/с", "расчетный счет", "account"),
             )
         )
         findings.extend(
@@ -116,7 +116,7 @@ class RuleBasedDetector(BaseDetector):
                 0.35,
                 normalizer=lambda value: digits_only(value),
                 validator=maybe_validate_bik,
-                required_context=("Р±РёРє", "bik"),
+                required_context=("бик", "bik"),
             )
         )
         findings.extend(
@@ -127,7 +127,7 @@ class RuleBasedDetector(BaseDetector):
                 0.4,
                 normalizer=lambda value: digits_only(value),
                 validator=lambda value: len(digits_only(value)) == 10,
-                required_context=("РІРѕРґРёС‚РµР»СЊ", "driver", "license", "СѓРґРѕСЃС‚РѕРІРµСЂРµРЅРёРµ"),
+                required_context=("водитель", "driver", "license", "удостоверение"),
             )
         )
         findings.extend(self._detect_cvv(chunk))
@@ -211,7 +211,7 @@ class RuleBasedDetector(BaseDetector):
             snippet = chunk.text[max(0, match.start() - 35) : min(len(chunk.text), match.end() + 35)]
             has_keyword_context = text_contains_keywords(
                 snippet,
-                ("РґР°С‚Р° СЂРѕР¶РґРµРЅРёСЏ", "СЂРѕРґРёР»СЃСЏ", "СЂРѕРґРёР»Р°СЃСЊ", "birth", "dob"),
+                ("дата рождения", "родился", "родилась", "birth", "dob"),
             )
             if not (has_column_context or has_keyword_context):
                 continue
@@ -259,7 +259,7 @@ class RuleBasedDetector(BaseDetector):
                     continue
                 snippet = chunk.text[max(0, match.start() - 40) : min(len(chunk.text), match.end() + 40)]
                 has_keyword_context = text_contains_keywords(
-                    snippet, ("С„РёРѕ", "С„Р°РјРёР»РёСЏ", "РѕС‚С‡РµСЃС‚РІРѕ", "surname", "fullname")
+                    snippet, ("фио", "фамилия", "отчество", "surname", "fullname")
                 )
                 if regex is patterns.FIO_VALUE_RE and not (has_column_context or has_keyword_context):
                     continue

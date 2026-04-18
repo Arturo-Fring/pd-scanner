@@ -31,15 +31,25 @@ def build_config(tmp_path: Path, mode: str = "deep") -> AppConfig:
 
 
 def _mock_ocr(monkeypatch, text: str = "OCR_TEXT") -> None:
-    monkeypatch.setattr("pd_scanner.extractors.ocr_service.OCRService.get_status", lambda self: (True, "mocked OCR"))
+    monkeypatch.setattr(
+        "pd_scanner.extractors.ocr_service.OCRService.get_status_payload",
+        lambda self: {
+            "available": True,
+            "backend": "easyocr",
+            "device": "cuda",
+            "status": "ready",
+            "message": "mocked OCR",
+            "details": {},
+        },
+    )
     monkeypatch.setattr(
         "pd_scanner.extractors.ocr_service.OCRService.extract_text_from_image",
         lambda self, image, lang=None: OCRResult(
             text=text,
             available=True,
-            backend="mock_ocr",
+            backend="easyocr",
             warnings=[],
-            metadata={"backend": "mock_ocr", "lang": lang or self.config.ocr.lang},
+            metadata={"backend": "easyocr", "device": "cuda", "lang": lang or self.config.ocr.lang},
         ),
     )
     monkeypatch.setattr("pd_scanner.extractors.ocr_service.OCRService.extract_text", lambda self, image: text)
@@ -63,6 +73,7 @@ def test_pdf_image_ocr(tmp_path: Path, monkeypatch) -> None:
 
     assert "pdf_image_ocr" in source_types
     assert result.metadata["embedded_images"] >= 1
+    assert result.metadata["page_ocr_attempts"] == 0
 
 
 def test_docx_image_ocr(tmp_path: Path, monkeypatch) -> None:

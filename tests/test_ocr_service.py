@@ -129,6 +129,7 @@ def test_ocr_service_builds_minimal_paddle_init_kwargs(tmp_path: Path, monkeypat
 def test_ocr_service_marks_runtime_failure_and_degrades_backend(tmp_path: Path, monkeypatch) -> None:
     clear_ocr_cache()
     config = build_config(tmp_path, mode="deep")
+    config.ocr.backend = "paddleocr"
     init_calls: list[dict[str, object]] = []
 
     class FakePaddle:
@@ -178,6 +179,7 @@ def test_ocr_service_marks_runtime_failure_and_degrades_backend(tmp_path: Path, 
 def test_ocr_service_offline_mode_does_not_init_paddle_without_local_models(tmp_path: Path, monkeypatch) -> None:
     clear_ocr_cache()
     config = build_config(tmp_path, mode="deep")
+    config.ocr.backend = "paddleocr"
     init_calls: list[dict[str, object]] = []
 
     class FakePaddle:

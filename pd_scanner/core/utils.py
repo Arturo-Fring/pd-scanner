@@ -10,6 +10,27 @@ from pathlib import Path
 from typing import Any
 
 
+DEFAULT_TEXT_ENCODINGS: tuple[str, ...] = (
+    "utf-8-sig",
+    "utf-8",
+    "cp1251",
+    "utf-16",
+    "utf-16le",
+    "latin-1",
+)
+MOJIBAKE_MARKERS: tuple[str, ...] = (
+    "Р°",
+    "Рё",
+    "Рї",
+    "Рѕ",
+    "С‚",
+    "СЏ",
+    "СЊ",
+    "Ð",
+    "Ñ",
+)
+
+
 def time_now() -> float:
     """Return a monotonic timestamp."""
     return time.perf_counter()
@@ -48,12 +69,63 @@ def flatten_json(data: Any, prefix: str = "") -> list[tuple[str, Any]]:
     return items
 
 
+def looks_like_mojibake(text: str) -> bool:
+    """Heuristically detect common UTF-8/CP1251 mojibake patterns."""
+    sample = text[:4000]
+    marker_hits = sum(sample.count(marker) for marker in MOJIBAKE_MARKERS)
+    return marker_hits >= 2
+
+
+def _text_quality_score(text: str) -> int:
+    sample = text[:4000]
+    if not sample.strip():
+        return -10_000
+    letters = sum(char.isalpha() for char in sample)
+    cyrillic = sum(char.lower() in "абвгдеёжзийклмнопрстуфхцчшщъыьэюя" for char in sample)
+    nulls = sample.count("\x00")
+    mojibake_penalty = sum(sample.count(marker) for marker in MOJIBAKE_MARKERS) * 8
+    return letters + (cyrillic * 2) - (nulls * 20) - mojibake_penalty
+
+
+def decode_text_best_effort(
+    data: bytes,
+    encodings: tuple[str, ...] = DEFAULT_TEXT_ENCODINGS,
+) -> tuple[str, str]:
+    """Decode bytes with simple scoring across common local encodings."""
+    candidates: list[tuple[int, str, str]] = []
+    seen: set[str] = set()
+    for encoding in encodings:
+        if encoding in seen:
+            continue
+        seen.add(encoding)
+        try:
+            text = data.decode(encoding)
+        except UnicodeDecodeError:
+            continue
+        candidates.append((_text_quality_score(text), encoding, text))
+    if not candidates:
+        return data.decode("utf-8", errors="ignore"), "utf-8/ignore"
+    _, encoding, text = max(candidates, key=lambda item: item[0])
+    return text, encoding
+
+
+def safe_read_text_details(
+    path: Path,
+    encodings: tuple[str, ...] = DEFAULT_TEXT_ENCODINGS,
+) -> tuple[str, str, bool]:
+    """Read text with graceful encoding fallback plus mojibake hint."""
+    data = path.read_bytes()
+    text, encoding = decode_text_best_effort(data, encodings=encodings)
+    return text, encoding, looks_like_mojibake(text)
+
+
 def safe_read_text(path: Path, encoding: str = "utf-8") -> str:
     """Read text with graceful fallback."""
     try:
         return path.read_text(encoding=encoding)
     except UnicodeDecodeError:
-        return path.read_text(encoding="utf-8", errors="ignore")
+        text, _, _ = safe_read_text_details(path)
+        return text
 
 
 def sanitize_whitespace(text: str) -> str:
@@ -80,4 +152,3 @@ def shorten(text: str, max_length: int = 160) -> str:
     if len(cleaned) <= max_length:
         return cleaned
     return f"{cleaned[: max_length - 3]}..."
-
